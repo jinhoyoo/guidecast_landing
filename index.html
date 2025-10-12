@@ -21,8 +21,18 @@ layout: none
       lang = 'ja';
     }
 
-    // baseurl을 고려한 리다이렉트
-    const baseUrl = '{{ site.baseurl }}';
+    // 현재 경로에서 baseurl 자동 감지
+    const currentPath = window.location.pathname;
+    const pathParts = currentPath.split('/').filter(p => p);
+
+    // 첫 번째 경로가 언어 코드가 아니면 baseurl로 간주
+    const langCodes = ['ko', 'en', 'zh-TW', 'zh-CN', 'ja'];
+    let baseUrl = '';
+
+    if (pathParts.length > 0 && !langCodes.includes(pathParts[0])) {
+      baseUrl = '/' + pathParts[0];
+    }
+
     window.location.href = `${baseUrl}/${lang}/`;
   </script>
   <style>
