@@ -1,0 +1,82 @@
+{% assign t = site.data.translations[page.lang].pricing %}
+
+<section id="pricing" class="pricing-section">
+  <div class="container">
+    <h2 class="section-title">{{ t.title }}</h2>
+
+    <div class="pricing-grid">
+      <!-- Free Plan -->
+      <div class="pricing-card">
+        <h3 class="plan-name">{{ t.plans.free.name }}</h3>
+        <div class="plan-price">{{ t.plans.free.price }}</div>
+        <ul class="plan-features">
+          {% for feature in t.plans.free.features %}
+            <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+        <button class="btn-secondary">{{ t.plans.free.button }}</button>
+      </div>
+
+      <!-- Basic Plan -->
+      <div class="pricing-card featured">
+        <div class="popular-badge">{{ t.plans.basic.badge }}</div>
+        <h3 class="plan-name">{{ t.plans.basic.name }}</h3>
+        <div class="plan-price">{{ t.plans.basic.price }}<span class="period">{{ t.plans.basic.period }}</span></div>
+        <ul class="plan-features">
+          {% for feature in t.plans.basic.features %}
+            <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+        <button class="btn-primary">{{ t.plans.basic.button }}</button>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="pricing-card">
+        <h3 class="plan-name">{{ t.plans.pro.name }}</h3>
+        <div class="plan-price">{{ t.plans.pro.price }}<span class="period">{{ t.plans.pro.period }}</span></div>
+        <ul class="plan-features">
+          {% for feature in t.plans.pro.features %}
+            <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+        <button class="btn-primary">{{ t.plans.pro.button }}</button>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="pricing-card">
+        <h3 class="plan-name">{{ t.plans.enterprise.name }}</h3>
+        <div class="plan-price">{{ t.plans.enterprise.price }}</div>
+        <ul class="plan-features">
+          {% for feature in t.plans.enterprise.features %}
+            <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+        <button class="btn-secondary">{{ t.plans.enterprise.button }}</button>
+      </div>
+    </div>
+
+    <!-- Additional Credits -->
+    <div class="additional-credits">
+      <h4>{{ t.credits.title }}</h4>
+      <p class="credits-subtitle">{{ t.credits.subtitle }}</p>
+      <div class="credits-grid">
+        {% for credit in t.credits.items %}
+          <div class="credit-card{% if credit.badge %} featured{% endif %}">
+            {% if credit.badge %}
+              <div class="credit-badge">{{ credit.badge }}</div>
+            {% endif %}
+            <div class="credit-icon">{{ credit.icon }}</div>
+            <div class="credit-amount">{{ credit.amount }}</div>
+            <div class="credit-price">{{ credit.price }}</div>
+            <div class="credit-hours">{{ credit.hours }}</div>
+            {% if credit.save %}
+              <div class="credit-save">{{ credit.save }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <p class="pricing-note">{{ t.note }}</p>
+  </div>
+</section>

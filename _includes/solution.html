@@ -1,0 +1,19 @@
+{% assign t = site.data.translations[page.lang].solution %}
+
+<section id="solution" class="solution-section">
+  <div class="container">
+    <h2 class="section-title">{{ t.title }}</h2>
+
+    <div class="features-grid">
+      {% for feature in t.features %}
+        <div class="feature">
+          <div class="feature-icon">{{ feature.icon }}</div>
+          <div class="feature-content">
+            <h3 class="feature-title">{{ feature.title }}</h3>
+            <p class="feature-description">{{ feature.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

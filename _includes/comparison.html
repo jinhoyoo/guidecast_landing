@@ -1,0 +1,29 @@
+{% assign t = site.data.translations[page.lang].comparison %}
+
+<section id="comparison" class="comparison-section">
+  <div class="container">
+    <h2 class="section-title">{{ t.title }}</h2>
+    <p class="section-subtitle">{{ t.subtitle }}</p>
+
+    <div class="comparison-table-wrapper">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>{{ t.headers.item }}</th>
+            <th>{{ t.headers.wireless }}</th>
+            <th class="highlight">{{ t.headers.guidecast }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in t.rows %}
+            <tr>
+              <td>{{ row.item }}</td>
+              <td>{{ row.wireless }}</td>
+              <td class="highlight">{{ row.guidecast }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

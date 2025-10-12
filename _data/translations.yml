@@ -1,0 +1,899 @@
+# 한국어
+ko:
+  site:
+    title: "Guidecast"
+    description: "스마트폰으로 완성하는 프로 투어 가이드"
+    
+  nav:
+    home: "홈"
+    features: "기능"
+    pricing: "요금제"
+    faq: "FAQ"
+    
+  hero:
+    headline: "무선 장비 없이, <br/>스마트폰으로 완성하는 프로 투어 가이드"
+    subheadline: "24만원짜리 무선 장비 대신 QR코드 하나로 시작하세요. 충전 걱정, 파손 위험, 관리 스트레스 모두 끝."
+    info_box: "가이드는 요금제 구독. 관광객은 100% 무료 참여."
+    cta_button: "데모 영상 보기 (30초)"
+    image_alt: "가이드가 QR코드를 보여주는 장면"
+    
+  pain_points:
+    title: "이런 고민, 당신만의 문제가 아닙니다"
+    items:
+      - icon: "💸"
+        title: "장비 구매비 부담"
+        description: "10명 투어 한 번 하려고 24만원? 개인 가이드에겐 너무 큰 초기 비용"
+      - icon: "🔋"
+        title: "충전·관리 스트레스"
+        description: "투어 전날 밤 충전 확인, 파손되면 수리비까지... 가이드 일에만 집중하고 싶은데"
+      - icon: "📱"
+        title: "관광객 경험 한계"
+        description: "일방적인 음성만 들려주기엔 2025년이 아깝죠. 사진 공유도, 실시간 소통도 안 되는 구식 장비"
+        
+  solution:
+    title: "Guidecast 하나면 충분합니다"
+    features:
+      - icon: "⚡"
+        title: "QR 스캔 한 번으로 시작"
+        description: "앱에서 투어 생성 → QR코드 보여주기 → 관광객 스캔 참여. 3초 완료."
+      - icon: "🎙️"
+        title: "실시간 음성 방송"
+        description: "WebRTC 기반 고품질 오디오. 최대 20명까지 끊김 없이 전달."
+      - icon: "📋"
+        title: "요점 카드 + 진동 알림"
+        description: "중요한 정보는 카드로 전송. 관광객 폰이 진동하며 알림 → 놓칠 일 없음."
+      - icon: "📸"
+        title: "투어 사진 공유 앨범"
+        description: "투어 중 찍은 사진 실시간 업로드 → 여행 끝나면 관광객들이 한 번에 다운로드 가능"
+        
+  testimonials:
+    title: "이미 전환한 가이드들의 이야기"
+    items:
+      - text: "무선 장비 살 돈으로 3개월 구독했는데 훨씬 편해요. 관광객 반응도 좋고!"
+        author: "김OO, 서울 도보 투어 가이드"
+      - text: "박물관 도슨트로 일하는데 장비 충전 안 해도 돼서 아침이 편해졌어요."
+        author: "이OO, 박물관 도슨트"
+      - text: "사진 공유 기능 덕분에 관광객들이 리뷰를 더 많이 남겨줘요."
+        author: "박OO, 제주 투어 가이드"
+        
+  pricing:
+    title: "당신의 투어 규모에 맞는 요금제"
+    plans:
+      free:
+        name: "Free"
+        price: "무료"
+        features:
+          - "최대 3명"
+          - "월 1,000분 포함"
+          - "시험 서비스"
+          - "무상 평가용"
+          - "오디오 방송, 사진 공유"
+        button: "무료로 시작"
+      basic:
+        name: "Basic"
+        price: "$15"
+        period: "/월"
+        badge: "인기"
+        features:
+          - "최대 10명"
+          - "월 5,000분 포함"
+          - "개인 가이드 최적"
+          - "장비 대체, 간편 운영"
+        button: "1주 무료 체험"
+      pro:
+        name: "Pro"
+        price: "$75"
+        period: "/월"
+        features:
+          - "최대 20명"
+          - "월 30,000분 포함"
+          - "중견 가이드/여행사"
+          - "대규모 그룹 안정적 운영"
+        button: "1주 무료 체험"
+      enterprise:
+        name: "Enterprise"
+        price: "맞춤 견적"
+        features:
+          - "무제한"
+          - "별도 협의"
+          - "박물관/공공기관"
+          - "조직 전체 라이선싱"
+          - "전용 지원"
+        button: "상담 신청"
+    credits:
+      title: "💳 추가 사용량 크레딧"
+      subtitle: "요금제 사용량을 초과했을 때 필요한 만큼만 구매하세요"
+      items:
+        - icon: "⚡"
+          amount: "1,000분"
+          price: "$1.5"
+          hours: "≈ 16.7시간"
+        - icon: "⚡⚡"
+          amount: "2,000분"
+          price: "$2.8"
+          hours: "≈ 33.3시간"
+          save: "$0.2 절약"
+          badge: "인기"
+        - icon: "⚡⚡⚡"
+          amount: "3,000분"
+          price: "$4.0"
+          hours: "≈ 50시간"
+          save: "$0.5 절약"
+    note: "본 요금제와 무료 체험은 '가이드' 전용입니다. 관광객은 항상 무료로 참여합니다."
+    
+  comparison:
+    title: "무선 장비 vs Guidecast"
+    subtitle: "결제 주체: 가이드 · 관광객은 항상 무료"
+    headers:
+      item: "항목"
+      wireless: "기존 무선 장비"
+      guidecast: "Guidecast"
+    rows:
+      - item: "초기 비용"
+        wireless: "24만원+(인원이 늘면 더 비용발생)"
+        guidecast: "무료 체험 → 월 $15(인원이 늘어도 안심)"
+      - item: "충전/관리"
+        wireless: "매번 필요"
+        guidecast: "불필요"
+      - item: "파손 위험"
+        wireless: "높음 (수리비 추가)"
+        guidecast: "없음"
+      - item: "사진 공유"
+        wireless: "불가능"
+        guidecast: "실시간 앨범"
+      - item: "요점 전달"
+        wireless: "음성뿐"
+        guidecast: "카드 + 진동 알림"
+      - item: "관광객 소통"
+        wireless: "일방향"
+        guidecast: "양방향 가능"
+        
+  faq:
+    title: "자주 묻는 질문"
+    items:
+      - question: "관광객은 비용을 내나요?"
+        answer: "아니요. 관광객은 항상 무료이며, 앱 설치 없이 QR 스캔으로 바로 참여합니다. 결제와 구독은 가이드만 해당됩니다."
+      - question: "무선 장비 없이 정말 투어가 가능한가요?"
+        answer: "네, 가능합니다. Guidecast는 스마트폰의 인터넷 연결만으로 실시간 음성 방송이 가능합니다. 관광객들이 QR코드를 스캔하면 자동으로 연결되며, 기존 무선 장비와 동일하거나 더 나은 음질을 제공합니다."
+      - question: "관광객들도 앱을 설치해야 하나요?"
+        answer: "아니요, 설치 필요 없습니다. 관광객은 QR코드를 스캔하면 웹브라우저로 바로 참여할 수 있습니다. 별도의 앱 다운로드나 회원가입 없이 즉시 투어에 참여 가능합니다."
+      - question: "인터넷이 안 되는 곳에서도 사용할 수 있나요?"
+        answer: "Guidecast는 인터넷 연결이 필요한 서비스입니다. 다만 4G/5G 모바일 데이터만으로도 충분히 작동하며, 데이터 사용량은 1시간 투어 기준 약 50-100MB 수준으로 부담이 적습니다."
+      - question: "무료 체험 후 자동 결제되나요?"
+        answer: "아니요, 자동 결제되지 않습니다. 1주 무료 체험 기간 동안 신용카드 등록 없이 모든 기능을 사용할 수 있으며, 체험 종료 후 원하실 때 유료 구독을 선택하시면 됩니다."
+      - question: "투어 중 사진은 어떻게 관리되나요?"
+        answer: "가이드가 투어 중 촬영한 사진은 자동으로 공유 앨범에 업로드됩니다. 관광객들은 투어 종료 후 30일 이내에 앨범에서 사진을 다운로드할 수 있으며, 30일 후 자동 삭제되어 개인정보가 안전하게 보호됩니다."
+        
+  cta:
+    title: "출시 전 얼리버드 혜택"
+    subtitle: "지금 신청하고 연락처와 의견을 남겨주시면, 출시 후 <strong>1,000시간 무료 이용 크레딧</strong>을 드립니다!"
+    button: "얼리버드 신청하고 1,000시간 받기"
+    links:
+      faq: "FAQ 보기"
+      
+  footer:
+    brand: "Guidecast"
+    tagline: "스마트폰으로 완성하는 프로 투어 가이드"
+    contact_title: "문의"
+    email: "support@guidecast.com"
+    copyright: "2025 Guidecast. All rights reserved."
+
+# 영어
+en:
+  site:
+    title: "Guidecast"
+    description: "Professional Tour Guiding with Your Smartphone"
+    
+  nav:
+    home: "Home"
+    features: "Features"
+    pricing: "Pricing"
+    faq: "FAQ"
+    
+  hero:
+    headline: "Professional Tour Guiding Without Wireless Equipment"
+    subheadline: "Start with a QR code instead of $200 wireless equipment. No charging worries, no damage risks, no management stress."
+    info_box: "Guides subscribe to plans. Tourists participate 100% free."
+    cta_button: "Watch Demo (30s)"
+    image_alt: "Guide showing QR code"
+    
+  pain_points:
+    title: "You're Not Alone in These Struggles"
+    items:
+      - icon: "💸"
+        title: "Equipment Cost Burden"
+        description: "$200 for a 10-person tour? Too much upfront cost for independent guides"
+      - icon: "🔋"
+        title: "Charging & Management Stress"
+        description: "Checking battery the night before, repair costs if damaged... Just want to focus on guiding"
+      - icon: "📱"
+        title: "Limited Tourist Experience"
+        description: "One-way audio only in 2025? No photo sharing, no real-time interaction with outdated equipment"
+        
+  solution:
+    title: "Guidecast Is All You Need"
+    features:
+      - icon: "⚡"
+        title: "Start with One QR Scan"
+        description: "Create tour in app → Show QR code → Tourists scan and join. Done in 3 seconds."
+      - icon: "🎙️"
+        title: "Real-time Audio Broadcasting"
+        description: "WebRTC-based high-quality audio. Seamless delivery to up to 20 people."
+      - icon: "📋"
+        title: "Info Cards + Vibration Alerts"
+        description: "Send key information as cards. Tourist phones vibrate with alerts → Nothing missed."
+      - icon: "📸"
+        title: "Tour Photo Sharing Album"
+        description: "Upload photos in real-time during tour → Tourists download all at once after trip"
+        
+  testimonials:
+    title: "Stories from Guides Who Switched"
+    items:
+      - text: "Used equipment budget for 3 months subscription, much more convenient. Tourists love it!"
+        author: "Kim OO, Seoul Walking Tour Guide"
+      - text: "Working as museum docent, mornings are easier without battery charging."
+        author: "Lee OO, Museum Docent"
+      - text: "Thanks to photo sharing, tourists leave more reviews."
+        author: "Park OO, Jeju Tour Guide"
+        
+  pricing:
+    title: "Plans for Your Tour Size"
+    plans:
+      free:
+        name: "Free"
+        price: "Free"
+        features:
+          - "Up to 3 people"
+          - "1,000 minutes/month"
+          - "Trial service"
+          - "Free evaluation"
+          - "Audio broadcast, photo sharing"
+        button: "Start Free"
+      basic:
+        name: "Basic"
+        price: "$15"
+        period: "/mo"
+        badge: "Popular"
+        features:
+          - "Up to 10 people"
+          - "5,000 minutes/month"
+          - "Perfect for solo guides"
+          - "Equipment replacement, easy operation"
+        button: "1 Week Free Trial"
+      pro:
+        name: "Pro"
+        price: "$75"
+        period: "/mo"
+        features:
+          - "Up to 20 people"
+          - "30,000 minutes/month"
+          - "Mid-sized guides/agencies"
+          - "Stable large group operation"
+        button: "1 Week Free Trial"
+      enterprise:
+        name: "Enterprise"
+        price: "Custom Quote"
+        features:
+          - "Unlimited"
+          - "Separate consultation"
+          - "Museums/public institutions"
+          - "Organization-wide licensing"
+          - "Dedicated support"
+        button: "Request Consultation"
+    credits:
+      title: "💳 Additional Usage Credits"
+      subtitle: "Purchase only what you need when exceeding plan limits"
+      items:
+        - icon: "⚡"
+          amount: "1,000 min"
+          price: "$1.5"
+          hours: "≈ 16.7 hours"
+        - icon: "⚡⚡"
+          amount: "2,000 min"
+          price: "$2.8"
+          hours: "≈ 33.3 hours"
+          save: "Save $0.2"
+          badge: "Popular"
+        - icon: "⚡⚡⚡"
+          amount: "3,000 min"
+          price: "$4.0"
+          hours: "≈ 50 hours"
+          save: "Save $0.5"
+    note: "Plans and free trials are for guides only. Tourists always participate for free."
+    
+  comparison:
+    title: "Wireless Equipment vs Guidecast"
+    subtitle: "Payment: Guides only · Tourists always free"
+    headers:
+      item: "Item"
+      wireless: "Traditional Wireless"
+      guidecast: "Guidecast"
+    rows:
+      - item: "Initial Cost"
+        wireless: "$200+ (more cost with more people)"
+        guidecast: "Free trial → $15/mo (no worry with growth)"
+      - item: "Charging/Management"
+        wireless: "Required every time"
+        guidecast: "Not needed"
+      - item: "Damage Risk"
+        wireless: "High (repair costs)"
+        guidecast: "None"
+      - item: "Photo Sharing"
+        wireless: "Impossible"
+        guidecast: "Real-time album"
+      - item: "Info Delivery"
+        wireless: "Audio only"
+        guidecast: "Cards + vibration alerts"
+      - item: "Tourist Interaction"
+        wireless: "One-way"
+        guidecast: "Two-way possible"
+        
+  faq:
+    title: "Frequently Asked Questions"
+    items:
+      - question: "Do tourists pay?"
+        answer: "No. Tourists always participate for free via QR scan without app installation. Only guides pay for subscriptions."
+      - question: "Can tours really work without wireless equipment?"
+        answer: "Yes. Guidecast enables real-time audio broadcasting with just smartphone internet. Tourists auto-connect via QR scan with equal or better audio quality than traditional equipment."
+      - question: "Do tourists need to install an app?"
+        answer: "No installation needed. Tourists join via web browser after QR scan. No app download or registration required."
+      - question: "Does it work without internet?"
+        answer: "Guidecast requires internet connection. However, 4G/5G mobile data is sufficient, using only 50-100MB per hour of touring."
+      - question: "Auto-charged after free trial?"
+        answer: "No auto-charging. Use all features during 1-week free trial without credit card. Choose paid subscription when ready after trial ends."
+      - question: "How are tour photos managed?"
+        answer: "Photos taken during tour auto-upload to shared album. Tourists can download within 30 days after tour, then auto-deleted for privacy protection."
+        
+  cta:
+    title: "Early Bird Benefits Before Launch"
+    subtitle: "Sign up now with your contact and feedback to receive <strong>1,000 hours free credit</strong> after launch!"
+    button: "Apply for Early Bird & Get 1,000 Hours"
+    links:
+      faq: "View FAQ"
+      
+  footer:
+    brand: "Guidecast"
+    tagline: "Professional Tour Guiding with Your Smartphone"
+    contact_title: "Contact"
+    email: "support@guidecast.com"
+    copyright: "2025 Guidecast. All rights reserved."
+
+# 中文（繁體）- Traditional Chinese
+zh-TW:
+  site:
+    title: "Guidecast"
+    description: "用智慧型手機完成專業導覽"
+
+  nav:
+    home: "首頁"
+    features: "功能"
+    pricing: "方案"
+    faq: "常見問題"
+
+  hero:
+    headline: "無需無線設備，用智慧型手機完成專業導覽"
+    subheadline: "只需一個QR碼即可開始，無需$200的無線設備。無需充電煩惱、無損壞風險、無管理壓力。"
+    info_box: "導遊付費訂閱方案。遊客100%免費參與。"
+    cta_button: "觀看示範影片 (30秒)"
+    image_alt: "導遊展示QR碼畫面"
+
+  pain_points:
+    title: "這些困擾並非只有您獨有"
+    items:
+      - icon: "💸"
+        title: "設備購買負擔"
+        description: "為了10人團就要花$200？對獨立導遊來說初期成本太高"
+      - icon: "🔋"
+        title: "充電與管理壓力"
+        description: "每次導覽前都要檢查電量，損壞了還要修理費⋯⋯只想專注於導覽工作"
+      - icon: "📱"
+        title: "遊客體驗限制"
+        description: "2025年了還只能單向語音？無法分享照片、無法即時互動的過時設備"
+
+  solution:
+    title: "只需Guidecast就夠了"
+    features:
+      - icon: "⚡"
+        title: "一次QR掃描即可開始"
+        description: "在應用程式中建立導覽 → 顯示QR碼 → 遊客掃描加入。3秒完成。"
+      - icon: "🎙️"
+        title: "即時語音廣播"
+        description: "基於WebRTC的高品質音訊。無縫傳輸給最多20人。"
+      - icon: "📋"
+        title: "資訊卡片 + 震動提醒"
+        description: "以卡片形式傳送重要資訊。遊客手機震動提醒 → 不會錯過任何訊息。"
+      - icon: "📸"
+        title: "導覽照片分享相簿"
+        description: "導覽期間即時上傳照片 → 遊客在旅程結束後一次下載全部照片"
+
+  testimonials:
+    title: "已轉換使用的導遊分享"
+    items:
+      - text: "用購買設備的預算訂閱了3個月，方便多了。遊客反應也很好！"
+        author: "金OO，首爾步行導覽導遊"
+      - text: "在博物館擔任導覽員，不用充電讓早晨輕鬆許多。"
+        author: "李OO，博物館導覽員"
+      - text: "多虧照片分享功能，遊客留下更多評論。"
+        author: "朴OO，濟州導覽導遊"
+
+  pricing:
+    title: "適合您導覽規模的方案"
+    plans:
+      free:
+        name: "Free"
+        price: "免費"
+        features:
+          - "最多3人"
+          - "每月1,000分鐘"
+          - "試用服務"
+          - "免費評估"
+          - "語音廣播、照片分享"
+        button: "免費開始"
+      basic:
+        name: "Basic"
+        price: "$15"
+        period: "/月"
+        badge: "熱門"
+        features:
+          - "最多10人"
+          - "每月5,000分鐘"
+          - "個人導遊最佳選擇"
+          - "替代設備、輕鬆營運"
+        button: "1週免費試用"
+      pro:
+        name: "Pro"
+        price: "$75"
+        period: "/月"
+        features:
+          - "最多20人"
+          - "每月30,000分鐘"
+          - "中型導遊/旅行社"
+          - "大型團體穩定營運"
+        button: "1週免費試用"
+      enterprise:
+        name: "Enterprise"
+        price: "客製報價"
+        features:
+          - "無限制"
+          - "另行協商"
+          - "博物館/公共機構"
+          - "組織整體授權"
+          - "專屬支援"
+        button: "申請諮詢"
+    credits:
+      title: "💳 額外使用點數"
+      subtitle: "超過方案限制時，只需購買所需的量"
+      items:
+        - icon: "⚡"
+          amount: "1,000分鐘"
+          price: "$1.5"
+          hours: "≈ 16.7小時"
+        - icon: "⚡⚡"
+          amount: "2,000分鐘"
+          price: "$2.8"
+          hours: "≈ 33.3小時"
+          save: "節省$0.2"
+          badge: "熱門"
+        - icon: "⚡⚡⚡"
+          amount: "3,000分鐘"
+          price: "$4.0"
+          hours: "≈ 50小時"
+          save: "節省$0.5"
+    note: "方案與免費試用僅限導遊使用。遊客永遠免費參與。"
+
+  comparison:
+    title: "無線設備 vs Guidecast"
+    subtitle: "付費對象：僅導遊 · 遊客永遠免費"
+    headers:
+      item: "項目"
+      wireless: "傳統無線設備"
+      guidecast: "Guidecast"
+    rows:
+      - item: "初期成本"
+        wireless: "$200+（人數增加成本更高）"
+        guidecast: "免費試用 → $15/月（人數增加無憂）"
+      - item: "充電/管理"
+        wireless: "每次都需要"
+        guidecast: "不需要"
+      - item: "損壞風險"
+        wireless: "高（修理費用）"
+        guidecast: "無"
+      - item: "照片分享"
+        wireless: "不可能"
+        guidecast: "即時相簿"
+      - item: "資訊傳遞"
+        wireless: "僅語音"
+        guidecast: "卡片 + 震動提醒"
+      - item: "遊客互動"
+        wireless: "單向"
+        guidecast: "雙向可能"
+
+  faq:
+    title: "常見問題"
+    items:
+      - question: "遊客需要付費嗎？"
+        answer: "不需要。遊客透過QR掃描永遠免費參與，無需安裝應用程式。只有導遊需要付費訂閱。"
+      - question: "沒有無線設備真的可以導覽嗎？"
+        answer: "可以。Guidecast只需智慧型手機的網路連線即可實現即時語音廣播。遊客透過QR掃描自動連接，音質與傳統設備相同或更好。"
+      - question: "遊客需要安裝應用程式嗎？"
+        answer: "不需要安裝。遊客掃描QR碼後透過網頁瀏覽器加入。無需下載應用程式或註冊。"
+      - question: "沒有網路也能使用嗎？"
+        answer: "Guidecast需要網路連線。但是4G/5G行動數據就足夠，每小時導覽只使用約50-100MB。"
+      - question: "免費試用後會自動扣款嗎？"
+        answer: "不會自動扣款。1週免費試用期間無需信用卡即可使用所有功能，試用結束後可選擇付費訂閱。"
+      - question: "導覽照片如何管理？"
+        answer: "導覽期間拍攝的照片會自動上傳至共享相簿。遊客可在導覽結束後30天內下載，30天後自動刪除以保護隱私。"
+
+  cta:
+    title: "上線前早鳥優惠"
+    subtitle: "現在申請並留下您的聯絡方式和意見，上線後將獲得<strong>1,000小時免費點數</strong>！"
+    button: "申請早鳥優惠並獲得1,000小時"
+    links:
+      faq: "查看常見問題"
+
+  footer:
+    brand: "Guidecast"
+    tagline: "用智慧型手機完成專業導覽"
+    contact_title: "聯絡"
+    email: "support@guidecast.com"
+    copyright: "2025 Guidecast. 版權所有。"
+
+# 中文（简体）- Simplified Chinese
+zh-CN:
+  site:
+    title: "Guidecast"
+    description: "用智能手机完成专业导览"
+
+  nav:
+    home: "首页"
+    features: "功能"
+    pricing: "方案"
+    faq: "常见问题"
+
+  hero:
+    headline: "无需无线设备，用智能手机完成专业导览"
+    subheadline: "只需一个QR码即可开始，无需$200的无线设备。无需充电烦恼、无损坏风险、无管理压力。"
+    info_box: "导游付费订阅方案。游客100%免费参与。"
+    cta_button: "观看示范视频 (30秒)"
+    image_alt: "导游展示QR码画面"
+
+  pain_points:
+    title: "这些困扰并非只有您独有"
+    items:
+      - icon: "💸"
+        title: "设备购买负担"
+        description: "为了10人团就要花$200？对独立导游来说初期成本太高"
+      - icon: "🔋"
+        title: "充电与管理压力"
+        description: "每次导览前都要检查电量，损坏了还要维修费⋯⋯只想专注于导览工作"
+      - icon: "📱"
+        title: "游客体验限制"
+        description: "2025年了还只能单向语音？无法分享照片、无法实时互动的过时设备"
+
+  solution:
+    title: "只需Guidecast就够了"
+    features:
+      - icon: "⚡"
+        title: "一次QR扫描即可开始"
+        description: "在应用程序中创建导览 → 显示QR码 → 游客扫描加入。3秒完成。"
+      - icon: "🎙️"
+        title: "实时语音广播"
+        description: "基于WebRTC的高品质音频。无缝传输给最多20人。"
+      - icon: "📋"
+        title: "信息卡片 + 震动提醒"
+        description: "以卡片形式发送重要信息。游客手机震动提醒 → 不会错过任何信息。"
+      - icon: "📸"
+        title: "导览照片分享相册"
+        description: "导览期间实时上传照片 → 游客在旅程结束后一次下载全部照片"
+
+  testimonials:
+    title: "已转换使用的导游分享"
+    items:
+      - text: "用购买设备的预算订阅了3个月，方便多了。游客反应也很好！"
+        author: "金OO，首尔步行导览导游"
+      - text: "在博物馆担任导览员，不用充电让早晨轻松许多。"
+        author: "李OO，博物馆导览员"
+      - text: "多亏照片分享功能，游客留下更多评论。"
+        author: "朴OO，济州导览导游"
+
+  pricing:
+    title: "适合您导览规模的方案"
+    plans:
+      free:
+        name: "Free"
+        price: "免费"
+        features:
+          - "最多3人"
+          - "每月1,000分钟"
+          - "试用服务"
+          - "免费评估"
+          - "语音广播、照片分享"
+        button: "免费开始"
+      basic:
+        name: "Basic"
+        price: "$15"
+        period: "/月"
+        badge: "热门"
+        features:
+          - "最多10人"
+          - "每月5,000分钟"
+          - "个人导游最佳选择"
+          - "替代设备、轻松运营"
+        button: "1周免费试用"
+      pro:
+        name: "Pro"
+        price: "$75"
+        period: "/月"
+        features:
+          - "最多20人"
+          - "每月30,000分钟"
+          - "中型导游/旅行社"
+          - "大型团体稳定运营"
+        button: "1周免费试用"
+      enterprise:
+        name: "Enterprise"
+        price: "定制报价"
+        features:
+          - "无限制"
+          - "另行协商"
+          - "博物馆/公共机构"
+          - "组织整体授权"
+          - "专属支持"
+        button: "申请咨询"
+    credits:
+      title: "💳 额外使用积分"
+      subtitle: "超过方案限制时，只需购买所需的量"
+      items:
+        - icon: "⚡"
+          amount: "1,000分钟"
+          price: "$1.5"
+          hours: "≈ 16.7小时"
+        - icon: "⚡⚡"
+          amount: "2,000分钟"
+          price: "$2.8"
+          hours: "≈ 33.3小时"
+          save: "节省$0.2"
+          badge: "热门"
+        - icon: "⚡⚡⚡"
+          amount: "3,000分钟"
+          price: "$4.0"
+          hours: "≈ 50小时"
+          save: "节省$0.5"
+    note: "方案与免费试用仅限导游使用。游客永远免费参与。"
+
+  comparison:
+    title: "无线设备 vs Guidecast"
+    subtitle: "付费对象：仅导游 · 游客永远免费"
+    headers:
+      item: "项目"
+      wireless: "传统无线设备"
+      guidecast: "Guidecast"
+    rows:
+      - item: "初期成本"
+        wireless: "$200+（人数增加成本更高）"
+        guidecast: "免费试用 → $15/月（人数增加无忧）"
+      - item: "充电/管理"
+        wireless: "每次都需要"
+        guidecast: "不需要"
+      - item: "损坏风险"
+        wireless: "高（维修费用）"
+        guidecast: "无"
+      - item: "照片分享"
+        wireless: "不可能"
+        guidecast: "实时相册"
+      - item: "信息传递"
+        wireless: "仅语音"
+        guidecast: "卡片 + 震动提醒"
+      - item: "游客互动"
+        wireless: "单向"
+        guidecast: "双向可能"
+
+  faq:
+    title: "常见问题"
+    items:
+      - question: "游客需要付费吗？"
+        answer: "不需要。游客通过QR扫描永远免费参与，无需安装应用程序。只有导游需要付费订阅。"
+      - question: "没有无线设备真的可以导览吗？"
+        answer: "可以。Guidecast只需智能手机的网络连接即可实现实时语音广播。游客通过QR扫描自动连接，音质与传统设备相同或更好。"
+      - question: "游客需要安装应用程序吗？"
+        answer: "不需要安装。游客扫描QR码后通过网页浏览器加入。无需下载应用程序或注册。"
+      - question: "没有网络也能使用吗？"
+        answer: "Guidecast需要网络连接。但是4G/5G移动数据就足够，每小时导览只使用约50-100MB。"
+      - question: "免费试用后会自动扣款吗？"
+        answer: "不会自动扣款。1周免费试用期间无需信用卡即可使用所有功能，试用结束后可选择付费订阅。"
+      - question: "导览照片如何管理？"
+        answer: "导览期间拍摄的照片会自动上传至共享相册。游客可在导览结束后30天内下载，30天后自动删除以保护隐私。"
+
+  cta:
+    title: "上线前早鸟优惠"
+    subtitle: "现在申请并留下您的联系方式和意见，上线后将获得<strong>1,000小时免费积分</strong>！"
+    button: "申请早鸟优惠并获得1,000小时"
+    links:
+      faq: "查看常见问题"
+
+  footer:
+    brand: "Guidecast"
+    tagline: "用智能手机完成专业导览"
+    contact_title: "联系"
+    email: "support@guidecast.com"
+    copyright: "2025 Guidecast. 版权所有。"
+
+# 日本語 - Japanese
+ja:
+  site:
+    title: "Guidecast"
+    description: "スマートフォンで完成するプロツアーガイド"
+
+  nav:
+    home: "ホーム"
+    features: "機能"
+    pricing: "料金プラン"
+    faq: "FAQ"
+
+  hero:
+    headline: "無線機器不要、スマートフォンで完成するプロツアーガイド"
+    subheadline: "2万円以上する無線機器の代わりにQRコード一つで開始。充電の心配、破損リスク、管理ストレスすべて解決。"
+    info_box: "ガイドはプラン購読。観光客は100%無料参加。"
+    cta_button: "デモ動画を見る (30秒)"
+    image_alt: "ガイドがQRコードを見せる場面"
+
+  pain_points:
+    title: "こんな悩み、あなただけの問題ではありません"
+    items:
+      - icon: "💸"
+        title: "機器購入費の負担"
+        description: "10人ツアーのために2万円以上？個人ガイドには大きすぎる初期費用"
+      - icon: "🔋"
+        title: "充電・管理のストレス"
+        description: "ツアー前日夜の充電確認、破損したら修理費まで…ガイド業務だけに集中したいのに"
+      - icon: "📱"
+        title: "観光客体験の限界"
+        description: "一方的な音声だけでは2025年としてもったいない。写真共有も、リアルタイム交流もできない旧式機器"
+
+  solution:
+    title: "Guidecast一つで十分です"
+    features:
+      - icon: "⚡"
+        title: "QRスキャン一回で開始"
+        description: "アプリでツアー作成 → QRコード表示 → 観光客がスキャン参加。3秒完了。"
+      - icon: "🎙️"
+        title: "リアルタイム音声放送"
+        description: "WebRTCベースの高品質オーディオ。最大20名まで途切れなく伝達。"
+      - icon: "📋"
+        title: "要点カード + バイブ通知"
+        description: "重要な情報はカードで送信。観光客のスマホが振動して通知 → 見逃すことなし。"
+      - icon: "📸"
+        title: "ツアー写真共有アルバム"
+        description: "ツアー中に撮った写真をリアルタイムアップロード → 旅行後に観光客が一括ダウンロード可能"
+
+  testimonials:
+    title: "すでに切り替えたガイドの声"
+    items:
+      - text: "無線機器を買うお金で3ヶ月購読しましたが、ずっと便利です。観光客の反応も良いです！"
+        author: "キムOO、ソウル徒歩ツアーガイド"
+      - text: "博物館ドーセントとして働いていますが、充電不要で朝が楽になりました。"
+        author: "リーOO、博物館ドーセント"
+      - text: "写真共有機能のおかげで、観光客がレビューをたくさん残してくれます。"
+        author: "パクOO、済州ツアーガイド"
+
+  pricing:
+    title: "あなたのツアー規模に合った料金プラン"
+    plans:
+      free:
+        name: "Free"
+        price: "無料"
+        features:
+          - "最大3名"
+          - "月1,000分含む"
+          - "試用サービス"
+          - "無料評価用"
+          - "音声放送、写真共有"
+        button: "無料で始める"
+      basic:
+        name: "Basic"
+        price: "$15"
+        period: "/月"
+        badge: "人気"
+        features:
+          - "最大10名"
+          - "月5,000分含む"
+          - "個人ガイド最適"
+          - "機器代替、簡単運営"
+        button: "1週間無料体験"
+      pro:
+        name: "Pro"
+        price: "$75"
+        period: "/月"
+        features:
+          - "最大20名"
+          - "月30,000分含む"
+          - "中堅ガイド/旅行社"
+          - "大規模グループ安定運営"
+        button: "1週間無料体験"
+      enterprise:
+        name: "Enterprise"
+        price: "カスタム見積"
+        features:
+          - "無制限"
+          - "別途協議"
+          - "博物館/公共機関"
+          - "組織全体ライセンス"
+          - "専用サポート"
+        button: "相談申込"
+    credits:
+      title: "💳 追加使用クレジット"
+      subtitle: "プラン使用量を超過した時に必要な分だけ購入"
+      items:
+        - icon: "⚡"
+          amount: "1,000分"
+          price: "$1.5"
+          hours: "≈ 16.7時間"
+        - icon: "⚡⚡"
+          amount: "2,000分"
+          price: "$2.8"
+          hours: "≈ 33.3時間"
+          save: "$0.2節約"
+          badge: "人気"
+        - icon: "⚡⚡⚡"
+          amount: "3,000分"
+          price: "$4.0"
+          hours: "≈ 50時間"
+          save: "$0.5節約"
+    note: "本料金プランと無料体験は「ガイド」専用です。観光客は常に無料で参加します。"
+
+  comparison:
+    title: "無線機器 vs Guidecast"
+    subtitle: "支払い対象：ガイドのみ · 観光客は常に無料"
+    headers:
+      item: "項目"
+      wireless: "従来の無線機器"
+      guidecast: "Guidecast"
+    rows:
+      - item: "初期費用"
+        wireless: "2万円以上（人数が増えるとさらに費用発生）"
+        guidecast: "無料体験 → 月$15（人数が増えても安心）"
+      - item: "充電/管理"
+        wireless: "毎回必要"
+        guidecast: "不要"
+      - item: "破損リスク"
+        wireless: "高い（修理費追加）"
+        guidecast: "なし"
+      - item: "写真共有"
+        wireless: "不可能"
+        guidecast: "リアルタイムアルバム"
+      - item: "要点伝達"
+        wireless: "音声のみ"
+        guidecast: "カード + バイブ通知"
+      - item: "観光客交流"
+        wireless: "一方向"
+        guidecast: "双方向可能"
+
+  faq:
+    title: "よくある質問"
+    items:
+      - question: "観光客は費用を支払いますか？"
+        answer: "いいえ。観光客は常に無料で、アプリのインストールなしでQRスキャンですぐに参加できます。支払いと購読はガイドのみです。"
+      - question: "無線機器なしで本当にツアーが可能ですか？"
+        answer: "はい、可能です。Guidecastはスマートフォンのインターネット接続だけでリアルタイム音声放送が可能です。観光客がQRコードをスキャンすると自動的に接続され、従来の無線機器と同等以上の音質を提供します。"
+      - question: "観光客もアプリをインストールする必要がありますか？"
+        answer: "いいえ、インストール不要です。観光客はQRコードをスキャンするとウェブブラウザですぐに参加できます。アプリのダウンロードや会員登録なしで即座にツアー参加可能です。"
+      - question: "インターネットがない場所でも使用できますか？"
+        answer: "Guidecastはインターネット接続が必要なサービスです。ただし4G/5Gモバイルデータだけで十分に動作し、データ使用量は1時間ツアー基準で約50-100MB程度で負担が少ないです。"
+      - question: "無料体験後に自動決済されますか？"
+        answer: "いいえ、自動決済されません。1週間の無料体験期間中にクレジットカード登録なしですべての機能を使用でき、体験終了後にご希望の時に有料購読を選択できます。"
+      - question: "ツアー中の写真はどのように管理されますか？"
+        answer: "ガイドがツアー中に撮影した写真は自動的に共有アルバムにアップロードされます。観光客はツアー終了後30日以内にアルバムから写真をダウンロードでき、30日後に自動削除されて個人情報が安全に保護されます。"
+
+  cta:
+    title: "リリース前アーリーバード特典"
+    subtitle: "今申し込んで連絡先とご意見を残していただければ、リリース後に<strong>1,000時間無料クレジット</strong>をプレゼント！"
+    button: "アーリーバード申込で1,000時間獲得"
+    links:
+      faq: "FAQを見る"
+
+  footer:
+    brand: "Guidecast"
+    tagline: "スマートフォンで完成するプロツアーガイド"
+    contact_title: "お問い合わせ"
+    email: "support@guidecast.com"
+    copyright: "2025 Guidecast. All rights reserved."

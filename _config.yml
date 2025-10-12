@@ -1,0 +1,55 @@
+# Site settings
+title: Guidecast
+description: 스마트폰으로 완성하는 프로 투어 가이드
+baseurl: "" # GitHub repo name이 있으면 "/repo-name"
+url: "https://yourusername.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Plugins (GitHub Pages 지원)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - CLAUDE.md
+  - CLAUDE.md.backup
+  - CLAUDE_new.md
+  - README.md
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "ko"
+    values:
+      lang: "ko"
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+
+# SEO
+twitter:
+  username: guidecast
+  card: summary_large_image
+
+social:
+  name: Guidecast
+  links:
+    - https://twitter.com/guidecast
+
+# Analytics (배포 시 추가)
+# google_analytics: G-XXXXXXXXXX

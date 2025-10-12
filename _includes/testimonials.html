@@ -1,0 +1,16 @@
+{% assign t = site.data.translations[page.lang].testimonials %}
+
+<section id="testimonials" class="testimonials-section">
+  <div class="container">
+    <h2 class="section-title">{{ t.title }}</h2>
+
+    <div class="testimonials-grid">
+      {% for item in t.items %}
+        <div class="testimonial-card">
+          <p class="testimonial-text">"{{ item.text }}"</p>
+          <p class="testimonial-author">- {{ item.author }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

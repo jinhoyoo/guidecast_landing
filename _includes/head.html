@@ -1,0 +1,31 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  {% assign t = site.data.translations[page.lang] %}
+
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ t.site.title }}</title>
+  <meta name="description" content="{{ page.description | default: t.site.description }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ t.site.title }}">
+  <meta property="og:description" content="{{ t.site.description }}">
+  <meta property="og:image" content="{{ '/assets/images/og-image.jpg' | absolute_url }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ t.site.title }}">
+  <meta name="twitter:description" content="{{ t.site.description }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+  <!-- SEO Plugin -->
+  {% seo %}
+</head>

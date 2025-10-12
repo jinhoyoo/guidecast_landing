@@ -1,0 +1,21 @@
+{% assign t = site.data.translations[page.lang].faq %}
+
+<section id="faq" class="faq-section">
+  <div class="container">
+    <h2 class="section-title">{{ t.title }}</h2>
+
+    <div class="faq-list">
+      {% for item in t.items %}
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            <span>{{ item.question }}</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>{{ item.answer }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

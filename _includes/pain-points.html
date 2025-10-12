@@ -1,0 +1,17 @@
+{% assign t = site.data.translations[page.lang].pain_points %}
+
+<section id="pain-points" class="pain-points-section">
+  <div class="container">
+    <h2 class="section-title">{{ t.title }}</h2>
+
+    <div class="cards-grid">
+      {% for item in t.items %}
+        <div class="card">
+          <div class="card-icon">{{ item.icon }}</div>
+          <h3 class="card-title">{{ item.title }}</h3>
+          <p class="card-description">{{ item.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

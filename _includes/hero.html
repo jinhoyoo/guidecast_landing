@@ -1,0 +1,27 @@
+{% assign t = site.data.translations[page.lang].hero %}
+
+<section id="hero" class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="headline">{{ t.headline }}</h1>
+        <p class="subheadline">{{ t.subheadline }}</p>
+
+        <div class="info-box">
+          <span class="icon">💡</span>
+          <p><strong>{{ t.info_box }}</strong></p>
+        </div>
+
+        <button class="cta-primary" onclick="showDemoVideo()">
+          {{ t.cta_button }}
+        </button>
+      </div>
+
+      <div class="hero-image">
+        <img src="{{ '/assets/images/image0.png' | relative_url }}"
+             alt="{{ t.image_alt }}"
+             loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>

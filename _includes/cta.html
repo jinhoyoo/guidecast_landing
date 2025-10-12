@@ -1,0 +1,14 @@
+{% assign t = site.data.translations[page.lang].cta %}
+
+<section id="cta" class="cta-section">
+  <div class="container">
+    <h2 class="cta-title">{{ t.title }}</h2>
+    <p class="cta-subtitle">{{ t.subtitle }}</p>
+    <button class="cta-primary large" onclick="showEarlyBirdForm()">
+      {{ t.button }}
+    </button>
+    <div class="cta-links">
+      <a href="#faq">{{ t.links.faq }}</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+{% assign t = site.data.translations[page.lang].footer %}
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>{{ t.brand }}</h3>
+        <p>{{ t.tagline }}</p>
+      </div>
+      <!-- Uncomment if you want contact info
+      <div class="footer-contact">
+        <h4>{{ t.contact_title }}</h4>
+        <p>{{ t.contact_title }}: <a href="mailto:{{ t.email }}">{{ t.email }}</a></p>
+      </div>
+      -->
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ t.copyright }}</p>
+    </div>
+  </div>
+</footer>
