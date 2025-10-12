@@ -191,10 +191,293 @@ function addVideoModalStyles() {
   document.head.appendChild(style);
 }
 
+// Early Bird Form Modal Functionality
+function showEarlyBirdForm() {
+  const modal = document.createElement('div');
+  modal.className = 'form-modal';
+  modal.innerHTML = `
+    <div class="form-modal-content">
+      <button class="form-modal-close" onclick="closeEarlyBirdForm()">&times;</button>
+      <div class="form-wrapper">
+        <h2 class="form-title">얼리버드 신청</h2>
+        <p class="form-subtitle">연락처와 의견을 남겨주시면 출시 후 <strong>1,000시간 무료 크레딧</strong>을 드립니다!</p>
+        <form id="early-bird-form" onsubmit="handleEarlyBirdSubmit(event)">
+          <div class="form-group">
+            <label for="name">이름 *</label>
+            <input type="text" id="name" name="name" required placeholder="홍길동">
+          </div>
+          <div class="form-group">
+            <label for="email">이메일 *</label>
+            <input type="email" id="email" name="email" required placeholder="example@email.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">연락처 *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="010-1234-5678">
+          </div>
+          <div class="form-group">
+            <label for="company">소속 (선택)</label>
+            <input type="text" id="company" name="company" placeholder="개인 가이드 / 여행사명 등">
+          </div>
+          <div class="form-group">
+            <label for="feedback">의견 및 기대사항 *</label>
+            <textarea id="feedback" name="feedback" rows="4" required placeholder="Guidecast에 기대하는 점이나 필요한 기능을 자유롭게 작성해주세요."></textarea>
+          </div>
+          <div class="form-group checkbox-group">
+            <label>
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <span>개인정보 수집 및 이용에 동의합니다.</span>
+            </label>
+          </div>
+          <button type="submit" class="btn-primary form-submit">1,000시간 크레딧 받기</button>
+        </form>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+  document.body.style.overflow = 'hidden';
+  addFormModalStyles();
+}
+
+function closeEarlyBirdForm() {
+  const modal = document.querySelector('.form-modal');
+  if (modal) {
+    modal.remove();
+    document.body.style.overflow = 'auto';
+  }
+}
+
+function handleEarlyBirdSubmit(event) {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email'),
+    phone: formData.get('phone'),
+    company: formData.get('company'),
+    feedback: formData.get('feedback'),
+    timestamp: new Date().toISOString()
+  };
+
+  // Log data to console (실제 구현 시 서버로 전송)
+  console.log('얼리버드 신청 데이터:', data);
+
+  // Show success message
+  const formWrapper = document.querySelector('.form-wrapper');
+  formWrapper.innerHTML = `
+    <div class="form-success">
+      <div class="success-icon">✓</div>
+      <h2>신청이 완료되었습니다!</h2>
+      <p>소중한 의견 감사합니다.<br>
+      출시 후 이메일로 <strong>1,000시간 무료 크레딧</strong>을 보내드리겠습니다.</p>
+      <button class="btn-primary" onclick="closeEarlyBirdForm()">확인</button>
+    </div>
+  `;
+
+  // Track event
+  trackEvent('Early Bird', 'submit', data.email);
+}
+
+function addFormModalStyles() {
+  if (document.getElementById('form-modal-styles')) return;
+
+  const style = document.createElement('style');
+  style.id = 'form-modal-styles';
+  style.textContent = `
+    .form-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+      animation: fadeIn 0.3s ease;
+      overflow-y: auto;
+      padding: 2rem 0;
+    }
+
+    .form-modal-content {
+      position: relative;
+      width: 90%;
+      max-width: 600px;
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      margin: auto;
+    }
+
+    .form-modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: transparent;
+      border: none;
+      color: #64748b;
+      font-size: 2rem;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10001;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .form-modal-close:hover {
+      transform: scale(1.1);
+      color: #1e293b;
+    }
+
+    .form-wrapper {
+      padding: 3rem 2.5rem;
+    }
+
+    .form-title {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #1e293b;
+    }
+
+    .form-subtitle {
+      font-size: 1rem;
+      color: #64748b;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .form-subtitle strong {
+      color: #2563eb;
+      font-weight: 700;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #2563eb;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .checkbox-group label {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      cursor: pointer;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    .checkbox-group input[type="checkbox"] {
+      width: auto;
+      margin-top: 0.25rem;
+      cursor: pointer;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.125rem;
+      margin-top: 1rem;
+    }
+
+    .form-success {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .success-icon {
+      width: 80px;
+      height: 80px;
+      background-color: #10b981;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      margin: 0 auto 1.5rem;
+      font-weight: 700;
+    }
+
+    .form-success h2 {
+      color: #1e293b;
+      margin-bottom: 1rem;
+    }
+
+    .form-success p {
+      color: #64748b;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .form-success strong {
+      color: #2563eb;
+    }
+
+    @media (max-width: 768px) {
+      .form-wrapper {
+        padding: 2rem 1.5rem;
+      }
+
+      .form-title {
+        font-size: 1.5rem;
+      }
+
+      .form-modal-close {
+        top: 0.5rem;
+        right: 0.5rem;
+      }
+    }
+  `;
+
+  document.head.appendChild(style);
+}
+
 // Close modal when clicking outside
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('video-modal')) {
     closeDemoVideo();
+  }
+  if (e.target.classList.contains('form-modal')) {
+    closeEarlyBirdForm();
   }
 });
 
@@ -202,6 +485,7 @@ document.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeDemoVideo();
+    closeEarlyBirdForm();
   }
 });
 

@@ -517,8 +517,32 @@ button, .btn-primary, .btn-secondary {
 }
 
 .comparison-table thead {
+  background-color: #f8fafc;
+}
+
+.comparison-table thead th {
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.comparison-table thead th.highlight {
   background-color: var(--primary-color);
   color: white;
+  font-size: var(--font-size-xl);
+  position: relative;
+}
+
+.comparison-table thead th.highlight::after {
+  content: '✓ 추천';
+  position: absolute;
+  top: -8px;
+  right: 1rem;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
 }
 
 .comparison-table th,
@@ -538,13 +562,24 @@ button, .btn-primary, .btn-secondary {
   color: var(--text-secondary);
 }
 
-.comparison-table .highlight {
+.comparison-table td.highlight {
   background-color: #eff6ff;
   color: var(--primary-color);
-  font-weight: 600;
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+  border-left: 3px solid var(--primary-color);
+  border-right: 3px solid var(--primary-color);
+}
+
+.comparison-table tbody tr:last-child td.highlight {
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .comparison-table tbody tr:hover {
+  background-color: transparent;
+}
+
+.comparison-table tbody tr:hover td:not(.highlight) {
   background-color: var(--bg-light);
 }
 
