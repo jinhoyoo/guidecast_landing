@@ -5,7 +5,7 @@ layout: none
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/ko/">
+  <meta http-equiv="refresh" content="0; url={{ '/ko/' | relative_url }}">
   <script>
     // 브라우저 언어 자동 감지
     const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
@@ -21,7 +21,9 @@ layout: none
       lang = 'ja';
     }
 
-    window.location.href = `/${lang}/`;
+    // baseurl을 고려한 리다이렉트
+    const baseUrl = '{{ site.baseurl }}';
+    window.location.href = `${baseUrl}/${lang}/`;
   </script>
   <style>
     body {
