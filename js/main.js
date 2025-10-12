@@ -597,8 +597,8 @@ document.querySelectorAll('.btn-primary, .cta-primary').forEach(button => {
     // Placeholder for actual sign-up flow
     console.log('CTA clicked:', this.textContent);
 
-    // In production, this would redirect to sign-up page or open a modal
-    alert('회원가입 페이지로 이동합니다. (실제 구현 시 적절한 URL로 연결하세요)');
+    // // In production, this would redirect to sign-up page or open a modal
+    // alert('회원가입 페이지로 이동합니다. (실제 구현 시 적절한 URL로 연결하세요)');
   });
 });
 
@@ -608,11 +608,11 @@ document.querySelectorAll('.btn-secondary').forEach(button => {
     console.log('Secondary CTA clicked:', this.textContent);
 
     // In production, this would handle consultation requests
-    if (this.textContent.includes('상담')) {
-      alert('상담 신청 페이지로 이동합니다. (실제 구현 시 적절한 URL로 연결하세요)');
-    } else {
-      alert('무료 체험을 시작합니다. (실제 구현 시 적절한 URL로 연결하세요)');
-    }
+    // if (this.textContent.includes('상담')) {
+    //   alert('상담 신청 페이지로 이동합니다. (실제 구현 시 적절한 URL로 연결하세요)');
+    // } else {
+    //   alert('무료 체험을 시작합니다. (실제 구현 시 적절한 URL로 연결하세요)');
+    // }
   });
 });
 
