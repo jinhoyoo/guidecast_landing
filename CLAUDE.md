@@ -72,7 +72,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans
 - 헤드라인: "무선 장비 없이, 스마트폰으로 완성하는 프로 투어 가이드"
 - 서브헤드: "24만원짜리 무선 장비 대신 QR코드 하나로 시작하세요. 충전 걱정, 파손 위험, 관리 스트레스 모두 끝."
 - 인포박스: "가이드는 요금제 구독. 관광객은 100% 무료, 앱 설치 없이 참여."
-- CTA 버튼: "데모 영상 보기 (30초)"
+- CTA 버튼: "데모 영상 보기 (30초)" (`onclick="showDemoVideo()"`)
 - Hero 이미지: QR코드 스캔 장면
 
 **레이아웃**:
@@ -90,12 +90,12 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans
         충전 걱정, 파손 위험, 관리 스트레스 모두 끝.</p>
         <div class="info-box">
           <span class="icon">💡</span>
-          <p><strong>가이드는 요금제 구독. 관광객은 100% 무료, 앱 설치 없이 참여.</strong></p>
+          <p><strong>가이드는 요금제 구독. 관광객은 100% 무료 참여.</strong></p>
         </div>
         <button class="cta-primary" onclick="showDemoVideo()">데모 영상 보기 (30초)</button>
       </div>
       <div class="hero-image">
-        <img src="./images/hero-qr-scan.png" alt="가이드가 QR코드를 보여주는 장면" />
+        <img src="./images/image0.png" alt="가이드가 QR코드를 보여주는 장면" loading="lazy" />
       </div>
     </div>
   </div>
@@ -237,7 +237,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans
           <li>무상 평가용</li>
           <li>오디오 방송, 사진 공유</li>
         </ul>
-        <button class="btn-secondary">무료로 시작</button>
+        <button class="btn-secondary">무료로 <br /> 시작</button>
       </div>
 
       <!-- Basic Plan -->
@@ -251,7 +251,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans
           <li>개인 가이드 최적</li>
           <li>장비 대체, 간편 운영</li>
         </ul>
-        <button class="btn-primary">1주 무료 체험</button>
+        <button class="btn-primary">1주 무료<br /> 체험</button>
       </div>
 
       <!-- Pro Plan -->
@@ -264,7 +264,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans
           <li>중견 가이드/여행사</li>
           <li>대규모 그룹 안정적 운영</li>
         </ul>
-        <button class="btn-primary">1주 무료 체험</button>
+        <button class="btn-primary">1주 무료 <br />체험</button>
       </div>
 
       <!-- Enterprise Plan -->
@@ -283,15 +283,34 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans
     </div>
 
     <div class="additional-credits">
-      <h4>추가 사용량 크레딧</h4>
-      <ul>
-        <li>1,000분: $1.5</li>
-        <li>2,000분: $2.8</li>
-        <li>3,000분: $4.0</li>
-      </ul>
+      <h4>💳 추가 사용량 크레딧</h4>
+      <p class="credits-subtitle">요금제 사용량을 초과했을 때 필요한 만큼만 구매하세요</p>
+      <div class="credits-grid">
+        <div class="credit-card">
+          <div class="credit-icon">⚡</div>
+          <div class="credit-amount">1,000분</div>
+          <div class="credit-price">$1.5</div>
+          <div class="credit-hours">≈ 16.7시간</div>
+        </div>
+        <div class="credit-card featured">
+          <div class="credit-badge">인기</div>
+          <div class="credit-icon">⚡⚡</div>
+          <div class="credit-amount">2,000분</div>
+          <div class="credit-price">$2.8</div>
+          <div class="credit-hours">≈ 33.3시간</div>
+          <div class="credit-save">$0.2 절약</div>
+        </div>
+        <div class="credit-card">
+          <div class="credit-icon">⚡⚡⚡</div>
+          <div class="credit-amount">3,000분</div>
+          <div class="credit-price">$4.0</div>
+          <div class="credit-hours">≈ 50시간</div>
+          <div class="credit-save">$0.5 절약</div>
+        </div>
+      </div>
     </div>
 
-    <p class="pricing-note">본 요금제와 무료 체험은 '가이드' 전용입니다. 관광객은 항상 무료로 참여합니다. 무료 체험 기간 내 언제든 위약금 없이 취소 가능. 신용카드 등록 필요 없음.</p>
+    <p class="pricing-note">본 요금제와 무료 체험은 '가이드' 전용입니다. 관광객은 항상 무료로 참여합니다. </p>
   </div>
 </section>
 ```
