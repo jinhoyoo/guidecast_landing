@@ -1,8 +1,8 @@
 # Site settings
 title: Guidecast
 description: 스마트폰으로 완성하는 프로 투어 가이드
-baseurl: "/guidecast_landing" # GitHub repo name이 있으면 "/repo-name"
-url: "https://jinhoyoo.github.io"
+baseurl: "" # 아래 도메인에 연결되기 때문에, 필요 없음 
+url: "https://www.guidecast.co"
 
 # Build settings
 markdown: kramdown
