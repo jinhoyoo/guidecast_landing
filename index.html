@@ -58,6 +58,9 @@ layout: none
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📣</text></svg>">
 
+  <!-- Meta Refresh Fallback (for crawlers and no-JS environments) -->
+  <meta http-equiv="refresh" content="2; url=https://www.guidecast.co/en/">
+
   <script>
     // 브라우저 언어 자동 감지
     const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
@@ -85,7 +88,10 @@ layout: none
       baseUrl = '/' + pathParts[0];
     }
 
-    window.location.href = `${baseUrl}/${lang}/`;
+    // Delay redirect to allow crawlers to read meta tags (1 second)
+    setTimeout(() => {
+      window.location.href = `${baseUrl}/${lang}/`;
+    }, 1000);
   </script>
   <style>
     body {
