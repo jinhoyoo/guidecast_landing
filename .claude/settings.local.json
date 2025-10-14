@@ -10,7 +10,8 @@
       "Bash(bundle install:*)",
       "Bash(cat:*)",
       "Bash(sips:*)",
-      "Bash(bundle exec jekyll:*)"
+      "Bash(bundle exec jekyll:*)",
+      "Bash(curl -s https://www.guidecast.co)"
     ],
     "deny": [],
     "ask": []
