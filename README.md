@@ -499,6 +499,45 @@ bundle exec jekyll serve --livereload
 
 ---
 
+## 📋 Early Bird Form 설정
+
+Early Bird 신청 폼은 Google Sheets와 연동되어 자동으로 데이터를 저장합니다.
+
+### 빠른 설정 (30분)
+
+1. **Google Sheets 생성**
+   - [Google Sheets](https://sheets.google.com)에서 새 스프레드시트 생성
+   - 첫 번째 행에 헤더 입력: `Name | Email | Phone | Company | Feedback | Privacy Consent | Language | Timestamp`
+
+2. **Apps Script 배포**
+   - 확장 프로그램 > Apps Script
+   - `google-apps-script.js` 파일 내용 복사/붙여넣기
+   - 배포 > 새 배포 > 웹 앱 (모든 사용자 접근 가능)
+   - 배포 URL 복사
+
+3. **main.js 설정**
+   - `assets/js/main.js` 파일 열기
+   - `GOOGLE_SCRIPT_URL` 값을 배포 URL로 교체
+
+4. **테스트**
+   - 로컬에서 폼 제출 테스트
+   - Google Sheets에서 데이터 확인
+
+**자세한 가이드**: [GOOGLE_SHEETS_SETUP.md](./GOOGLE_SHEETS_SETUP.md) 참조
+
+### 수집되는 데이터
+
+- 이름 (Name)
+- 이메일 (Email)
+- 전화번호 (Phone)
+- 소속 (Company, 선택)
+- 의견/피드백 (Feedback)
+- 개인정보 동의 (Privacy Consent: Yes/No)
+- 언어 (Language: ko/en/ja/zh-TW/zh-CN)
+- 제출 시간 (Timestamp)
+
+---
+
 ## 📝 개발 가이드
 
 ### 개발 워크플로우
@@ -542,9 +581,9 @@ git push origin feature/new-section
 - ✅ 커스텀 도메인 연결
 
 ### Phase 2 (진행 중)
-- 🚧 일본어, 중국어(간/번체) 번역 완료
+- ✅ 일본어, 중국어(간/번체) 번역 완료
 - 🚧 데모 영상 제작 및 연동
-- 🚧 얼리버드 신청 폼 백엔드 연결
+- ✅ 얼리버드 신청 폼 Google Sheets 연결
 - 🚧 Google Analytics 연동
 
 ### Phase 3 (계획 중)
@@ -556,11 +595,6 @@ git push origin feature/new-section
 
 ---
 
-## 🤝 기여하기
-
-이 프로젝트는 현재 비공개 저장소입니다. 기여를 원하시면 support@guidecast.com으로 문의해주세요.
-
----
 
 ## 📄 라이선스
 
@@ -572,9 +606,7 @@ git push origin feature/new-section
 
 ## 📞 문의
 
-- **Email**: support@guidecast.com
 - **Website**: [https://www.guidecast.co](https://www.guidecast.co)
-- **Twitter**: [@guidecast](https://twitter.com/guidecast)
 
 ---
 

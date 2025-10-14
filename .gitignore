@@ -44,6 +44,9 @@ yarn-error.log
 .env
 .env.local
 
+# Jekyll local config (for development)
+_config.local.yml
+
 # 프로젝트 관련 임시 파일
 CLAUDE_new.md
 *.draft.md

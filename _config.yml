@@ -53,3 +53,6 @@ social:
 
 # Analytics (배포 시 추가)
 # google_analytics: G-XXXXXXXXXX
+
+# Google Apps Script URL for form submissions
+google_script_url: "https://script.google.com/macros/s/AKfycbx33-X6-kNBrHCwTzUJclbZo2gz9x0Z-eGZzm1NzsgO0JVpVw2rcbooLzbmaFP9oCQoTA/exec"

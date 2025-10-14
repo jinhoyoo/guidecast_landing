@@ -1,5 +1,9 @@
 // Main JavaScript for Guidecast Landing Page
 
+// Google Apps Script Web App URL is now loaded from Jekyll config via window.GOOGLE_SCRIPT_URL
+// Fallback to empty string if not configured
+const GOOGLE_SCRIPT_URL = window.GOOGLE_SCRIPT_URL || '';
+
 // 햄버거 메뉴 토글 기능
 function toggleMobileMenu() {
   const navMenu = document.getElementById('navMenu');
@@ -294,33 +298,83 @@ function showEarlyBirdForm() {
         <h2 class="form-title">${t.title}</h2>
         <p class="form-subtitle">${t.subtitle}</p>
         <form id="early-bird-form" onsubmit="handleEarlyBirdSubmit(event)">
-          <div class="form-group">
-            <label for="name">${t.name_label}</label>
-            <input type="text" id="name" name="name" required placeholder="${t.name_placeholder}">
-          </div>
-          <div class="form-group">
-            <label for="email">${t.email_label}</label>
-            <input type="email" id="email" name="email" required placeholder="${t.email_placeholder}">
-          </div>
-          <div class="form-group">
-            <label for="phone">${t.phone_label}</label>
-            <input type="tel" id="phone" name="phone" required placeholder="${t.phone_placeholder}">
-          </div>
-          <div class="form-group">
-            <label for="company">${t.company_label}</label>
-            <input type="text" id="company" name="company" placeholder="${t.company_placeholder}">
-          </div>
-          <div class="form-group">
-            <label for="feedback">${t.feedback_label}</label>
-            <textarea id="feedback" name="feedback" rows="4" required placeholder="${t.feedback_placeholder}"></textarea>
-          </div>
-          <div class="form-group checkbox-group">
-            <label>
-              <input type="checkbox" id="privacy" name="privacy" required>
-              <span>${t.privacy_label}</span>
-            </label>
-          </div>
-          <button type="submit" class="btn-primary form-submit">${t.submit_button}</button>
+          <fieldset>
+            <div class="form-group">
+              <label for="name">${t.name_label}</label>
+              <input type="text" id="name" name="name" required placeholder="${t.name_placeholder}">
+            </div>
+            <div class="form-group">
+              <label for="email">${t.email_label}</label>
+              <input type="email" id="email" name="email" required placeholder="${t.email_placeholder}">
+            </div>
+            <div class="form-group">
+              <label for="phone">${t.phone_label}</label>
+              <div class="phone-input-group">
+                <select id="country-code" name="country_code" class="country-code-select">
+                  <option value="+82" selected>🇰🇷 +82</option>
+                  <option value="+1">🇺🇸 +1</option>
+                  <option value="+81">🇯🇵 +81</option>
+                  <option value="+86">🇨🇳 +86</option>
+                  <option value="+886">🇹🇼 +886</option>
+                  <option value="+44">🇬🇧 +44</option>
+                  <option value="+33">🇫🇷 +33</option>
+                  <option value="+49">🇩🇪 +49</option>
+                  <option value="+61">🇦🇺 +61</option>
+                  <option value="+91">🇮🇳 +91</option>
+                  <option value="+65">🇸🇬 +65</option>
+                  <option value="+852">🇭🇰 +852</option>
+                  <option value="+66">🇹🇭 +66</option>
+                  <option value="+60">🇲🇾 +60</option>
+                  <option value="+63">🇵🇭 +63</option>
+                  <option value="+84">🇻🇳 +84</option>
+                  <option value="+62">🇮🇩 +62</option>
+                  <option value="+7">🇷🇺 +7</option>
+                  <option value="+34">🇪🇸 +34</option>
+                  <option value="+39">🇮🇹 +39</option>
+                  <option value="+351">🇵🇹 +351</option>
+                  <option value="+31">🇳🇱 +31</option>
+                  <option value="+41">🇨🇭 +41</option>
+                  <option value="+46">🇸🇪 +46</option>
+                  <option value="+47">🇳🇴 +47</option>
+                  <option value="+45">🇩🇰 +45</option>
+                  <option value="+358">🇫🇮 +358</option>
+                  <option value="+48">🇵🇱 +48</option>
+                  <option value="+420">🇨🇿 +420</option>
+                  <option value="+43">🇦🇹 +43</option>
+                  <option value="+32">🇧🇪 +32</option>
+                  <option value="+30">🇬🇷 +30</option>
+                  <option value="+90">🇹🇷 +90</option>
+                  <option value="+20">🇪🇬 +20</option>
+                  <option value="+27">🇿🇦 +27</option>
+                  <option value="+52">🇲🇽 +52</option>
+                  <option value="+55">🇧🇷 +55</option>
+                  <option value="+54">🇦🇷 +54</option>
+                  <option value="+56">🇨🇱 +56</option>
+                  <option value="+57">🇨🇴 +57</option>
+                  <option value="+64">🇳🇿 +64</option>
+                </select>
+                <input type="tel" id="phone" name="phone" placeholder="${t.phone_placeholder}">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="company">${t.company_label}</label>
+              <input type="text" id="company" name="company" placeholder="${t.company_placeholder}">
+            </div>
+            <div class="form-group">
+              <label for="feedback">${t.feedback_label}</label>
+              <textarea id="feedback" name="feedback" rows="4" required placeholder="${t.feedback_placeholder}"></textarea>
+            </div>
+            <div class="form-group checkbox-group">
+              <label>
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <span>${t.privacy_label}</span>
+              </label>
+            </div>
+            <button type="submit" class="btn-primary form-submit">
+              <span class="button-text">${t.submit_button}</span>
+              <span class="spinner"></span>
+            </button>
+          </fieldset>
         </form>
       </div>
     </div>
@@ -342,25 +396,92 @@ function closeEarlyBirdForm() {
 function handleEarlyBirdSubmit(event) {
   event.preventDefault();
 
-  const formData = new FormData(event.target);
-  const data = {
-    name: formData.get('name'),
-    email: formData.get('email'),
-    phone: formData.get('phone'),
-    company: formData.get('company'),
-    feedback: formData.get('feedback'),
-    timestamp: new Date().toISOString()
-  };
-
-  // Log data to console (실제 구현 시 서버로 전송)
-  console.log('Early bird application data:', data);
-
   // Get current language and translations
   const lang = window.GUIDECAST_LANG || 'ko';
   const translations = window.GUIDECAST_TRANSLATIONS || {};
   const t = translations[lang]?.form || translations['ko'].form;
+  
+  const form = event.target;
+  const fieldset = form.querySelector('fieldset');
+  const submitButton = form.querySelector('.form-submit');
+  
 
-  // Show success message
+  const formData = new FormData(event.target);
+  const countryCode = formData.get('country_code');
+  const phoneNumber = formData.get('phone');
+  const fullPhone = phoneNumber ? `${countryCode} ${phoneNumber}` : '';
+
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email'),
+    phone: fullPhone,
+    company: formData.get('company'),
+    feedback: formData.get('feedback'),
+    privacy: formData.get('privacy') ? 'Yes' : 'No',
+    language: lang,
+    timestamp: new Date().toISOString()
+  };
+
+  // Show loading state
+  fieldset.disabled = true;
+  submitButton.classList.add('loading');
+
+
+  // Check if Google Script URL is configured
+  if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === '') {
+    console.warn('Google Apps Script URL not configured in _config.yml. Data:', data);
+    showSuccessMessage(t);
+    trackEvent('Early Bird', 'submit', data.email);
+    return;
+  }
+
+  // Send data to Google Sheets
+  fetch(GOOGLE_SCRIPT_URL, {
+    method: 'POST',
+    mode: 'no-cors', // Required for Google Apps Script
+    cache: 'no-cache',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data)
+  })
+  .then(() => {
+    // Note: With 'no-cors' mode, we can't read the response
+    // But if no error is thrown, we can assume success
+    console.log('Early bird application submitted:', data);
+    showSuccessMessage(t);
+    trackEvent('Early Bird', 'submit', data.email);
+  })
+  .catch((error) => {
+    console.error('Error submitting form:', error);
+    fieldset.disabled = false;
+    submitButton.classList.remove('loading');
+
+    // Show error message
+    const formWrapper = document.querySelector('.form-wrapper');
+    const errorMessages = {
+      ko: '죄송합니다. 오류가 발생했습니다. 다시 시도해 주세요.',
+      en: 'Sorry, an error occurred. Please try again.',
+      ja: '申し訳ございません。エラーが発生しました。もう一度お試しください。',
+      'zh-TW': '抱歉，發生錯誤。請重試。',
+      'zh-CN': '抱歉，发生错误。请重试。'
+    };
+
+    formWrapper.innerHTML = `
+      <div class="form-error">
+        <div class="error-icon">⚠</div>
+        <h2>${errorMessages[lang] || errorMessages['en']}</h2>
+        <p>Email: support@guidecast.com</p>
+        <button class="btn-primary" onclick="closeEarlyBirdForm()">${t.success_button}</button>
+      </div>
+    `;
+
+    trackEvent('Early Bird', 'error', error.toString());
+  });
+}
+
+// Helper function to show success message
+function showSuccessMessage(t) {
   const formWrapper = document.querySelector('.form-wrapper');
   formWrapper.innerHTML = `
     <div class="form-success">
@@ -370,9 +491,6 @@ function handleEarlyBirdSubmit(event) {
       <button class="btn-primary" onclick="closeEarlyBirdForm()">${t.success_button}</button>
     </div>
   `;
-
-  // Track event
-  trackEvent('Early Bird', 'submit', data.email);
 }
 
 function addFormModalStyles() {
@@ -487,6 +605,32 @@ function addFormModalStyles() {
       min-height: 100px;
     }
 
+    .phone-input-group {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .country-code-select {
+      flex: 0 0 120px;
+      padding: 0.75rem 0.5rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      background-color: white;
+      cursor: pointer;
+      transition: border-color 0.2s ease;
+    }
+
+    .country-code-select:focus {
+      outline: none;
+      border-color: #2563eb;
+    }
+
+    .phone-input-group input[type="tel"] {
+      flex: 1;
+    }
+
     .checkbox-group {
       display: flex;
       align-items: flex-start;
@@ -512,6 +656,38 @@ function addFormModalStyles() {
       padding: 1rem;
       font-size: 1.125rem;
       margin-top: 1rem;
+    }
+
+    .form-submit:disabled {
+      background-color: #94a3b8;
+      cursor: not-allowed;
+    }
+
+    .form-submit .spinner {
+      display: none;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 1s ease-in-out infinite;
+      margin: 0 auto;
+    }
+
+    .form-submit.loading .spinner {
+      display: block;
+    }
+
+    .form-submit.loading .button-text {
+      display: none;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    fieldset:disabled {
+      opacity: 0.7;
     }
 
     .form-success {
@@ -548,6 +724,36 @@ function addFormModalStyles() {
       color: #2563eb;
     }
 
+    .form-error {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .error-icon {
+      width: 80px;
+      height: 80px;
+      background-color: #ef4444;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      margin: 0 auto 1.5rem;
+      font-weight: 700;
+    }
+
+    .form-error h2 {
+      color: #1e293b;
+      margin-bottom: 1rem;
+    }
+
+    .form-error p {
+      color: #64748b;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
     @media (max-width: 768px) {
       .form-wrapper {
         padding: 2rem 1.5rem;
@@ -560,6 +766,16 @@ function addFormModalStyles() {
       .form-modal-close {
         top: 0.5rem;
         right: 0.5rem;
+      }
+
+      .phone-input-group {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .country-code-select {
+        flex: 1;
+        width: 100%;
       }
     }
   `;

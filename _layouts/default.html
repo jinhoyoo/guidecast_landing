@@ -14,6 +14,8 @@
     // Pass current language and form translations to JavaScript
     window.GUIDECAST_LANG = '{{ page.lang | default: "ko" }}';
     window.GUIDECAST_TRANSLATIONS = {{ site.data.translations | jsonify }};
+    // Pass Google Script URL from Jekyll config
+    window.GOOGLE_SCRIPT_URL = '{{ site.google_script_url }}';
   </script>
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
