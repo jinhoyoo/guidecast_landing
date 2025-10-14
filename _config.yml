@@ -51,6 +51,10 @@ social:
   links:
     - https://twitter.com/guidecast
 
+# OpenGraph & Social Media
+logo: /assets/images/og-image.jpg
+image: /assets/images/og-image.jpg
+
 # Analytics (배포 시 추가)
 # google_analytics: G-XXXXXXXXXX
 
