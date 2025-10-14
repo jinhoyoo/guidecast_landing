@@ -132,18 +132,163 @@
   color: var(--primary-color);
 }
 
+/* 햄버거 메뉴 아이콘 */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.hamburger-line {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* 햄버거 아이콘 애니메이션 (X로 변환) */
+.hamburger.active .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(0.5rem, 0.5rem);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+}
+
 @media (max-width: 768px) {
+  /* 햄버거 아이콘 표시 */
+  .hamburger {
+    display: flex;
+  }
+
+  /* 네비게이션 메뉴 - 모바일 */
   .nav-menu {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    left: 0;
+    background: white;
     flex-direction: column;
     gap: 1rem;
+    padding: 1.5rem 1.5rem 3rem 1.5rem; /* 하단 패딩 추가 */
+    box-shadow: var(--shadow-lg);
+    max-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    -webkit-overflow-scrolling: touch; /* iOS 스크롤 부드럽게 */
+  }
+
+  .nav-menu.active {
+    max-height: calc(100vh - 70px);
+    opacity: 1;
+  }
+
+  /* 스크롤바 스타일 커스터마이징 */
+  .nav-menu::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .nav-menu::-webkit-scrollbar-track {
+    background: var(--bg-light);
+  }
+
+  .nav-menu::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+  }
+
+  .nav-menu::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-hover);
   }
 
   .nav-links {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.75rem 0;
+    font-size: 1.125rem;
+    border-bottom: 1px solid var(--border-color);
   }
 
   .language-switcher {
     margin-left: 0;
+    width: 100%;
+  }
+
+  .lang-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* 모바일에서 언어 드롭다운 위치 조정 */
+  .lang-dropdown {
+    position: static;
+    opacity: 0;
+    visibility: hidden;
+    transform: none;
+    margin-top: 0.5rem;
+    max-height: 0;
+    overflow: visible;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+  .language-switcher.active .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    max-height: 500px; /* 5개 언어 모두 표시되도록 충분히 증가 */
+  }
+
+  /* 모바일에서 언어 드롭다운 링크 스타일 */
+  .lang-dropdown li {
+    margin-bottom: 0.25rem;
+  }
+
+  .lang-dropdown li:last-child {
+    margin-bottom: 1rem; /* 마지막 항목에 추가 여백 */
+  }
+
+  .lang-dropdown a {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-light);
+    border-radius: var(--radius-sm);
+  }
+
+  .lang-dropdown a:hover,
+  .lang-dropdown a.active {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  /* 언어 토글 버튼에 아래 화살표 회전 */
+  .language-switcher.active .chevron {
+    transform: rotate(180deg);
   }
 }

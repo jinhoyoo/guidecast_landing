@@ -9,7 +9,14 @@
         </a>
       </div>
 
-      <div class="nav-menu">
+      <!-- 햄버거 메뉴 아이콘 (모바일) -->
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMobileMenu()">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
         <ul class="nav-links">
           <li><a href="#hero">{{ t.nav.home }}</a></li>
           <li><a href="#solution">{{ t.nav.features }}</a></li>

@@ -1,5 +1,88 @@
 // Main JavaScript for Guidecast Landing Page
 
+// 햄버거 메뉴 토글 기능
+function toggleMobileMenu() {
+  const navMenu = document.getElementById('navMenu');
+  const hamburger = document.querySelector('.hamburger');
+
+  navMenu.classList.toggle('active');
+  hamburger.classList.toggle('active');
+
+  // ARIA 속성 업데이트
+  const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+  hamburger.setAttribute('aria-expanded', !isExpanded);
+
+  // body 스크롤 제어 (선택사항)
+  if (navMenu.classList.contains('active')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'auto';
+  }
+}
+
+// 언어 전환 토글 기능 (모바일용)
+function toggleLanguageSwitcher() {
+  const langSwitcher = document.querySelector('.language-switcher');
+  langSwitcher.classList.toggle('active');
+}
+
+// 메뉴 링크 클릭 시 모바일 메뉴 닫기
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const navMenu = document.getElementById('navMenu');
+      const hamburger = document.querySelector('.hamburger');
+
+      if (window.innerWidth <= 768 && navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = 'auto';
+      }
+    });
+  });
+
+  // 모바일에서 언어 선택 버튼 클릭 이벤트
+  const langToggle = document.querySelector('.lang-toggle');
+  if (langToggle) {
+    langToggle.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleLanguageSwitcher();
+      }
+    });
+  }
+
+  // 메뉴 외부 클릭 시 닫기
+  document.addEventListener('click', (e) => {
+    const navMenu = document.getElementById('navMenu');
+    const hamburger = document.querySelector('.hamburger');
+    const isClickInsideNav = navMenu.contains(e.target) || hamburger.contains(e.target);
+
+    if (!isClickInsideNav && navMenu.classList.contains('active') && window.innerWidth <= 768) {
+      navMenu.classList.remove('active');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = 'auto';
+    }
+  });
+
+  // 창 크기 변경 시 데스크탑에서 body overflow 복원
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      document.body.style.overflow = 'auto';
+      const navMenu = document.getElementById('navMenu');
+      const hamburger = document.querySelector('.hamburger');
+      if (navMenu) navMenu.classList.remove('active');
+      if (hamburger) hamburger.classList.remove('active');
+      if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+
 // FAQ Toggle Functionality
 function toggleFAQ(button) {
   const faqItem = button.parentElement;
