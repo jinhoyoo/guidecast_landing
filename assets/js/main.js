@@ -280,42 +280,47 @@ function addVideoModalStyles() {
 
 // Early Bird Form Modal Functionality
 function showEarlyBirdForm() {
+  // Get current language and translations
+  const lang = window.GUIDECAST_LANG || 'ko';
+  const translations = window.GUIDECAST_TRANSLATIONS || {};
+  const t = translations[lang]?.form || translations['ko'].form;
+
   const modal = document.createElement('div');
   modal.className = 'form-modal';
   modal.innerHTML = `
     <div class="form-modal-content">
       <button class="form-modal-close" onclick="closeEarlyBirdForm()">&times;</button>
       <div class="form-wrapper">
-        <h2 class="form-title">얼리버드 신청</h2>
-        <p class="form-subtitle">연락처와 의견을 남겨주시면 출시 후 <strong>1,000시간 무료 크레딧</strong>을 드립니다!</p>
+        <h2 class="form-title">${t.title}</h2>
+        <p class="form-subtitle">${t.subtitle}</p>
         <form id="early-bird-form" onsubmit="handleEarlyBirdSubmit(event)">
           <div class="form-group">
-            <label for="name">이름 *</label>
-            <input type="text" id="name" name="name" required placeholder="홍길동">
+            <label for="name">${t.name_label}</label>
+            <input type="text" id="name" name="name" required placeholder="${t.name_placeholder}">
           </div>
           <div class="form-group">
-            <label for="email">이메일 *</label>
-            <input type="email" id="email" name="email" required placeholder="example@email.com">
+            <label for="email">${t.email_label}</label>
+            <input type="email" id="email" name="email" required placeholder="${t.email_placeholder}">
           </div>
           <div class="form-group">
-            <label for="phone">연락처 *</label>
-            <input type="tel" id="phone" name="phone" required placeholder="010-1234-5678">
+            <label for="phone">${t.phone_label}</label>
+            <input type="tel" id="phone" name="phone" required placeholder="${t.phone_placeholder}">
           </div>
           <div class="form-group">
-            <label for="company">소속 (선택)</label>
-            <input type="text" id="company" name="company" placeholder="개인 가이드 / 여행사명 등">
+            <label for="company">${t.company_label}</label>
+            <input type="text" id="company" name="company" placeholder="${t.company_placeholder}">
           </div>
           <div class="form-group">
-            <label for="feedback">의견 및 기대사항 *</label>
-            <textarea id="feedback" name="feedback" rows="4" required placeholder="Guidecast에 기대하는 점이나 필요한 기능을 자유롭게 작성해주세요."></textarea>
+            <label for="feedback">${t.feedback_label}</label>
+            <textarea id="feedback" name="feedback" rows="4" required placeholder="${t.feedback_placeholder}"></textarea>
           </div>
           <div class="form-group checkbox-group">
             <label>
               <input type="checkbox" id="privacy" name="privacy" required>
-              <span>개인정보 수집 및 이용에 동의합니다.</span>
+              <span>${t.privacy_label}</span>
             </label>
           </div>
-          <button type="submit" class="btn-primary form-submit">1,000시간 크레딧 받기</button>
+          <button type="submit" class="btn-primary form-submit">${t.submit_button}</button>
         </form>
       </div>
     </div>
@@ -348,17 +353,21 @@ function handleEarlyBirdSubmit(event) {
   };
 
   // Log data to console (실제 구현 시 서버로 전송)
-  console.log('얼리버드 신청 데이터:', data);
+  console.log('Early bird application data:', data);
+
+  // Get current language and translations
+  const lang = window.GUIDECAST_LANG || 'ko';
+  const translations = window.GUIDECAST_TRANSLATIONS || {};
+  const t = translations[lang]?.form || translations['ko'].form;
 
   // Show success message
   const formWrapper = document.querySelector('.form-wrapper');
   formWrapper.innerHTML = `
     <div class="form-success">
       <div class="success-icon">✓</div>
-      <h2>신청이 완료되었습니다!</h2>
-      <p>소중한 의견 감사합니다.<br>
-      출시 후 이메일로 <strong>1,000시간 무료 크레딧</strong>을 보내드리겠습니다.</p>
-      <button class="btn-primary" onclick="closeEarlyBirdForm()">확인</button>
+      <h2>${t.success_title}</h2>
+      <p>${t.success_message}</p>
+      <button class="btn-primary" onclick="closeEarlyBirdForm()">${t.success_button}</button>
     </div>
   `;
 
