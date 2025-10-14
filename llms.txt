@@ -1,0 +1,178 @@
+# Guidecast - Professional Tour Guiding with Your Smartphone
+
+> Website: https://www.guidecast.co
+> Description: A smartphone-based tour guiding solution that replaces expensive wireless equipment
+> Languages: Korean (ko), English (en), Traditional Chinese (zh-TW), Simplified Chinese (zh-CN), Japanese (ja)
+
+## Overview
+
+Guidecast is a revolutionary tour guiding platform that enables professional tour guides to conduct tours using only smartphones, eliminating the need for expensive wireless equipment ($200+). The service provides real-time audio broadcasting, photo sharing, info cards with vibration alerts, and two-way communication capabilities.
+
+## Key Value Propositions
+
+1. **No Equipment Cost**: Start with QR code instead of $200+ wireless equipment
+2. **Zero Maintenance**: No charging, no damage risk, no management stress
+3. **Enhanced Tourist Experience**: Photo sharing, info cards, real-time interaction
+4. **Guide-Only Payment**: Guides subscribe to plans; tourists participate 100% free via QR scan without app installation
+
+## Core Features
+
+- **QR Code Instant Join**: Tourists scan QR code and join via web browser (no app needed)
+- **Real-time Audio Broadcasting**: WebRTC-based high-quality audio for up to 20 people
+- **Info Cards + Vibration Alerts**: Send important information as cards with phone vibration
+- **Tour Photo Sharing Album**: Real-time photo upload during tour, downloadable for 30 days
+- **Zero Tourist Friction**: No app installation, no registration, completely free for tourists
+
+## Pricing Plans
+
+### Free Plan
+- Up to 3 people
+- 1,000 minutes/month
+- Trial service for evaluation
+- Audio broadcast & photo sharing
+
+### Basic Plan - $15/month (Most Popular)
+- Up to 10 people
+- 5,000 minutes/month
+- Perfect for solo guides
+- Equipment replacement solution
+
+### Pro Plan - $75/month
+- Up to 20 people
+- 30,000 minutes/month
+- For mid-sized guides/agencies
+- Stable large group operation
+
+### Enterprise Plan - Custom Quote
+- Unlimited capacity
+- For museums/public institutions
+- Organization-wide licensing
+- Dedicated support
+
+### Additional Credits (Pay-as-you-go)
+- 1,000 minutes: $1.5 (≈ 16.7 hours)
+- 2,000 minutes: $2.8 (≈ 33.3 hours) - Save $0.2
+- 3,000 minutes: $4.0 (≈ 50 hours) - Save $0.5
+
+## Pain Points Addressed
+
+1. **High Equipment Purchase Cost**: Traditional wireless equipment costs $200+ for 10 people, with additional costs as group size increases
+2. **Charging & Management Stress**: Battery checking before every tour, repair costs if damaged
+3. **Limited Tourist Experience**: One-way audio only, no photo sharing, no real-time interaction
+
+## Competitive Advantages vs Traditional Wireless Equipment
+
+| Feature | Traditional Wireless | Guidecast |
+|---------|---------------------|-----------|
+| Initial Cost | $200+ (more with more people) | Free trial → $15/mo (no worry with growth) |
+| Charging/Management | Required every time | Not needed |
+| Damage Risk | High (repair costs) | None |
+| Photo Sharing | Impossible | Real-time album |
+| Info Delivery | Audio only | Cards + vibration alerts |
+| Tourist Interaction | One-way | Two-way possible |
+
+## Frequently Asked Questions
+
+**Q: Do tourists pay?**
+A: No. Tourists always participate for free via QR scan without app installation. Only guides pay for subscriptions.
+
+**Q: Can tours really work without wireless equipment?**
+A: Yes. Guidecast enables real-time audio broadcasting with just smartphone internet. Tourists auto-connect via QR scan with equal or better audio quality than traditional equipment.
+
+**Q: Do tourists need to install an app?**
+A: No installation needed. Tourists join via web browser after QR scan. No app download or registration required.
+
+**Q: Does it work without internet?**
+A: Guidecast requires internet connection. However, 4G/5G mobile data is sufficient, using only 50-100MB per hour of touring.
+
+**Q: Auto-charged after free trial?**
+A: No auto-charging. Use all features during 1-week free trial without credit card. Choose paid subscription when ready after trial ends.
+
+**Q: How are tour photos managed?**
+A: Photos taken during tour auto-upload to shared album. Tourists can download within 30 days after tour, then auto-deleted for privacy protection.
+
+## Target Audience
+
+### Primary
+- **Independent tour guides**: Walking tours, city tours, cultural tours
+- **Museum docents**: Indoor guided tours without equipment hassle
+- **Travel agencies**: Medium to large group tours
+
+### Secondary
+- **Public institutions**: Museums, cultural centers, government facilities
+- **Educational institutions**: School field trips, university campus tours
+- **Corporate**: Company tours, factory tours, facility tours
+
+## Technical Stack
+
+- **Frontend**: Jekyll static site generator
+- **Hosting**: GitHub Pages with custom domain (www.guidecast.co)
+- **Audio Technology**: WebRTC for real-time audio broadcasting
+- **Platform**: Web-based (no app installation required for tourists)
+- **Languages**: Full multilingual support (KO, EN, ZH-TW, ZH-CN, JA)
+
+## Site Structure
+
+```
+/ko/          - Korean homepage
+/en/          - English homepage
+/zh-tw/       - Traditional Chinese homepage (coming soon)
+/zh-cn/       - Simplified Chinese homepage (coming soon)
+/ja/          - Japanese homepage (coming soon)
+```
+
+## Early Bird Offer
+
+**Pre-launch Special**: Sign up now with contact info and feedback to receive **1,000 hours free credit** after launch!
+
+## Contact
+
+- **Email**: support@guidecast.com
+- **Website**: https://www.guidecast.co
+
+## Key SEO Keywords
+
+- Tour guide system
+- Wireless tour guide alternative
+- Smartphone tour guiding
+- QR code tour solution
+- Real-time audio broadcasting
+- Tour photo sharing
+- Museum docent system
+- Walking tour guide app
+- Travel guide technology
+
+## Social Proof
+
+### Testimonials
+
+1. "Used equipment budget for 3 months subscription, much more convenient. Tourists love it!" - Kim OO, Seoul Walking Tour Guide
+
+2. "Working as museum docent, mornings are easier without battery charging." - Lee OO, Museum Docent
+
+3. "Thanks to photo sharing, tourists leave more reviews." - Park OO, Jeju Tour Guide
+
+## Content Sections (Landing Page)
+
+1. **Hero**: Main value proposition with demo video CTA
+2. **Pain Points**: Three key problems with traditional equipment
+3. **Solution**: Four core features of Guidecast
+4. **Testimonials**: Real guide experiences
+5. **Pricing**: Four pricing tiers with clear comparison
+6. **Comparison Table**: Direct comparison with wireless equipment
+7. **FAQ**: Six most common questions
+8. **CTA**: Early bird signup form
+
+## Data Usage & Technical Requirements
+
+- **Data Consumption**: ~50-100MB per hour of tour
+- **Internet Required**: Yes (4G/5G mobile data sufficient)
+- **Browser Compatibility**: Modern web browsers (Chrome, Safari, Firefox, Edge)
+- **Device Requirements**: Smartphone with internet connection
+- **No Downloads**: Web-based, no app installation needed
+
+---
+
+*Last Updated: 2025-10-14*
+*Version: 1.0*
+*Copyright: 2025 Guidecast. All rights reserved.*
