@@ -404,6 +404,209 @@ en:
     email: "support@guidecast.com"
     copyright: "2025 Guidecast. All rights reserved."
 
+# Español (Spanish)
+es:
+  site:
+    title: "Guidecast"
+    description: "Guía Turística Profesional con Tu Smartphone"
+    og_description: "Inicia tours profesionales con un código QR en lugar de equipos inalámbricos de $200. Sin preocupaciones de carga, sin riesgos de daños, sin estrés de gestión."
+
+  nav:
+    home: "Inicio"
+    features: "Características"
+    pricing: "Precios"
+    faq: "Preguntas"
+
+  hero:
+    headline: "Guía Turística Profesional Sin Equipos Inalámbricos"
+    subheadline: "Comienza con un código QR en lugar de equipos inalámbricos de $200. Sin preocupaciones de carga, sin riesgos de daños, sin estrés de gestión."
+    info_box: "Los guías se suscriben a planes. Los turistas participan 100% gratis."
+    cta_button: "Ver Demo (30s)"
+    image_alt: "Guía mostrando código QR"
+
+  pain_points:
+    title: "No Estás Solo en Estas Dificultades"
+    items:
+      - icon: "💸"
+        title: "Carga del Costo del Equipo"
+        description: "¿$200 para un tour de 10 personas? Demasiado costo inicial para guías independientes"
+      - icon: "🔋"
+        title: "Estrés de Carga y Gestión"
+        description: "Revisar batería la noche anterior, costos de reparación si se daña... Solo quiero concentrarme en guiar"
+      - icon: "📱"
+        title: "Experiencia Turística Limitada"
+        description: "¿Solo audio unidireccional en 2025? Sin compartir fotos, sin interacción en tiempo real con equipos obsoletos"
+
+  solution:
+    title: "Guidecast Es Todo Lo Que Necesitas"
+    features:
+      - icon: "⚡"
+        title: "Comienza con Un Escaneo QR"
+        description: "Crea tour en la app → Muestra código QR → Turistas escanean y se unen. Listo en 3 segundos."
+      - icon: "🎙️"
+        title: "Transmisión de Audio en Tiempo Real"
+        description: "Audio de alta calidad basado en WebRTC. Entrega fluida para hasta 20 personas."
+      - icon: "📋"
+        title: "Tarjetas de Información + Alertas de Vibración"
+        description: "Envía información clave como tarjetas. Los teléfonos de turistas vibran con alertas → Nada se pierde."
+      - icon: "📸"
+        title: "Álbum Compartido de Fotos del Tour"
+        description: "Sube fotos en tiempo real durante el tour → Los turistas descargan todo al final del viaje"
+
+  testimonials:
+    title: "Historias de Guías Que Cambiaron"
+    items:
+      - text: "Usé el presupuesto del equipo para 3 meses de suscripción, mucho más conveniente. ¡A los turistas les encanta!"
+        author: "Kim OO, Guía de Tours a Pie en Seúl"
+      - text: "Trabajando como docente de museo, las mañanas son más fáciles sin cargar baterías."
+        author: "Lee OO, Docente de Museo"
+      - text: "Gracias a compartir fotos, los turistas dejan más reseñas."
+        author: "Park OO, Guía de Tours en Jeju"
+
+  pricing:
+    title: "Planes para el Tamaño de Tu Tour"
+    plans:
+      free:
+        name: "Gratis"
+        price: "Gratis"
+        features:
+          - "Hasta 3 personas"
+          - "1,000 minutos/mes"
+          - "Servicio de prueba"
+          - "Evaluación gratuita"
+          - "Transmisión de audio, compartir fotos"
+        button: "Comenzar Gratis"
+      basic:
+        name: "Básico"
+        price: "$15"
+        period: "/mes"
+        badge: "Popular"
+        features:
+          - "Hasta 10 personas"
+          - "5,000 minutos/mes"
+          - "Perfecto para guías independientes"
+          - "Reemplazo de equipo, operación fácil"
+        button: "Prueba Gratis de 1 Semana"
+      pro:
+        name: "Pro"
+        price: "$75"
+        period: "/mes"
+        features:
+          - "Hasta 20 personas"
+          - "30,000 minutos/mes"
+          - "Guías/agencias medianas"
+          - "Operación estable de grupos grandes"
+        button: "Prueba Gratis de 1 Semana"
+      enterprise:
+        name: "Empresa"
+        price: "Cotización Personalizada"
+        features:
+          - "Ilimitado"
+          - "Consulta separada"
+          - "Museos/instituciones públicas"
+          - "Licenciamiento organizacional"
+          - "Soporte dedicado"
+        button: "Solicitar Consulta"
+    credits:
+      title: "💳 Créditos de Uso Adicionales"
+      subtitle: "Compra solo lo que necesites al exceder los límites del plan"
+      items:
+        - icon: "⚡"
+          amount: "1,000 min"
+          price: "$1.5"
+          hours: "≈ 16.7 horas"
+        - icon: "⚡⚡"
+          amount: "2,000 min"
+          price: "$2.8"
+          hours: "≈ 33.3 horas"
+          save: "Ahorra $0.2"
+          badge: "Popular"
+        - icon: "⚡⚡⚡"
+          amount: "3,000 min"
+          price: "$4.0"
+          hours: "≈ 50 horas"
+          save: "Ahorra $0.5"
+    note: "Los planes y pruebas gratuitas son solo para guías. Los turistas siempre participan gratis."
+
+  comparison:
+    title: "Equipo Inalámbrico vs Guidecast"
+    subtitle: "Pago: Solo guías · Turistas siempre gratis"
+    badge: "✓ Recomendado"
+    headers:
+      item: "Artículo"
+      wireless: "Inalámbrico Tradicional"
+      guidecast: "Guidecast"
+    rows:
+      - item: "Costo Inicial"
+        wireless: "$200+ (más costo con más personas)"
+        guidecast: "Prueba gratis → $15/mes (sin preocupaciones con crecimiento)"
+      - item: "Carga/Gestión"
+        wireless: "Requerido cada vez"
+        guidecast: "No necesario"
+      - item: "Riesgo de Daño"
+        wireless: "Alto (costos de reparación)"
+        guidecast: "Ninguno"
+      - item: "Compartir Fotos"
+        wireless: "Imposible"
+        guidecast: "Álbum en tiempo real"
+      - item: "Entrega de Información"
+        wireless: "Solo audio"
+        guidecast: "Tarjetas + alertas de vibración"
+      - item: "Interacción con Turistas"
+        wireless: "Unidireccional"
+        guidecast: "Bidireccional posible"
+
+  faq:
+    title: "Preguntas Frecuentes"
+    items:
+      - question: "¿Los turistas pagan?"
+        answer: "No. Los turistas siempre participan gratis mediante escaneo QR sin instalar aplicación. Solo los guías pagan las suscripciones."
+      - question: "¿Realmente pueden funcionar los tours sin equipos inalámbricos?"
+        answer: "Sí. Guidecast permite transmisión de audio en tiempo real solo con internet del smartphone. Los turistas se conectan automáticamente mediante escaneo QR con calidad de audio igual o mejor que los equipos tradicionales."
+      - question: "¿Los turistas necesitan instalar una aplicación?"
+        answer: "No se necesita instalación. Los turistas se unen mediante navegador web después del escaneo QR. No se requiere descarga de aplicación ni registro."
+      - question: "¿Funciona sin internet?"
+        answer: "Guidecast requiere conexión a internet. Sin embargo, los datos móviles 4G/5G son suficientes, usando solo 50-100MB por hora de tour."
+      - question: "¿Se cobra automáticamente después de la prueba gratuita?"
+        answer: "No hay cargo automático. Usa todas las funciones durante la prueba gratuita de 1 semana sin tarjeta de crédito. Elige la suscripción de pago cuando estés listo después de que termine la prueba."
+      - question: "¿Cómo se gestionan las fotos del tour?"
+        answer: "Las fotos tomadas durante el tour se suben automáticamente al álbum compartido. Los turistas pueden descargarlas dentro de los 30 días posteriores al tour, luego se eliminan automáticamente para protección de privacidad."
+
+  cta:
+    title: "Beneficios de Madrugador Antes del Lanzamiento"
+    subtitle: "¡Regístrate ahora con tu contacto y comentarios para recibir <strong>1,000 minutos de crédito gratis</strong> después del lanzamiento!"
+    button: "Solicitar Madrugador y Obtener 1,000 Minutos"
+    links:
+      faq: "Ver Preguntas"
+
+  form:
+    title: "Solicitud de Madrugador"
+    subtitle: "¡Deja tu contacto y comentarios para recibir <strong>1,000 minutos de crédito gratis</strong> después del lanzamiento!"
+    name_label: "Nombre *"
+    name_placeholder: "Juan Pérez"
+    email_label: "Correo Electrónico *"
+    email_placeholder: "ejemplo@email.com"
+    phone_label: "Número de Teléfono"
+    phone_placeholder: "234-567-8900"
+    country_code_label: "Código de País"
+    company_label: "Organización (Opcional)"
+    company_placeholder: "Guía independiente / Nombre de agencia de viajes, etc."
+    feedback_label: "Comentarios y Expectativas *"
+    feedback_placeholder: "Siéntete libre de compartir lo que esperas de Guidecast o las características que necesitas."
+    privacy_label: "Acepto la recopilación y uso de información personal."
+    submit_button: "Obtener 1,000 Minutos de Crédito"
+    submitting: "Enviando..."
+    success_title: "¡Solicitud Completa!"
+    success_message: "Gracias por tus valiosos comentarios.<br>Te enviaremos <strong>1,000 minutos de crédito gratis</strong> por correo electrónico después del lanzamiento."
+    success_button: "OK"
+
+  footer:
+    brand: "Guidecast"
+    tagline: "Guía Turística Profesional con Tu Smartphone"
+    contact_title: "Contacto"
+    email: "support@guidecast.com"
+    copyright: "2025 Guidecast. Todos los derechos reservados."
+
 # 中文（繁體）- Traditional Chinese
 zh-TW:
   site:
