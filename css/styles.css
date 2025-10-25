@@ -613,8 +613,7 @@ button, .btn-primary, .btn-secondary {
   position: relative;
 }
 
-.comparison-table thead th.highlight::after {
-  content: '✓ 추천';
+.comparison-badge {
   position: absolute;
   top: -8px;
   right: 1rem;
@@ -624,6 +623,7 @@ button, .btn-primary, .btn-secondary {
   border-radius: var(--radius-full);
   font-size: var(--font-size-sm);
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .comparison-table th,

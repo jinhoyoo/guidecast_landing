@@ -125,6 +125,7 @@ ko:
   comparison:
     title: "무선 장비 vs Guidecast"
     subtitle: "결제 주체: 가이드 · 관광객은 항상 무료"
+    badge: "✓ 추천"
     headers:
       item: "항목"
       wireless: "기존 무선 장비"
@@ -327,6 +328,7 @@ en:
   comparison:
     title: "Wireless Equipment vs Guidecast"
     subtitle: "Payment: Guides only · Tourists always free"
+    badge: "✓ Recommended"
     headers:
       item: "Item"
       wireless: "Traditional Wireless"
@@ -528,6 +530,7 @@ zh-TW:
   comparison:
     title: "無線設備 vs Guidecast"
     subtitle: "付費對象：僅導遊 · 遊客永遠免費"
+    badge: "✓ 推薦"
     headers:
       item: "項目"
       wireless: "傳統無線設備"
@@ -729,6 +732,7 @@ zh-CN:
   comparison:
     title: "无线设备 vs Guidecast"
     subtitle: "付费对象：仅导游 · 游客永远免费"
+    badge: "✓ 推荐"
     headers:
       item: "项目"
       wireless: "传统无线设备"
@@ -930,6 +934,7 @@ ja:
   comparison:
     title: "無線機器 vs Guidecast"
     subtitle: "支払い対象：ガイドのみ · 観光客は常に無料"
+    badge: "✓ おすすめ"
     headers:
       item: "項目"
       wireless: "従来の無線機器"
