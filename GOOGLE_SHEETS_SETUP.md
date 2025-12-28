@@ -16,11 +16,11 @@
 1. [Google Sheets](https://sheets.google.com) 접속
 2. **빈 스프레드시트** 생성
 3. 스프레드시트 이름을 **"Guidecast Early Bird Applications"**로 변경
-4. 첫 번째 행(A1-H1)에 다음 헤더 입력:
+4. 첫 번째 행(A1-J1)에 다음 헤더 입력:
 
-| A | B | C | D | E | F | G | H |
-|---|---|---|---|---|---|---|---|
-| Name | Email | Phone | Company | Feedback | Privacy Consent | Language | Timestamp |
+| A | B | C | D | E | F | G | H | I | J |
+|---|---|---|---|---|---|---|---|---|---|
+| Name | Email | Phone | Company | Tour Method | Payment Willingness | Feedback | Privacy Consent | Language | Timestamp |
 
 ---
 
@@ -96,9 +96,11 @@ bundle exec jekyll serve
 폼 제출 후 다음을 확인하세요:
 
 - [ ] Google Sheets에 새로운 행이 추가됨
-- [ ] 모든 필드(이름, 이메일, 전화번호 등)가 올바르게 저장됨
+- [ ] 모든 필드(이름, 이메일, 전화번호, 회사, 투어 방식, 결제 의향, 피드백 등)가 올바르게 저장됨
+- [ ] Tour Method 필드에 선택한 투어 방식이 저장됨
+- [ ] Payment Willingness 필드에 선택한 결제 의향이 저장됨
 - [ ] Timestamp가 정확함
-- [ ] Language 필드에 언어 코드(ko, en, ja 등)가 저장됨
+- [ ] Language 필드에 언어 코드(ko, en, ja, es, zh-CN, zh-TW 등)가 저장됨
 - [ ] 브라우저에 성공 메시지가 표시됨
 
 ---

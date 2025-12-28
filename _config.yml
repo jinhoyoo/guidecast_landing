@@ -75,4 +75,4 @@ image: /assets/images/og-image.jpg
 # google_analytics: G-XXXXXXXXXX
 
 # Google Apps Script URL for form submissions
-google_script_url: "https://script.google.com/macros/s/AKfycbx33-X6-kNBrHCwTzUJclbZo2gz9x0Z-eGZzm1NzsgO0JVpVw2rcbooLzbmaFP9oCQoTA/exec"
+google_script_url: "https://script.google.com/macros/s/AKfycbxuJhf-lOy4q7HYJb4o2ucuma9iULo3sCPIFuNdkcZ2PjBfXA8fmb0GyjfFLJOfMw030Q/exec"
