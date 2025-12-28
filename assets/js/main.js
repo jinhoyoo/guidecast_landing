@@ -298,7 +298,7 @@ function showEarlyBirdForm() {
         <h2 class="form-title">${t.title}</h2>
         <p class="form-subtitle">${t.subtitle}</p>
         <form id="early-bird-form" onsubmit="handleEarlyBirdSubmit(event)">
-          <fieldset>
+          <div class="form-fields-wrapper">
             <div class="form-group">
               <label for="name">${t.name_label}</label>
               <input type="text" id="name" name="name" required placeholder="${t.name_placeholder}">
@@ -361,6 +361,44 @@ function showEarlyBirdForm() {
               <input type="text" id="company" name="company" placeholder="${t.company_placeholder}">
             </div>
             <div class="form-group">
+              <label>${t.q1_label}</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="tour_method" value="dedicated_equipment">
+                  <span>${t.q1_option1}</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="tour_method" value="voice_only">
+                  <span>${t.q1_option2}</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="tour_method" value="other_apps">
+                  <span>${t.q1_option3}</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="tour_method" value="not_started">
+                  <span>${t.q1_option4}</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>${t.q2_label}</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="payment_willingness" value="willing">
+                  <span>${t.q2_option1}</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="payment_willingness" value="consider">
+                  <span>${t.q2_option2}</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="payment_willingness" value="not_willing">
+                  <span>${t.q2_option3}</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
               <label for="feedback">${t.feedback_label}</label>
               <textarea id="feedback" name="feedback" rows="4" required placeholder="${t.feedback_placeholder}"></textarea>
             </div>
@@ -374,7 +412,7 @@ function showEarlyBirdForm() {
               <span class="button-text">${t.submit_button}</span>
               <span class="spinner"></span>
             </button>
-          </fieldset>
+          </div>
         </form>
       </div>
     </div>
@@ -402,7 +440,7 @@ function handleEarlyBirdSubmit(event) {
   const t = translations[lang]?.form || translations['ko'].form;
   
   const form = event.target;
-  const fieldset = form.querySelector('fieldset');
+  const formWrapper = form.querySelector('.form-fields-wrapper');
   const submitButton = form.querySelector('.form-submit');
   
 
@@ -416,6 +454,8 @@ function handleEarlyBirdSubmit(event) {
     email: formData.get('email'),
     phone: fullPhone,
     company: formData.get('company'),
+    tourMethod: formData.get('tour_method') || '',
+    paymentWillingness: formData.get('payment_willingness') || '',
     feedback: formData.get('feedback'),
     privacy: formData.get('privacy') ? 'Yes' : 'No',
     language: lang,
@@ -423,7 +463,8 @@ function handleEarlyBirdSubmit(event) {
   };
 
   // Show loading state
-  fieldset.disabled = true;
+  formWrapper.style.pointerEvents = 'none';
+  formWrapper.style.opacity = '0.7';
   submitButton.classList.add('loading');
 
 
@@ -454,7 +495,8 @@ function handleEarlyBirdSubmit(event) {
   })
   .catch((error) => {
     console.error('Error submitting form:', error);
-    fieldset.disabled = false;
+    formWrapper.style.pointerEvents = 'auto';
+    formWrapper.style.opacity = '1';
     submitButton.classList.remove('loading');
 
     // Show error message
@@ -651,6 +693,59 @@ function addFormModalStyles() {
       cursor: pointer;
     }
 
+    .form-fields-wrapper {
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .radio-label {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      cursor: pointer;
+      font-weight: 400;
+      padding: 0.625rem 0.75rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+      text-align: left;
+    }
+
+    .radio-label:hover {
+      background-color: #f8fafc;
+    }
+
+    .radio-label input[type="radio"] {
+      flex-shrink: 0;
+      cursor: pointer;
+      margin: 0;
+    }
+
+    .radio-label span {
+      line-height: 1.4;
+      text-align: left;
+      flex: 1;
+    }
+
+    .radio-label:has(input:checked) {
+      border-color: #2563eb;
+      background-color: #eff6ff;
+    }
+
+    .radio-label:has(input:checked) span {
+      color: #2563eb;
+      font-weight: 500;
+    }
+
     .form-submit {
       width: 100%;
       padding: 1rem;
@@ -686,9 +781,6 @@ function addFormModalStyles() {
       to { transform: rotate(360deg); }
     }
 
-    fieldset:disabled {
-      opacity: 0.7;
-    }
 
     .form-success {
       text-align: center;
