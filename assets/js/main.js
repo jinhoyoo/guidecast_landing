@@ -703,21 +703,23 @@ function addFormModalStyles() {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+      align-items: stretch;
     }
 
     .radio-label {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      align-items: flex-start;
       justify-content: flex-start;
-      gap: 0.5rem;
+      gap: 0.75rem;
       cursor: pointer;
       font-weight: 400;
-      padding: 0.625rem 0.75rem;
+      padding: 0.75rem 1rem;
       border: 1px solid #e2e8f0;
       border-radius: 8px;
       transition: background-color 0.2s ease, border-color 0.2s ease;
       text-align: left;
+      width: 100%;
     }
 
     .radio-label:hover {
@@ -728,12 +730,21 @@ function addFormModalStyles() {
       flex-shrink: 0;
       cursor: pointer;
       margin: 0;
+      margin-top: 0.25rem;
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
     }
 
     .radio-label span {
-      line-height: 1.4;
+      line-height: 1.5;
       text-align: left;
       flex: 1;
+      display: inline-block;
+      margin: 0;
+      word-wrap: break-word;
+      white-space: normal;
+      max-width: calc(100% - 30px);
     }
 
     .radio-label:has(input:checked) {
