@@ -3,7 +3,7 @@
  *
  * Setup Instructions:
  * 1. Create a new Google Spreadsheet
- * 2. Add headers in first row: Name | Email | Phone | Company | Feedback | Privacy Consent | Language | Timestamp
+ * 2. Add headers in first row: Name | Email | Phone | Company | Tour Method | Payment Willingness | Feedback | Privacy Consent | Language | Timestamp
  * 3. Go to Extensions > Apps Script
  * 4. Paste this code
  * 5. Deploy > New deployment
@@ -28,6 +28,8 @@ function doPost(e) {
       data.email || '',
       data.phone || '',
       data.company || '',
+      data.tourMethod || '',
+      data.paymentWillingness || '',
       data.feedback || '',
       data.privacy || 'No',
       data.language || 'ko',
@@ -66,6 +68,8 @@ function testDoPost() {
         email: 'test@example.com',
         phone: '010-1234-5678',
         company: 'Test Company',
+        tourMethod: 'dedicated_equipment',
+        paymentWillingness: 'willing',
         feedback: 'This is a test feedback',
         privacy: 'Yes',
         language: 'ko',

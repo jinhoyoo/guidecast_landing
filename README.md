@@ -142,7 +142,7 @@ landing_page/
 ```bash
 # 저장소 클론
 git clone https://github.com/yourusername/guidecast-landing.git
-cd landing_page
+cd guidecast-landing
 
 # 의존성 설치
 bundle install

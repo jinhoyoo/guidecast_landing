@@ -193,6 +193,17 @@ ko:
     success_title: "신청이 완료되었습니다!"
     success_message: "소중한 의견 감사합니다.<br>출시 후 이메일로 <strong>1,000분 무료 크레딧</strong>을 보내드리겠습니다."
     success_button: "확인"
+    # Q1: 현재 투어 운영 방식
+    q1_label: "현재 투어 운영 방식"
+    q1_option1: "전용 장비 사용 (오디오 가이드 등)"
+    q1_option2: "내 목소리만 사용"
+    q1_option3: "다른 앱/도구 사용"
+    q1_option4: "아직 시작 전, 준비 중"
+    # Q2: 지불 의향
+    q2_label: "Guidecast 앱으로 장비 없이 투어 운영이 가능하다면, 월 S$15 ~ S$30 정도의 사용료에 대해 어떻게 생각하시나요?"
+    q2_option1: "그 정도라면 기꺼이 지불하겠습니다"
+    q2_option2: "상황에 따라 고려할 수 있습니다"
+    q2_option3: "유료라면 사용하지 않을 것 같습니다"
 
   footer:
     brand: "Guidecast"
@@ -396,6 +407,17 @@ en:
     success_title: "Application Complete!"
     success_message: "Thank you for your valuable feedback.<br>We'll send you <strong>1,000 minutes free credit</strong> via email after launch."
     success_button: "OK"
+    # Q1: Current tour operation method
+    q1_label: "How do you currently conduct your tours?"
+    q1_option1: "Using dedicated equipment (audio guide, etc.)"
+    q1_option2: "Using only my voice"
+    q1_option3: "Using other apps/tools"
+    q1_option4: "Haven't started yet, but preparing"
+    # Q2: Payment willingness
+    q2_label: "If Guidecast app allows you to run tours without equipment, how do you feel about a monthly fee of S$15 ~ S$30?"
+    q2_option1: "I'm willing to pay that amount"
+    q2_option2: "I could consider it depending on the situation"
+    q2_option3: "I probably won't use it if it's paid"
 
   footer:
     brand: "Guidecast"
@@ -599,6 +621,17 @@ es:
     success_title: "¡Solicitud Completa!"
     success_message: "Gracias por tus valiosos comentarios.<br>Te enviaremos <strong>1,000 minutos de crédito gratis</strong> por correo electrónico después del lanzamiento."
     success_button: "OK"
+    # Q1: Método actual de operación de tours
+    q1_label: "¿Cómo realiza actualmente sus tours?"
+    q1_option1: "Usando equipo dedicado (audioguía, etc.)"
+    q1_option2: "Usando solo mi voz"
+    q1_option3: "Usando otras aplicaciones/herramientas"
+    q1_option4: "Aún no he comenzado, pero estoy preparándome"
+    # Q2: Disposición de pago
+    q2_label: "Si la aplicación Guidecast le permite realizar tours sin equipo, ¿qué opina de una tarifa mensual de S$15 ~ S$30?"
+    q2_option1: "Estoy dispuesto a pagar esa cantidad"
+    q2_option2: "Podría considerarlo dependiendo de la situación"
+    q2_option3: "Probablemente no lo usaré si es de pago"
 
   footer:
     brand: "Guidecast"
@@ -801,6 +834,17 @@ zh-TW:
     success_title: "申請完成！"
     success_message: "感謝您寶貴的意見。<br>上線後我們將透過電子郵件發送<strong>1,000分鐘免費點數</strong>給您。"
     success_button: "確認"
+    # Q1: 目前導覽運營方式
+    q1_label: "您目前如何進行導覽服務？"
+    q1_option1: "使用專用設備（語音導覽等）"
+    q1_option2: "僅用自己的聲音"
+    q1_option3: "使用其他應用程式/工具"
+    q1_option4: "尚未開始，但正在準備中"
+    # Q2: 付費意願
+    q2_label: "如果Guidecast應用程式讓您無需設備即可運營導覽服務，對於每月S$15 ~ S$30左右的使用費，您怎麼看？"
+    q2_option1: "這個價格我願意支付"
+    q2_option2: "根據情況可以考慮"
+    q2_option3: "如果收費可能不會使用"
 
   footer:
     brand: "Guidecast"
@@ -1003,6 +1047,17 @@ zh-CN:
     success_title: "申请完成！"
     success_message: "感谢您宝贵的意见。<br>上线后我们将通过电子邮箱发送<strong>1,000分钟免费积分</strong>给您。"
     success_button: "确认"
+    # Q1: 目前导览运营方式
+    q1_label: "您目前在导游服务中使用什么方式？"
+    q1_option1: "使用专用设备（音频导览等）"
+    q1_option2: "仅用自己的声音"
+    q1_option3: "使用其他应用/工具"
+    q1_option4: "还未开始，但正在准备中"
+    # Q2: 付费意愿
+    q2_label: "如果Guidecast应用让您无需设备即可运营导游服务，对于每月S$15 ~ S$30左右的使用费，您怎么看？"
+    q2_option1: "这个价格我愿意支付"
+    q2_option2: "根据情况可以考虑"
+    q2_option3: "如果收费可能不会使用"
 
   footer:
     brand: "Guidecast"
@@ -1205,6 +1260,17 @@ ja:
     success_title: "申込が完了しました！"
     success_message: "貴重なご意見ありがとうございます。<br>リリース後にメールで<strong>1,000分無料クレジット</strong>をお送りいたします。"
     success_button: "確認"
+    # Q1: 現在のツアー運営方法
+    q1_label: "現在どのようにツアーを行っていますか？"
+    q1_option1: "専用機器を使用（オーディオガイドなど）"
+    q1_option2: "自分の声だけを使用"
+    q1_option3: "他のアプリ/ツールを使用"
+    q1_option4: "まだ始めていないが、準備中"
+    # Q2: 支払い意向
+    q2_label: "Guidecastアプリで機器なしでツアー運営が可能なら、月額S$15〜S$30程度の使用料についてどう思いますか？"
+    q2_option1: "その金額なら喜んで支払います"
+    q2_option2: "状況によっては検討できます"
+    q2_option3: "有料なら使用しないと思います"
 
   footer:
     brand: "Guidecast"
