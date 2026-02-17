@@ -24,7 +24,7 @@
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
 
   /* Typography */
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+  --font-sans: 'Noto Sans', 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
@@ -66,6 +66,8 @@ body {
   background-color: var(--bg-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 /* Container */
@@ -375,11 +377,40 @@ button, .btn-primary, .btn-secondary {
   background-color: var(--bg-white);
 }
 
+.pricing-trial-highlight {
+  text-align: center;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-session-info {
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--spacing-lg);
   margin-top: var(--spacing-xl);
+}
+
+.pricing-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .pricing-card {
@@ -390,6 +421,8 @@ button, .btn-primary, .btn-secondary {
   text-align: center;
   transition: var(--transition-base);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .pricing-card:hover {
@@ -441,10 +474,17 @@ button, .btn-primary, .btn-secondary {
   color: var(--text-secondary);
 }
 
+.plan-price-local {
+  font-size: var(--font-size-sm);
+  color: var(--text-light);
+  margin-bottom: var(--spacing-md);
+}
+
 .plan-features {
   list-style: none;
   margin-bottom: var(--spacing-lg);
   text-align: left;
+  flex-grow: 1;
 }
 
 .plan-features li {
@@ -568,6 +608,46 @@ button, .btn-primary, .btn-secondary {
   margin-top: var(--spacing-xs);
 }
 
+.single-session-box {
+  margin-top: var(--spacing-2xl);
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  border: 2px solid #e0e7ff;
+}
+
+.single-session-box h4 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-primary);
+}
+
+.single-session-box p {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.pricing-free-highlight {
+  margin-top: var(--spacing-2xl);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border: 2px solid var(--success-color);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: #065f46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+.pricing-free-highlight .free-icon {
+  font-size: var(--font-size-2xl);
+}
+
 .pricing-note {
   margin-top: var(--spacing-xl);
   text-align: center;
@@ -662,6 +742,35 @@ button, .btn-primary, .btn-secondary {
 
 .comparison-table tbody tr:hover td:not(.highlight) {
   background-color: var(--bg-light);
+}
+
+/* App vs Web Section */
+.app-vs-web-section {
+  padding: var(--spacing-3xl) 0;
+  background-color: var(--bg-white);
+}
+
+.app-vs-web-section .info-box {
+  background-color: #eff6ff;
+  border: 1px solid #dbeafe;
+  backdrop-filter: none;
+}
+
+.app-vs-web-section .info-box p {
+  color: var(--text-secondary);
+}
+
+/* ROI Section */
+.roi-section {
+  padding: var(--spacing-3xl) 0;
+  background-color: var(--bg-light);
+}
+
+.roi-section .cards-grid {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* FAQ Section */
@@ -834,6 +943,14 @@ button, .btn-primary, .btn-secondary {
 
   .pricing-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-card.featured {
+    transform: scale(1.02);
   }
 
   .cards-grid {

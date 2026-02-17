@@ -4,79 +4,73 @@
   <div class="container">
     <h2 class="section-title">{{ t.title }}</h2>
 
-    <div class="pricing-grid">
-      <!-- Free Plan -->
-      <div class="pricing-card">
-        <h3 class="plan-name">{{ t.plans.free.name }}</h3>
-        <div class="plan-price">{{ t.plans.free.price }}</div>
-        <ul class="plan-features">
-          {% for feature in t.plans.free.features %}
-            <li>{{ feature }}</li>
-          {% endfor %}
-        </ul>
-        <button class="btn-secondary">{{ t.plans.free.button }}</button>
-      </div>
+    {% if t.trial_highlight %}
+    <p class="pricing-trial-highlight">✅ {{ t.trial_highlight }}</p>
+    {% endif %}
 
-      <!-- Basic Plan -->
-      <div class="pricing-card featured">
-        <div class="popular-badge">{{ t.plans.basic.badge }}</div>
-        <h3 class="plan-name">{{ t.plans.basic.name }}</h3>
-        <div class="plan-price">{{ t.plans.basic.price }}<span class="period">{{ t.plans.basic.period }}</span></div>
+    <p class="pricing-session-info">{{ t.session_info }}</p>
+
+    <div class="pricing-grid pricing-grid-3">
+      <!-- Starter Plan -->
+      <div class="pricing-card">
+        <h3 class="plan-name">{{ t.plans.starter.name }}</h3>
+        <div class="plan-price">{{ t.plans.starter.price }}<span class="period">{{ t.plans.starter.period }}</span></div>
+        <div class="plan-price-local">{{ t.plans.starter.price_local }}</div>
         <ul class="plan-features">
-          {% for feature in t.plans.basic.features %}
+          {% for feature in t.plans.starter.features %}
             <li>{{ feature }}</li>
           {% endfor %}
         </ul>
-        <button class="btn-primary">{{ t.plans.basic.button }}</button>
+        <button class="btn-primary" onclick="showEarlyBirdForm()">{{ t.plans.starter.button }}</button>
       </div>
 
       <!-- Pro Plan -->
-      <div class="pricing-card">
+      <div class="pricing-card featured">
+        {% if t.plans.pro.badge %}
+          <div class="popular-badge">{{ t.plans.pro.badge }}</div>
+        {% endif %}
         <h3 class="plan-name">{{ t.plans.pro.name }}</h3>
         <div class="plan-price">{{ t.plans.pro.price }}<span class="period">{{ t.plans.pro.period }}</span></div>
+        <div class="plan-price-local">{{ t.plans.pro.price_local }}</div>
         <ul class="plan-features">
           {% for feature in t.plans.pro.features %}
             <li>{{ feature }}</li>
           {% endfor %}
         </ul>
-        <button class="btn-primary">{{ t.plans.pro.button }}</button>
+        <button class="btn-primary" onclick="showEarlyBirdForm()">{{ t.plans.pro.button }}</button>
       </div>
 
       <!-- Enterprise Plan -->
       <div class="pricing-card">
         <h3 class="plan-name">{{ t.plans.enterprise.name }}</h3>
-        <div class="plan-price">{{ t.plans.enterprise.price }}</div>
+        <div class="plan-price">{{ t.plans.enterprise.price }}<span class="period">{{ t.plans.enterprise.period }}</span></div>
+        <div class="plan-price-local">{{ t.plans.enterprise.price_local }}</div>
         <ul class="plan-features">
           {% for feature in t.plans.enterprise.features %}
             <li>{{ feature }}</li>
           {% endfor %}
         </ul>
-        <button class="btn-secondary">{{ t.plans.enterprise.button }}</button>
+        <button class="btn-secondary" onclick="showEarlyBirdForm()">{{ t.plans.enterprise.button }}</button>
       </div>
     </div>
 
-    <!-- Additional Credits -->
-    <div class="additional-credits">
-      <h4>{{ t.credits.title }}</h4>
-      <p class="credits-subtitle">{{ t.credits.subtitle }}</p>
-      <div class="credits-grid">
-        {% for credit in t.credits.items %}
-          <div class="credit-card{% if credit.badge %} featured{% endif %}">
-            {% if credit.badge %}
-              <div class="credit-badge">{{ credit.badge }}</div>
-            {% endif %}
-            <div class="credit-icon">{{ credit.icon }}</div>
-            <div class="credit-amount">{{ credit.amount }}</div>
-            <div class="credit-price">{{ credit.price }}</div>
-            <div class="credit-hours">{{ credit.hours }}</div>
-            {% if credit.save %}
-              <div class="credit-save">{{ credit.save }}</div>
-            {% endif %}
-          </div>
-        {% endfor %}
-      </div>
+    <!-- Single Session Purchase -->
+    {% if t.single_session %}
+    <div class="single-session-box">
+      <h4>{{ t.single_session.title }}</h4>
+      <p>{{ t.single_session.description }}</p>
     </div>
+    {% endif %}
 
+    {% if t.free_highlight %}
+    <div class="pricing-free-highlight">
+      <span class="free-icon">🎉</span>
+      <strong>{{ t.free_highlight }}</strong>
+    </div>
+    {% endif %}
+
+    {% if t.note and t.note != "" %}
     <p class="pricing-note">{{ t.note }}</p>
+    {% endif %}
   </div>
 </section>
