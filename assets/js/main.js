@@ -116,7 +116,7 @@ function toggleFAQ(button) {
 function showDemoVideo() {
   // Get the base URL for assets
   const baseUrl = window.location.origin + (window.location.pathname.includes('/landing_page') ? '/landing_page' : '');
-  const videoPath = baseUrl + '/assets/videos/20251012_1541_01k7bhyr4sffkst9xrw8e4xzcy.mp4';
+  const videoPath = baseUrl + '/assets/videos/0216.mp4';
 
   // Create modal overlay
   const modal = document.createElement('div');
