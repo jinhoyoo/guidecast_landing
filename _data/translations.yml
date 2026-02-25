@@ -739,6 +739,253 @@ es:
     email: "support@guidecast.com"
     copyright: "2025 Guidecast. Todos los derechos reservados."
 
+# Deutsch - German
+de:
+  site:
+    title: "Guidecast"
+    description: "Professionelle Reiseführung mit einer App, ohne Megafon"
+    og_description: "Echtzeit-Sprachübertragung, sofortiger QR-Zugang, KI-gestützte Reiseantworten und Standortverfolgung. Ersetzt gemeinsam genutzte Empfänger durch die Smartphones der Touristen."
+
+  nav:
+    home: "Start"
+    features: "Funktionen"
+    pricing: "Preise"
+    faq: "FAQ"
+
+  hero:
+    headline: "Professionelle Reiseführung <br/>mit einer App, ohne Megafon"
+    subheadline: "Echtzeit-Sprachübertragung, sofortiger QR-Zugang, KI-Reiseantworten und Standortverfolgung. Ersetzt gemeinsam genutzte Empfänger durch die Smartphones der Touristen für hygienischere und intelligentere Touren."
+    info_box: "Nur Reiseleiter abonnieren. Touristen sind immer kostenlos, sofortiger QR-Zugang."
+    cta_button: "Demo ansehen (30s)"
+    image_alt: "Reiseleiter zeigt QR-Code, während Touristen ihn scannen, um beizutreten"
+
+  pain_points:
+    title: "Warum Geführte Touren dem Individualtourismus Unterliegen"
+    items:
+      - icon: "📢"
+        title: "Megafone sind verboten, ohne sie hört man nichts"
+        description: "Gruppen von 10+ benötigen Megafone, aber Lärmschutzvorschriften werden immer strenger."
+      - icon: "🦠"
+        title: "Gemeinsame Empfänger sind unhygienisch"
+        description: "Ohrhörer, die andere benutzt haben, Halsriemen von anderen. Egal wie gut Sie desinfizieren, hygienebewusste Touristen bevorzugen es, alleine zu reisen."
+      - icon: "🙋"
+        title: "Wiederholte Fragen erschöpfen Reiseleiter"
+        description: "Wo ist die Toilette? Wann treffen wir uns? Was ist das für ein Gebäude? Wenn 10 Personen zu verschiedenen Zeiten fragen, können Sie sich nicht auf Ihre Erklärungen konzentrieren."
+
+  solution:
+    title: "Die Guidecast App löst alles"
+    features:
+      - icon: "🎙️"
+        title: "Echtzeit-Sprachübertragung"
+        description: "Ultra-niedrige Latenz Audio basierend auf WebRTC. Klare Übertragung an 30 Personen ohne Megafon. Hintergrundwiedergabe auch bei ausgeschaltetem Bildschirm."
+      - icon: "⚡"
+        title: "Sofortiger QR-Zugang"
+        description: "Reiseleiter zeigt QR-Code, Touristen scannen und verbinden sich sofort. Keine komplizierte Registrierung, bereit in 3 Sekunden."
+      - icon: "🤖"
+        title: "KI beantwortet Wiederholungsfragen"
+        description: "\"Wo ist die Toilette?\" \"Wann treffen wir uns?\" — Die KI antwortet sofort in der App basierend auf vorab eingetragenen Informationen des Reiseleiters."
+      - icon: "📍"
+        title: "Echtzeit-Standortverfolgung"
+        description: "Sehen Sie den Standort des Reiseleiters und Ihren eigenen auf der App-Karte in Echtzeit. Keine Sorgen, wenn Sie beim Fotografieren zurückbleiben. Deaktiviert sich automatisch am Ende der Tour."
+
+  app_vs_web:
+    title: "Was möglich ist, weil es eine App ist"
+    badge: "✓ App"
+    headers:
+      item: "Funktion"
+      web: "Web-Lösung"
+      guidecast: "Guidecast (App)"
+    rows:
+      - item: "Hören mit ausgeschaltetem Bildschirm"
+        web: "❌ Unterbricht sich beim Ausschalten"
+        guidecast: "✅ Hintergrundwiedergabe"
+      - item: "Akku-Effizienz"
+        web: "⚠️ Browser läuft immer"
+        guidecast: "✅ Energiesparmodus"
+      - item: "Standortverfolgung"
+        web: "⚠️ Eingeschränkt"
+        guidecast: "✅ GPS-Karte in Echtzeit"
+      - item: "KI-Antworten"
+        web: "⚠️ Eingeschränkt"
+        guidecast: "✅ KI-FAQ Sofortantworten"
+      - item: "Verbindungsstabilität"
+        web: "⚠️ Trennt beim Tab-Wechsel"
+        guidecast: "✅ Automatische Wiederverbindung + lokales Buffering"
+    note: "Die App-Installation ist keine Hürde — sie ist <strong>eine Voraussetzung für zuverlässige Tour-Qualität</strong>. Sie wird natürlich mit den Anweisungen des Reiseleiters installiert und ist weniger als 50MB groß."
+
+  testimonials:
+    title: "Geschichten von Reiseleitern, die bereits gewechselt haben"
+    items:
+      - text: "Ich führte eine Gruppentour mit 30 Personen ohne Megafon durch und alle sagten, sie hätten alles perfekt gehört. Auch die Lärmbeschwerden verschwanden."
+        author: "Kim OO, Stadtführer in Kyoto"
+      - text: "Ich verbrachte täglich 30 Minuten mit Desinfizieren, Aufladen und der Verwaltung verlorener Empfänger. Diese Zeit gehört jetzt ganz mir."
+        author: "Lee OO, Museumsführerin"
+      - text: "Die KI beantwortet die 'Wo ist die Toilette?'-Fragen, sodass ich mich auf meine Erklärungen konzentrieren kann. Die Tourqualität hat sich deutlich verbessert."
+        author: "Park OO, Reiseleiter auf Jeju"
+
+  pricing:
+    title: "Pläne für Ihre Tourgröße"
+    trial_highlight: "Testen Sie 5 Sitzungen kostenlos auf echten Touren. Keine automatische Abrechnung."
+    session_info: "Abrechnungseinheit: Sitzung — 1 Sitzung = bis zu 8 Stunden. Die Sitzung endet sofort, wenn die Übertragung gestoppt wird."
+    plans:
+      starter:
+        name: "Starter"
+        price: "$22"
+        price_local: "~€20"
+        period: "/Mo."
+        features:
+          - "10 Sitzungen/Monat"
+          - "Bis zu 5 Zuhörer"
+          - "Ideal für Einzelreiseleiter"
+          - "Live-Audio + QR-Zugang + KI-FAQ + Standort"
+        button: "Kostenlos starten (5 Sitzungen)"
+      pro:
+        name: "Pro"
+        price: "$75"
+        price_local: "~€69"
+        period: "/Mo."
+        badge: "Beliebt"
+        features:
+          - "25 Sitzungen/Monat"
+          - "Bis zu 30 Zuhörer"
+          - "Mittlere Führungsagenturen"
+          - "Alles von Starter + stabile Großgruppenführung"
+        button: "Kostenlos starten (5 Sitzungen)"
+      enterprise:
+        name: "Enterprise"
+        price: "$225"
+        price_local: "~€209"
+        period: "/Mo."
+        features:
+          - "Unbegrenzte Sitzungen"
+          - "Unbegrenzte Zuhörer"
+          - "Museen / öffentliche Einrichtungen / Unternehmen"
+          - "Alles von Pro + Reiseleiter-Dashboard + dedizierter Support"
+        button: "Beratung anfragen"
+    single_session:
+      title: "Einzelne Sitzung kaufen (ohne Abonnement)"
+      description: "Kaufen Sie Sitzungen einzeln bei Bedarf (bis zu 5 Personen, In-App-Kauf)"
+    free_highlight: "Touristen sind immer kostenlos"
+    note: ""
+
+  comparison:
+    title: "Hardware-Empfänger vs. Voraufgezeichnete Audio-Apps vs. Guidecast"
+    subtitle: ""
+    badge: "✓ Empfohlen"
+    headers:
+      item: "Funktion"
+      hardware: "Hardware-Empfänger"
+      recorded: "Voraufgezeichnete Audio-Apps"
+      guidecast: "Guidecast"
+    rows:
+      - item: "Echtzeit-Kommunikation"
+        hardware: "✅ Möglich (unidirektional)"
+        recorded: "❌ Unmöglich (voraufgezeichnet)"
+        guidecast: "✅ KI-Chat"
+      - item: "Betriebskosten"
+        hardware: "❌ Teuer ($1.000~1.500)"
+        recorded: "✅ Günstig"
+        guidecast: "✅ Ab $22/Mo., Amortisation ab Monat 2"
+      - item: "Hygiene"
+        hardware: "❌ Gemeinsames Gerät (Desinfektion erforderlich)"
+        recorded: "✅ Persönliches Telefon"
+        guidecast: "✅ Persönliches Telefon + eigene Ohrhörer"
+      - item: "Live-Erlebnis"
+        hardware: "✅ Hoch"
+        recorded: "❌ Niedrig (nur zuhören)"
+        guidecast: "✅ Live mit dem Reiseleiter in Echtzeit"
+      - item: "KI-Informationen"
+        hardware: "❌ Keine"
+        recorded: "⚠️ Begrenzt"
+        guidecast: "✅ KI-FAQ Sofortantworten"
+      - item: "Standortverfolgung"
+        hardware: "❌ Nicht verfügbar"
+        recorded: "❌ Nicht verfügbar"
+        guidecast: "✅ Karte in Echtzeit"
+      - item: "Geräteverwaltung"
+        hardware: "❌ Aufladen/Desinfektion/Verlustmanagement"
+        recorded: "✅ Keine"
+        guidecast: "✅ Keine"
+
+  roi:
+    title: "Was sich mit Guidecast ändert"
+    items:
+      - icon: "💰"
+        title: "Keine Anfangsinvestition"
+        description: "Starten Sie sofort mit der kostenlosen Testversion statt Ausrüstung für $1.500+ zu kaufen"
+      - icon: "⏱️"
+        title: "Reduzierter Betriebsaufwand"
+        description: "Sparen Sie 30 Minuten pro Tour bei Verteilung, Einsammlung und Desinfektion — ca. 150 Stunden pro Jahr"
+      - icon: "⭐"
+        title: "Höhere Kundenzufriedenheit"
+        description: "Hygienische Umgebung und klares Audio + KI-Antworten — bessere Bewertungen und Wiederbuchungsraten"
+      - icon: "📋"
+        title: "Einfache Regulierungskonformität"
+        description: "Erfüllen Sie Lärmschutzvorschriften mit nur einer App — keine zusätzliche Ausrüstung nötig"
+
+  faq:
+    title: "Häufig gestellte Fragen"
+    items:
+      - question: "Zahlen Touristen irgendetwas?"
+        answer: "Nein. Touristen nehmen immer kostenlos teil. Sie installieren einfach die App nach den Anweisungen des Reiseleiters und scannen den QR-Code zum Beitreten. Nur Reiseleiter verwalten Zahlungen und Abonnements."
+      - question: "Müssen Touristen eine App installieren?"
+        answer: "Ja, Guidecast ist ein App-basierter Dienst. Da es eine App ist, unterstützt es Hintergrundwiedergabe bei ausgeschaltetem Bildschirm, Energiesparmodus und Echtzeit-Standortverfolgung. Die App ist kleiner als 50MB und kann vor der Tour natürlich mit den Anweisungen des Reiseleiters installiert werden."
+      - question: "Kann es wirklich 30 Personen ohne Megafon erreichen?"
+        answer: "Ja. Mit ultra-niedriger Latenztechnologie basierend auf WebRTC liefert es kristallklares Audio mit P95-Latenz unter 0,5 Sekunden. Touristen hören mit ihren eigenen Ohrhörern, sodass sie trotz Umgebungslärm klar hören."
+      - question: "Welche Fragen kann die KI beantworten?"
+        answer: "Sie beantwortet Fragen basierend auf vorab eingetragenen Informationen des Reiseleiters (Tourstandorte, Zeitpläne, Standorte von Einrichtungen, Sicherheitshinweise usw.). Bei nicht eingetragenen Fragen sagt sie 'Bitte fragen Sie direkt Ihren Reiseleiter', um falsche Informationen zu vermeiden."
+      - question: "Funktioniert es in Gebieten mit instabilem Internet?"
+        answer: "Ja, 4G/5G-Mobilfunkdaten sind ausreichend. Bei instabilem Netz minimieren lokales Buffering und automatische Wiederverbindung Unterbrechungen. Der Datenverbrauch beträgt ca. 50-100MB pro Stunde."
+      - question: "Werde ich nach der kostenlosen Testphase automatisch abgerechnet?"
+        answer: "Nein, es gibt keine automatische Abrechnung. Nach 5 kostenlosen Sitzungen wählen Sie, wann Sie sich für einen kostenpflichtigen Plan entscheiden."
+      - question: "Verursacht die Standortverfolgung Datenschutzprobleme?"
+        answer: "Die Standortfreigabe ist nur während der Tour-Sitzung aktiv und deaktiviert sich automatisch am Ende. Touristen haben eine Opt-out-Option, um die Standortfreigabe jederzeit zu deaktivieren."
+
+  cta:
+    title: "Nutzen Sie es ab Ihrer nächsten Tour"
+    subtitle: "5 Sitzungen kostenlos testen, kein Risiko. Überprüfen Sie es selbst auf einer echten Tour."
+    button: "Early-Bird-Angebot sichern"
+    links:
+      faq: "FAQ ansehen"
+      contact: "1:1-Beratung anfragen"
+
+  form:
+    title: "Early-Bird-Bewerbung"
+    subtitle: "Hinterlassen Sie Ihre Kontaktdaten und Feedback, um nach dem Launch <strong>10 kostenlose Sitzungen</strong> zu erhalten!"
+    name_label: "Name *"
+    name_placeholder: "Max Mustermann"
+    email_label: "E-Mail *"
+    email_placeholder: "beispiel@email.com"
+    phone_label: "Telefonnummer"
+    phone_placeholder: "030-12345678"
+    country_code_label: "Landesvorwahl"
+    company_label: "Organisation (Optional)"
+    company_placeholder: "Freiberuflicher Reiseleiter / Reiseagentur, etc."
+    feedback_label: "Kommentare und Erwartungen *"
+    feedback_placeholder: "Teilen Sie uns gerne mit, was Sie von Guidecast erwarten oder welche Funktionen Sie benötigen."
+    privacy_label: "Ich stimme der Erhebung und Verwendung meiner persönlichen Daten zu."
+    submit_button: "10 kostenlose Sitzungen erhalten"
+    submitting: "Wird gesendet..."
+    success_title: "Bewerbung abgeschlossen!"
+    success_message: "Vielen Dank für Ihr wertvolles Feedback.<br>Wir senden Ihnen nach dem Launch <strong>10 kostenlose Sitzungen</strong> per E-Mail."
+    success_button: "OK"
+    q1_label: "Wie führen Sie derzeit Ihre Touren durch?"
+    q1_option1: "Mit dedizierter Ausrüstung (Audioguide, etc.)"
+    q1_option2: "Nur mit meiner Stimme"
+    q1_option3: "Mit anderen Apps/Tools"
+    q1_option4: "Ich habe noch nicht angefangen, bereite mich aber vor"
+    q2_label: "Wenn die Guidecast-App es Ihnen ermöglicht, Touren ohne Ausrüstung durchzuführen, was denken Sie über eine monatliche Gebühr von $22 ~ $75?"
+    q2_option1: "Ich bin bereit, diesen Betrag zu zahlen"
+    q2_option2: "Ich könnte es je nach Situation in Betracht ziehen"
+    q2_option3: "Ich werde es wahrscheinlich nicht nutzen, wenn es kostenpflichtig ist"
+
+  footer:
+    brand: "Guidecast"
+    tagline: "Professionelle Reiseführung mit einer App, ohne Megafon"
+    contact_title: "Kontakt"
+    email: "support@guidecast.com"
+    copyright: "2025 Guidecast. Alle Rechte vorbehalten."
+
 # 日本語 - Japanese
 ja:
   site:
