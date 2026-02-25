@@ -11,7 +11,9 @@
       "Bash(cat:*)",
       "Bash(sips:*)",
       "Bash(bundle exec jekyll:*)",
-      "Bash(curl -s https://www.guidecast.co)"
+      "Bash(curl -s https://www.guidecast.co)",
+      "WebFetch(domain:127.0.0.1)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []

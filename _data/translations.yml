@@ -84,7 +84,7 @@ ko:
 
   pricing:
     title: "당신의 투어 규모에 맞는 요금제"
-    trial_highlight: "14일 무료 체험으로 위험 부담 제로. 실제 투어에서 직접 검증하고, 언제든 위약금 없이 취소하세요."
+    trial_highlight: "5 세션 무료로 실제 투어에서 직접 검증해보세요. 자동 결제 없음."
     session_info: "과금 단위: 세션(Session) — 1 세션 = 최대 8시간. 방송 종료 시 세션 즉시 종료."
     plans:
       starter:
@@ -97,7 +97,7 @@ ko:
           - "최대 5명 청취"
           - "개인 가이드 최적"
           - "실시간 음성 + QR 접속 + AI FAQ + 위치 확인"
-        button: "14일 무료 체험"
+        button: "5 세션 무료 시작"
       pro:
         name: "Pro"
         price: "$75"
@@ -109,7 +109,7 @@ ko:
           - "최대 30명 청취"
           - "중견 가이드 / 여행사"
           - "Starter 전체 + 대규모 그룹 안정 운영"
-        button: "14일 무료 체험"
+        button: "5 세션 무료 시작"
       enterprise:
         name: "Enterprise"
         price: "$225"
@@ -196,14 +196,14 @@ ko:
       - question: "인터넷이 불안정한 곳에서도 괜찮은가요?"
         answer: "4G/5G 모바일 데이터만으로 충분히 작동하며, 네트워크가 불안정할 때는 로컬 버퍼링과 자동 재접속으로 끊김을 최소화합니다. 데이터 사용량은 1시간 기준 약 50~100MB 수준입니다."
       - question: "무료 체험 후 자동 결제되나요?"
-        answer: "아니요, 자동 결제되지 않습니다. 14일 무료 체험 후 원하실 때 유료 구독을 선택하시면 됩니다."
+        answer: "아니요, 자동 결제되지 않습니다. 5 세션 무료 체험 후 원하실 때 유료 구독을 선택하시면 됩니다."
       - question: "위치 추적이 프라이버시에 문제되지 않나요?"
         answer: "위치 공유는 투어 세션 중에만 활성화되고, 종료 즉시 자동으로 비활성화됩니다. 관광객은 원하면 언제든 위치 공유를 끌 수 있는 옵트아웃 옵션이 있습니다."
 
   cta:
     title: "다음 투어부터 바로 써보세요"
-    subtitle: "14일 무료 체험으로 위험 부담 제로. 실제 투어에서 직접 검증하세요."
-    button: "가이드 무료로 시작하기"
+    subtitle: "5 세션 무료로 위험 부담 제로. 실제 투어에서 직접 검증하세요."
+    button: "얼리버드 혜택 받기"
     links:
       faq: "FAQ 보기"
       contact: "1:1 상담 신청"
@@ -331,7 +331,7 @@ en:
 
   pricing:
     title: "Plans for Your Tour Size"
-    trial_highlight: "Zero risk with a 14-day free trial. Verify it yourself on a real tour — cancel anytime, no penalty."
+    trial_highlight: "Try 5 free sessions on real tours. No auto-billing."
     session_info: "Billing unit: Session — 1 session = up to 8 hours. Session ends immediately when broadcast stops."
     plans:
       starter:
@@ -344,7 +344,7 @@ en:
           - "Up to 5 listeners"
           - "Perfect for solo guides"
           - "Live audio + QR access + AI FAQ + Location tracking"
-        button: "14-Day Free Trial"
+        button: "Start Free (5 Sessions)"
       pro:
         name: "Pro"
         price: "$75"
@@ -356,7 +356,7 @@ en:
           - "Up to 30 listeners"
           - "Mid-sized guides / agencies"
           - "All Starter features + stable large group operation"
-        button: "14-Day Free Trial"
+        button: "Start Free (5 Sessions)"
       enterprise:
         name: "Enterprise"
         price: "$225"
@@ -443,14 +443,14 @@ en:
       - question: "Does it work in areas with unstable internet?"
         answer: "It works sufficiently with 4G/5G mobile data alone. When the network is unstable, local buffering and auto-reconnection minimize interruptions. Data usage is approximately 50-100MB per hour."
       - question: "Will I be auto-charged after the free trial?"
-        answer: "No, there is no auto-charging. After the 14-day free trial, you choose to subscribe to a paid plan whenever you're ready."
+        answer: "No, there is no auto-charging. After 5 free sessions, you choose to subscribe to a paid plan whenever you're ready."
       - question: "Does location tracking cause privacy issues?"
         answer: "Location sharing is only active during the tour session and automatically deactivates immediately when it ends. Tourists have an opt-out option to turn off location sharing anytime."
 
   cta:
     title: "Start Using It on Your Next Tour"
-    subtitle: "Zero risk with a 14-day free trial. Verify it yourself on a real tour."
-    button: "Start Free as a Guide"
+    subtitle: "Try 5 free sessions with zero risk. Verify it yourself on a real tour."
+    button: "Claim Early Bird Offer"
     links:
       faq: "View FAQ"
       contact: "Request 1:1 Consultation"
@@ -578,7 +578,7 @@ es:
 
   pricing:
     title: "Planes para el Tamaño de Tu Tour"
-    trial_highlight: "Cero riesgo con 14 días de prueba gratis. Verifícalo en un tour real — cancela en cualquier momento sin penalización."
+    trial_highlight: "Prueba 5 sesiones gratis en tours reales. Sin cobro automático."
     session_info: "Unidad de facturación: Sesión — 1 sesión = hasta 8 horas. La sesión termina inmediatamente cuando se detiene la transmisión."
     plans:
       starter:
@@ -591,7 +591,7 @@ es:
           - "Hasta 5 oyentes"
           - "Perfecto para guías individuales"
           - "Audio en vivo + acceso QR + FAQ IA + Ubicación"
-        button: "Prueba Gratis de 14 Días"
+        button: "Empieza Gratis (5 Sesiones)"
       pro:
         name: "Pro"
         price: "$75"
@@ -603,7 +603,7 @@ es:
           - "Hasta 30 oyentes"
           - "Guías medianos / agencias"
           - "Todo de Starter + operación estable para grupos grandes"
-        button: "Prueba Gratis de 14 Días"
+        button: "Empieza Gratis (5 Sesiones)"
       enterprise:
         name: "Enterprise"
         price: "$225"
@@ -690,14 +690,14 @@ es:
       - question: "¿Funciona en áreas con internet inestable?"
         answer: "Funciona suficientemente con datos móviles 4G/5G. Cuando la red es inestable, el buffering local y la reconexión automática minimizan las interrupciones. El uso de datos es aproximadamente 50-100MB por hora."
       - question: "¿Me cobrarán automáticamente después de la prueba gratis?"
-        answer: "No, no hay cobro automático. Después de la prueba gratis de 14 días, eliges suscribirte a un plan de pago cuando estés listo."
+        answer: "No, no hay cobro automático. Después de las 5 sesiones gratis, eliges suscribirte a un plan de pago cuando estés listo."
       - question: "¿El seguimiento de ubicación causa problemas de privacidad?"
         answer: "La compartición de ubicación solo está activa durante la sesión del tour y se desactiva automáticamente cuando termina. Los turistas tienen una opción de exclusión para desactivar la compartición de ubicación en cualquier momento."
 
   cta:
     title: "Úsalo en Tu Próximo Tour"
-    subtitle: "Cero riesgo con una prueba gratis de 14 días. Verifícalo tú mismo en un tour real."
-    button: "Comienza Gratis como Guía"
+    subtitle: "Prueba 5 sesiones gratis sin riesgo. Verifícalo tú mismo en un tour real."
+    button: "Obtén la Oferta Early Bird"
     links:
       faq: "Ver Preguntas"
       contact: "Solicitar Consulta 1:1"
@@ -825,7 +825,7 @@ ja:
 
   pricing:
     title: "あなたのツアー規模に合った料金プラン"
-    trial_highlight: "14日間無料体験でリスクゼロ。実際のツアーで直接確かめて、いつでも違約金なしでキャンセルできます。"
+    trial_highlight: "実際のツアーで5セッション無料体験。自動課金なし。"
     session_info: "課金単位：セッション（Session）— 1セッション = 最大8時間。放送終了時にセッション即終了。"
     plans:
       starter:
@@ -838,7 +838,7 @@ ja:
           - "最大5名聴取"
           - "個人ガイド最適"
           - "リアルタイム音声 + QR接続 + AI FAQ + 位置確認"
-        button: "14日間無料体験"
+        button: "5セッション無料で始める"
       pro:
         name: "Pro"
         price: "$75"
@@ -850,7 +850,7 @@ ja:
           - "最大30名聴取"
           - "中堅ガイド / 旅行社"
           - "Starter全機能 + 大規模グループ安定運営"
-        button: "14日間無料体験"
+        button: "5セッション無料で始める"
       enterprise:
         name: "Enterprise"
         price: "$225"
@@ -937,14 +937,14 @@ ja:
       - question: "インターネットが不安定な場所でも大丈夫ですか？"
         answer: "4G/5Gモバイルデータだけで十分に動作し、ネットワークが不安定な時はローカルバッファリングと自動再接続で途切れを最小化します。データ使用量は1時間あたり約50~100MBです。"
       - question: "無料体験後に自動決済されますか？"
-        answer: "いいえ、自動決済されません。14日間の無料体験後、お好きな時に有料購読をお選びいただけます。"
+        answer: "いいえ、自動決済されません。5セッション無料体験後、お好きな時に有料購読をお選びいただけます。"
       - question: "位置追跡はプライバシーに問題ありませんか？"
         answer: "位置共有はツアーセッション中にのみ有効で、終了と同時に自動的に無効化されます。観光客はいつでも位置共有をオフにできるオプトアウトオプションがあります。"
 
   cta:
     title: "次のツアーからすぐ使ってみてください"
-    subtitle: "14日間の無料体験でリスクゼロ。実際のツアーでご自身で検証してください。"
-    button: "ガイドとして無料で始める"
+    subtitle: "5セッション無料でリスクゼロ。実際のツアーでご自身で検証してください。"
+    button: "アーリーバード特典を受け取る"
     links:
       faq: "FAQを見る"
       contact: "1:1相談申込"
@@ -1072,7 +1072,7 @@ zh-TW:
 
   pricing:
     title: "適合您導覽規模的方案"
-    trial_highlight: "14天免費試用，零風險。在真實導覽中親自驗證，隨時可無違約金取消。"
+    trial_highlight: "免費體驗5場次，在真實導覽中驗證。無自動扣款。"
     session_info: "計費單位：場次（Session）— 1場次 = 最長8小時。廣播結束時場次立即結束。"
     plans:
       starter:
@@ -1085,7 +1085,7 @@ zh-TW:
           - "最多5名收聽"
           - "個人導遊最佳選擇"
           - "即時語音 + QR接入 + AI FAQ + 位置確認"
-        button: "14天免費試用"
+        button: "免費開始（5場次）"
       pro:
         name: "Pro"
         price: "$75"
@@ -1097,7 +1097,7 @@ zh-TW:
           - "最多30名收聽"
           - "中型導遊 / 旅行社"
           - "Starter全部 + 大型團體穩定營運"
-        button: "14天免費試用"
+        button: "免費開始（5場次）"
       enterprise:
         name: "Enterprise"
         price: "$225"
@@ -1184,14 +1184,14 @@ zh-TW:
       - question: "網路不穩定的地方也能用嗎？"
         answer: "4G/5G行動數據就足以運作，網路不穩定時透過本地緩衝和自動重連將中斷降到最低。每小時數據使用量約50~100MB。"
       - question: "免費試用後會自動扣款嗎？"
-        answer: "不會自動扣款。14天免費試用結束後，您可以在準備好時選擇付費訂閱。"
+        answer: "不會自動扣款。5場次免費體驗結束後，您可以在準備好時選擇付費訂閱。"
       - question: "位置追蹤會有隱私問題嗎？"
         answer: "位置分享僅在導覽場次期間啟用，結束後立即自動關閉。遊客隨時可以選擇關閉位置分享。"
 
   cta:
     title: "下一次導覽就開始使用吧"
-    subtitle: "14天免費試用零風險。在實際導覽中親自驗證。"
-    button: "導遊免費開始"
+    subtitle: "5場次免費體驗，零風險。在實際導覽中親自驗證。"
+    button: "獲取早鳥優惠"
     links:
       faq: "查看常見問題"
       contact: "申請1對1諮詢"
@@ -1319,7 +1319,7 @@ zh-CN:
 
   pricing:
     title: "适合您导览规模的方案"
-    trial_highlight: "14天免费试用，零风险。在真实导览中亲自验证，随时可无违约金取消。"
+    trial_highlight: "免费体验5场次，在真实导览中验证。无自动扣款。"
     session_info: "计费单位：场次（Session）— 1场次 = 最长8小时。广播结束时场次立即结束。"
     plans:
       starter:
@@ -1332,7 +1332,7 @@ zh-CN:
           - "最多5名收听"
           - "个人导游最佳选择"
           - "实时语音 + QR接入 + AI FAQ + 位置确认"
-        button: "14天免费试用"
+        button: "免费开始（5场次）"
       pro:
         name: "Pro"
         price: "$75"
@@ -1344,7 +1344,7 @@ zh-CN:
           - "最多30名收听"
           - "中型导游 / 旅行社"
           - "Starter全部 + 大型团体稳定运营"
-        button: "14天免费试用"
+        button: "免费开始（5场次）"
       enterprise:
         name: "Enterprise"
         price: "$225"
@@ -1431,14 +1431,14 @@ zh-CN:
       - question: "网络不稳定的地方也能用吗？"
         answer: "4G/5G移动数据就足以运作，网络不稳定时通过本地缓冲和自动重连将中断降到最低。每小时数据使用量约50~100MB。"
       - question: "免费试用后会自动扣款吗？"
-        answer: "不会自动扣款。14天免费试用结束后，您可以在准备好时选择付费订阅。"
+        answer: "不会自动扣款。5场次免费体验结束后，您可以在准备好时选择付费订阅。"
       - question: "位置追踪会有隐私问题吗？"
         answer: "位置分享仅在导览场次期间启用，结束后立即自动关闭。游客随时可以选择关闭位置分享。"
 
   cta:
     title: "下一次导览就开始使用吧"
-    subtitle: "14天免费试用零风险。在实际导览中亲自验证。"
-    button: "导游免费开始"
+    subtitle: "5场次免费体验，零风险。在实际导览中亲自验证。"
+    button: "获取早鸟优惠"
     links:
       faq: "查看常见问题"
       contact: "申请1对1咨询"
