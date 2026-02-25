@@ -139,13 +139,32 @@ function showDemoVideo() {
   // Add styles for video modal
   addVideoModalStyles();
 
-  // Play the video
+  // Play the video and request fullscreen
   const video = document.getElementById('demo-video');
   if (video) {
-    video.play().catch(err => {
+    video.play().then(() => {
+      const requestFS =
+        video.requestFullscreen ||
+        video.webkitRequestFullscreen ||
+        video.mozRequestFullScreen ||
+        video.msRequestFullscreen;
+      if (requestFS) {
+        requestFS.call(video).catch(() => {
+          // 전체화면 거부 시 모달에서 그냥 재생 계속
+        });
+      }
+    }).catch(err => {
       console.log('Video autoplay was prevented:', err);
     });
   }
+
+  // 전체화면 종료 시 모달도 닫기
+  document.addEventListener('fullscreenchange', function onFSChange() {
+    if (!document.fullscreenElement) {
+      closeDemoVideo();
+      document.removeEventListener('fullscreenchange', onFSChange);
+    }
+  });
 }
 
 function closeDemoVideo() {
@@ -189,51 +208,52 @@ function addVideoModalStyles() {
 
     .video-modal-content {
       position: relative;
-      width: 90%;
-      max-width: 900px;
+      width: 100%;
+      height: 100%;
+      max-width: none;
       background-color: #000;
-      border-radius: 12px;
+      border-radius: 0;
       overflow: hidden;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     }
 
     .video-modal-close {
-      position: absolute;
-      top: -40px;
-      right: 0;
-      background: transparent;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.6);
       border: none;
       color: white;
-      font-size: 2.5rem;
+      font-size: 2rem;
       cursor: pointer;
-      width: 40px;
-      height: 40px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       z-index: 10001;
-      transition: transform 0.2s ease;
+      transition: background 0.2s ease, transform 0.2s ease;
     }
 
     .video-modal-close:hover {
+      background: rgba(0, 0, 0, 0.9);
       transform: scale(1.1);
     }
 
     .video-wrapper {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      height: 0;
-      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .video-wrapper video,
     .video-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
       background-color: #000;
+      object-fit: contain;
     }
 
     .video-placeholder {
@@ -264,13 +284,12 @@ function addVideoModalStyles() {
     }
 
     @media (max-width: 768px) {
-      .video-modal-content {
-        width: 95%;
-      }
-
       .video-modal-close {
-        top: -35px;
-        font-size: 2rem;
+        top: 0.75rem;
+        right: 0.75rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.75rem;
       }
 
       .video-placeholder p {

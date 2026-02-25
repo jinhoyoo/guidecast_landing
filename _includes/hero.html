@@ -12,15 +12,21 @@
           <p><strong>{{ t.info_box }}</strong></p>
         </div>
 
-        <button class="cta-primary" onclick="showDemoVideo()">
-          {{ t.cta_button }}
-        </button>
       </div>
 
       <div class="hero-image">
-        <img src="{{ '/assets/images/image0.png' | relative_url }}"
-             alt="{{ t.image_alt }}"
-             loading="lazy" />
+        <div class="hero-video-thumb" onclick="showDemoVideo()">
+          <img src="{{ '/assets/images/image0.png' | relative_url }}"
+               alt="{{ t.image_alt }}"
+               loading="lazy" />
+          <div class="hero-play-overlay">
+            <div class="hero-play-btn">
+              <svg viewBox="0 0 24 24" fill="white" width="44" height="44">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

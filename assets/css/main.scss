@@ -294,3 +294,63 @@
     transform: rotate(180deg);
   }
 }
+
+/* Hero Video Thumbnail with Play Button */
+.hero-video-thumb {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hero-video-thumb img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-video-thumb:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.hero-play-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease;
+  z-index: 2;
+}
+
+.hero-video-thumb:hover .hero-play-overlay {
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.hero-play-btn {
+  width: 72px;
+  height: 72px;
+  background: rgba(37, 99, 235, 0.92);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, background 0.2s ease;
+  padding-left: 5px;
+}
+
+.hero-video-thumb:hover .hero-play-btn {
+  transform: scale(1.12);
+  background: rgba(29, 78, 216, 1);
+}
