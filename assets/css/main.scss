@@ -5,6 +5,11 @@
 // 기존 CSS 파일을 임포트 (Jekyll이 처리)
 @import "existing-styles";
 
+// CSS Grid overflow fix: prevent long text from squeezing image column
+.hero-content > * {
+  min-width: 0;
+}
+
 // 언어 전환 드롭다운 스타일 추가
 .language-switcher {
   position: relative;
@@ -353,4 +358,61 @@
 .hero-video-thumb:hover .hero-play-btn {
   transform: scale(1.12);
   background: rgba(29, 78, 216, 1);
+}
+
+/* Hero Pain Bullets */
+.hero-pain-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero-pain-bullets li {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  line-height: 1.4;
+}
+
+/* Pricing Testimonials */
+.pricing-testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.pricing-quote {
+  background: var(--bg-light);
+  border-left: 3px solid var(--primary-color);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1rem 1.25rem;
+  margin: 0;
+}
+
+.pricing-quote p {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.pricing-quote cite {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Pricing Mini FAQ */
+.pricing-mini-faq {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
 }

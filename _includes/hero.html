@@ -7,6 +7,14 @@
         <h1 class="headline">{{ t.headline }}</h1>
         <p class="subheadline">{{ t.subheadline }}</p>
 
+        {% if t.pain_bullets %}
+        <ul class="hero-pain-bullets">
+          {% for bullet in t.pain_bullets %}
+            <li>{{ bullet }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
         <div class="info-box">
           <span class="icon">💡</span>
           <p><strong>{{ t.info_box }}</strong></p>

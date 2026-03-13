@@ -69,8 +69,34 @@
     </div>
     {% endif %}
 
-    {% if t.note and t.note != "" %}
-    <p class="pricing-note">{{ t.note }}</p>
+    <!-- Testimonials -->
+    {% if t.testimonials %}
+    <div class="pricing-testimonials">
+      {% for item in t.testimonials %}
+        <blockquote class="pricing-quote">
+          <p>"{{ item.text }}"</p>
+          <cite>— {{ item.author }}</cite>
+        </blockquote>
+      {% endfor %}
+    </div>
     {% endif %}
+
+    <!-- Mini FAQ -->
+    {% if t.mini_faq %}
+    <div class="pricing-mini-faq">
+      {% for item in t.mini_faq %}
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            <span>{{ item.question }}</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>{{ item.answer }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
   </div>
 </section>

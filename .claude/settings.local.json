@@ -13,7 +13,11 @@
       "Bash(bundle exec jekyll:*)",
       "Bash(curl -s https://www.guidecast.co)",
       "WebFetch(domain:127.0.0.1)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "mcp__puppeteer__puppeteer_navigate",
+      "mcp__puppeteer__puppeteer_screenshot",
+      "mcp__puppeteer__puppeteer_click",
+      "mcp__puppeteer__puppeteer_evaluate"
     ],
     "deny": [],
     "ask": []

@@ -13,10 +13,14 @@ ko:
 
   hero:
     headline: "메가폰 없이, <br/>앱 하나로 완성하는 프로 투어 가이드"
-    subheadline: "실시간 음성 방송, QR 즉시 접속, AI 여행 답변, 위치 확인까지. 공용 리시버 대신 관광객의 스마트폰으로, 더 위생적이고 더 스마트한 투어."
+    subheadline: "관광객 스마트폰이 리시버가 됩니다. QR 하나로 연결하면 음성이 30명에게 또렷하게 전달되고, AI가 반복 질문까지 대신 답해줘요."
     info_box: "가이드만 구독. 관광객은 항상 무료, QR 스캔으로 바로 참여."
     cta_button: "데모 영상 보기 (30초)"
     image_alt: "가이드가 QR코드를 보여주고 관광객이 스캔하는 장면"
+    pain_bullets:
+      - "📢 메가폰은 소음 규제에 걸리고, 없으면 안 들려요"
+      - "🦠 공용 리시버, 위생에 민감한 관광객은 찝찝해요"
+      - "🙋 맥락없는 급한 질문은 해설 흐름을 끊어요"
 
   pain_points:
     title: "가이드 투어가 개인 관광에 밀리는 이유"
@@ -36,16 +40,16 @@ ko:
     features:
       - icon: "🎙️"
         title: "실시간 음성 방송"
-        description: "WebRTC 기반 초저지연 오디오. 30명에게도 메가폰 없이 선명하게 전달. 화면 꺼도 백그라운드 재생으로 끊김 없음."
+        description: "30명에게 메가폰 없이 선명하게 전달. 화면 꺼도 끊김 없이 재생."
       - icon: "⚡"
         title: "QR 스캔으로 즉시 참여"
-        description: "가이드가 QR 보여주면 관광객이 스캔해 바로 접속. 복잡한 회원가입 없이 3초 완료."
+        description: "가이드가 QR 보여주면 3초 만에 접속. 회원가입 불필요."
       - icon: "🤖"
         title: "AI가 반복 질문 대신 답변"
-        description: "\"화장실 어디예요?\" \"집합 시간이요?\" — 가이드가 사전 등록한 정보 기반으로 AI가 앱 내에서 즉시 답변. 가이드는 해설에만 집중."
+        description: "가이드 등록 정보 기반으로 AI가 반복 질문에 즉시 답변. 가이드는 해설에만 집중."
       - icon: "📍"
         title: "실시간 위치 확인"
-        description: "앱 내 지도에서 가이드와 내 위치를 실시간으로 확인. 사진 찍다가 일행을 놓쳐도 안심. 투어 종료 시 자동 비활성화로 프라이버시 보호."
+        description: "지도에서 가이드와 내 위치를 실시간 확인. 투어 종료 시 자동 비활성화."
 
   app_vs_web:
     title: "앱이기 때문에 가능한 것들"
@@ -125,7 +129,18 @@ ko:
       title: "세션 단품 구매 (구독 없이도 OK)"
       description: "필요할 때 1회 단위로 세션 구매 가능 (최대 5명, 인앱 결제)"
     free_highlight: "관광객은 항상 무료"
-    note: ""
+    testimonials:
+      - text: "30명 단체 투어를 메가폰 없이 진행했는데 모두 잘 들렸다고 해요. 소음 민원도 사라졌습니다."
+        author: "김OO, 교토 도보 투어 가이드"
+      - text: "화장실 어디냐는 질문을 AI가 대신 답해주니 해설에 집중할 수 있어요. 투어 퀄리티가 확 올랐습니다."
+        author: "박OO, 제주 투어 가이드"
+    mini_faq:
+      - question: "관광객도 비용을 내나요?"
+        answer: "아니요. 관광객은 항상 무료입니다. QR 스캔으로 바로 참여할 수 있습니다."
+      - question: "무료 체험 후 자동 결제되나요?"
+        answer: "아니요. 5 세션 무료 체험 후 원하실 때 직접 유료 구독을 선택하시면 됩니다."
+      - question: "앱을 꼭 설치해야 하나요?"
+        answer: "네. 화면 꺼도 끊김 없는 재생, 실시간 위치 확인을 위해 앱이 필요합니다. 50MB 이하로 가볍습니다."
 
   comparison:
     title: "하드웨어 리시버 vs 녹음형 앱 vs Guidecast"
@@ -260,10 +275,14 @@ en:
 
   hero:
     headline: "Professional Tour Guiding <br/>with One App, No Megaphone Needed"
-    subheadline: "Real-time voice broadcasting, instant QR access, AI travel answers, and location tracking. Replace shared receivers with tourists' smartphones for a more hygienic and smarter tour."
-    info_box: "Only guides subscribe. Tourists always free, instant join via QR scan."
+    subheadline: "Tourists' phones become your audio system. One QR code, and your voice reaches 30 people clearly — AI handles the repeat questions for you."
+    info_box: "Only guides subscribe. Tourists join free — just scan the QR."
     cta_button: "Watch Demo (30s)"
     image_alt: "Guide showing QR code while tourists scan to join"
+    pain_bullets:
+      - "📢 Megaphones are banned in quiet zones — without them, no one hears you"
+      - "🦠 Shared receivers feel unhygienic to health-conscious tourists"
+      - "🙋 Out-of-context questions break your commentary flow"
 
   pain_points:
     title: "Why Guided Tours Are Losing to Independent Travel"
@@ -283,16 +302,16 @@ en:
     features:
       - icon: "🎙️"
         title: "Real-time Voice Broadcasting"
-        description: "WebRTC-based ultra-low-latency audio. Crystal clear delivery to 30 people without a megaphone. Background playback even with screen off."
+        description: "Crystal clear audio to 30 people without a megaphone. Plays in background even with screen off."
       - icon: "⚡"
         title: "Instant Join via QR Scan"
-        description: "Guide shows QR, tourists scan and connect instantly. No complex sign-up, done in 3 seconds."
+        description: "Guide shows QR, tourists scan and connect in 3 seconds. No sign-up required."
       - icon: "🤖"
         title: "AI Answers Repetitive Questions"
-        description: "\"Where's the restroom?\" \"What time do we meet?\" — AI answers instantly in-app based on info the guide pre-registers. Guide focuses only on commentary."
+        description: "AI instantly answers common questions based on guide's pre-registered info. Guide focuses on commentary."
       - icon: "📍"
         title: "Real-time Location Tracking"
-        description: "See guide and your location on the in-app map in real-time. No worry if you fall behind taking photos. Auto-deactivates when tour ends for privacy."
+        description: "See guide and your location on the in-app map in real-time. Auto-deactivates when tour ends."
 
   app_vs_web:
     title: "What's Possible Because It's an App"
@@ -372,7 +391,18 @@ en:
       title: "Single Session Purchase (No Subscription Required)"
       description: "Buy sessions one at a time when needed (up to 5 people, in-app purchase)"
     free_highlight: "Tourists Always Free"
-    note: ""
+    testimonials:
+      - text: "I ran a 30-person tour without a megaphone and everyone said they heard perfectly. Noise complaints disappeared too."
+        author: "Kim OO, Kyoto Walking Tour Guide"
+      - text: "AI answers the restroom questions so I can focus on commentary. Tour quality has gone way up."
+        author: "Park OO, Jeju Tour Guide"
+    mini_faq:
+      - question: "Do tourists need to pay?"
+        answer: "No. Tourists always join for free. Just scan the QR code and you're in."
+      - question: "Is there auto-billing after the free trial?"
+        answer: "No. After your 5 free sessions, you choose when and if to subscribe."
+      - question: "Do tourists need to install the app?"
+        answer: "Yes. The app enables background playback and live location tracking. It's lightweight — under 50MB."
 
   comparison:
     title: "Hardware Receivers vs Recorded Audio Apps vs Guidecast"
@@ -507,10 +537,14 @@ es:
 
   hero:
     headline: "Guía Turística Profesional <br/>con Una Sola App, Sin Megáfono"
-    subheadline: "Transmisión de voz en tiempo real, acceso QR instantáneo, respuestas de viaje con IA y seguimiento de ubicación. Reemplaza los receptores compartidos con los smartphones de los turistas para tours más higiénicos e inteligentes."
+    subheadline: "El móvil del turista se convierte en tu sistema de audio. Con un QR tu voz llega clara a 30 personas — y la IA responde las preguntas repetitivas por ti."
     info_box: "Solo los guías se suscriben. Los turistas siempre gratis, acceso instantáneo con QR."
     cta_button: "Ver Demo (30s)"
     image_alt: "Guía mostrando código QR mientras turistas escanean para unirse"
+    pain_bullets:
+      - "📢 Los megáfonos infringen las normas de ruido — sin ellos, nadie te oye"
+      - "🦠 Los receptores compartidos repelen a los turistas sensibles a la higiene"
+      - "🙋 Las preguntas fuera de contexto interrumpen tu hilo narrativo"
 
   pain_points:
     title: "Por Qué los Tours Guiados Pierden Frente al Turismo Individual"
@@ -530,16 +564,16 @@ es:
     features:
       - icon: "🎙️"
         title: "Transmisión de Voz en Tiempo Real"
-        description: "Audio ultra baja latencia basado en WebRTC. Entrega clara a 30 personas sin megáfono. Reproducción en segundo plano incluso con pantalla apagada."
+        description: "Audio WebRTC ultra-baja latencia. Clara transmisión a 30 personas sin megáfono. Reproducción en segundo plano con pantalla apagada."
       - icon: "⚡"
         title: "Acceso Instantáneo con QR"
-        description: "El guía muestra el QR, los turistas escanean y se conectan al instante. Sin registro complejo, listo en 3 segundos."
+        description: "El guía muestra el QR, los turistas escanean y se conectan al instante. Listo en 3 segundos."
       - icon: "🤖"
         title: "IA Responde Preguntas Repetitivas"
-        description: "\"¿Dónde está el baño?\" \"¿A qué hora nos reunimos?\" — La IA responde al instante en la app basándose en información pre-registrada por el guía."
+        description: "«¿Dónde está el baño?» «¿A qué hora nos reunimos?» — La IA responde al instante basándose en la información del guía."
       - icon: "📍"
         title: "Seguimiento de Ubicación en Tiempo Real"
-        description: "Ve la ubicación del guía y la tuya en el mapa de la app en tiempo real. Sin preocupaciones si te quedas atrás tomando fotos. Se desactiva automáticamente al finalizar el tour."
+        description: "Ve la ubicación del guía en el mapa en tiempo real. Sin preocupaciones si te quedas atrás. Se desactiva automáticamente al finalizar."
 
   app_vs_web:
     title: "Lo Que Es Posible Porque Es una App"
@@ -620,6 +654,18 @@ es:
       description: "Compra sesiones una a una cuando las necesites (hasta 5 personas, compra en la app)"
     free_highlight: "Los turistas siempre gratis"
     note: ""
+    testimonials:
+      - text: "Hice un tour de 30 personas sin megáfono y todos dijeron que escucharon perfectamente."
+        author: "Kim OO, Guía de Tours a Pie en Kioto"
+      - text: "La IA responde las preguntas del baño así que puedo concentrarme en la narración."
+        author: "Park OO, Guía de Tours en Jeju"
+    mini_faq:
+      - question: "¿Los turistas pagan algo?"
+        answer: "No. Los turistas siempre participan gratis. Solo escanean el QR para unirse."
+      - question: "¿Se cobra automáticamente después de la prueba gratis?"
+        answer: "No. Después de las 5 sesiones gratis, eliges suscribirte cuando estés listo."
+      - question: "¿Los turistas necesitan instalar una app?"
+        answer: "Sí. La app permite reproducción en segundo plano y seguimiento de ubicación. Pesa menos de 50MB."
 
   comparison:
     title: "Receptores de Hardware vs Apps de Audio Grabado vs Guidecast"
@@ -754,10 +800,14 @@ de:
 
   hero:
     headline: "Professionelle Reiseführung <br/>mit einer App, ohne Megafon"
-    subheadline: "Echtzeit-Sprachübertragung, sofortiger QR-Zugang, KI-Reiseantworten und Standortverfolgung. Ersetzt gemeinsam genutzte Empfänger durch die Smartphones der Touristen für hygienischere und intelligentere Touren."
+    subheadline: "Das Smartphone des Touristen wird zum Empfänger. Ein QR-Code genügt — Ihre Stimme kommt bei 30 Personen klar an, und die KI beantwortet Wiederholungsfragen für Sie."
     info_box: "Nur Reiseleiter abonnieren. Touristen sind immer kostenlos, sofortiger QR-Zugang."
     cta_button: "Demo ansehen (30s)"
     image_alt: "Reiseleiter zeigt QR-Code, während Touristen ihn scannen, um beizutreten"
+    pain_bullets:
+      - "📢 Megafone verstoßen gegen Lärmschutz — ohne sie hört man nichts"
+      - "🦠 Gemeinsame Empfänger schrecken hygienebewusste Touristen ab"
+      - "🙋 Kontextlose Fragen unterbrechen Ihren Redefluss"
 
   pain_points:
     title: "Warum Geführte Touren dem Individualtourismus Unterliegen"
@@ -777,16 +827,16 @@ de:
     features:
       - icon: "🎙️"
         title: "Echtzeit-Sprachübertragung"
-        description: "Ultra-niedrige Latenz Audio basierend auf WebRTC. Klare Übertragung an 30 Personen ohne Megafon. Hintergrundwiedergabe auch bei ausgeschaltetem Bildschirm."
+        description: "Ultra-niedrige WebRTC-Audio-Latenz. Klare Übertragung an 30 Personen ohne Megafon. Hintergrundwiedergabe bei ausgeschaltetem Bildschirm."
       - icon: "⚡"
         title: "Sofortiger QR-Zugang"
-        description: "Reiseleiter zeigt QR-Code, Touristen scannen und verbinden sich sofort. Keine komplizierte Registrierung, bereit in 3 Sekunden."
+        description: "Reiseleiter zeigt QR-Code, Touristen scannen und verbinden sich sofort. Bereit in 3 Sekunden."
       - icon: "🤖"
         title: "KI beantwortet Wiederholungsfragen"
-        description: "\"Wo ist die Toilette?\" \"Wann treffen wir uns?\" — Die KI antwortet sofort in der App basierend auf vorab eingetragenen Informationen des Reiseleiters."
+        description: "«Wo ist die Toilette?» «Wann treffen wir uns?» — Die KI antwortet sofort in der App basierend auf den Informationen des Reiseleiters."
       - icon: "📍"
         title: "Echtzeit-Standortverfolgung"
-        description: "Sehen Sie den Standort des Reiseleiters und Ihren eigenen auf der App-Karte in Echtzeit. Keine Sorgen, wenn Sie beim Fotografieren zurückbleiben. Deaktiviert sich automatisch am Ende der Tour."
+        description: "Sehen Sie den Standort des Reiseleiters auf der Karte in Echtzeit. Keine Sorgen beim Fotografieren. Deaktiviert sich automatisch am Ende."
 
   app_vs_web:
     title: "Was möglich ist, weil es eine App ist"
@@ -867,6 +917,18 @@ de:
       description: "Kaufen Sie Sitzungen einzeln bei Bedarf (bis zu 5 Personen, In-App-Kauf)"
     free_highlight: "Touristen sind immer kostenlos"
     note: ""
+    testimonials:
+      - text: "Ich führte eine Tour mit 30 Personen ohne Megafon durch und alle sagten, sie hätten alles perfekt gehört."
+        author: "Kim OO, Stadtführer in Kyoto"
+      - text: "Die KI beantwortet die Toilettenfragen, sodass ich mich auf meine Erklärungen konzentrieren kann."
+        author: "Park OO, Reiseleiter auf Jeju"
+    mini_faq:
+      - question: "Zahlen Touristen irgendetwas?"
+        answer: "Nein. Touristen nehmen immer kostenlos teil. Sie scannen einfach den QR-Code."
+      - question: "Werde ich nach der Testphase automatisch abgerechnet?"
+        answer: "Nein. Nach 5 kostenlosen Sitzungen wählen Sie, wann Sie sich für einen kostenpflichtigen Plan entscheiden."
+      - question: "Müssen Touristen eine App installieren?"
+        answer: "Ja. Die App ermöglicht Hintergrundwiedergabe und Echtzeit-Standortverfolgung. Sie ist kleiner als 50MB."
 
   comparison:
     title: "Hardware-Empfänger vs. Voraufgezeichnete Audio-Apps vs. Guidecast"
@@ -1001,10 +1063,14 @@ ja:
 
   hero:
     headline: "メガホンなし、<br/>アプリひとつで完成するプロツアーガイド"
-    subheadline: "リアルタイム音声放送、QR即時接続、AI旅行回答、位置確認まで。共用レシーバーの代わりに観光客のスマートフォンで、より衛生的でスマートなツアーを。"
+    subheadline: "観光客のスマホがレシーバーになります。QRひとつで繋がれば、声が30人にクリアに届き、繰り返しの質問はAIが代わりに答えてくれます。"
     info_box: "ガイドだけが購読。観光客は常に無料、QRスキャンですぐ参加。"
     cta_button: "デモ動画を見る (30秒)"
     image_alt: "ガイドがQRコードを見せ、観光客がスキャンして参加する場面"
+    pain_bullets:
+      - "📢 メガホンは騒音規制に引っかかり、なければ聞こえません"
+      - "🦠 共用レシーバー、衛生に敏感な観光客は嫌がります"
+      - "🙋 脈絡のない急な質問が解説の流れを妨げます"
 
   pain_points:
     title: "ガイドツアーが個人観光に負ける理由"
@@ -1024,16 +1090,16 @@ ja:
     features:
       - icon: "🎙️"
         title: "リアルタイム音声放送"
-        description: "WebRTCベースの超低遅延オーディオ。30人にもメガホンなしでクリアに伝達。画面オフでもバックグラウンド再生で途切れなし。"
+        description: "30人にメガホンなしでクリアに伝達。画面オフでも途切れなく再生。"
       - icon: "⚡"
         title: "QRスキャンで即時参加"
-        description: "ガイドがQRを見せれば観光客がスキャンしてすぐ接続。複雑な会員登録なしで3秒完了。"
+        description: "ガイドがQRを見せれば3秒で接続。会員登録不要。"
       - icon: "🤖"
-        title: "AIが繰り返しの質問に代わりに回答"
-        description: "「トイレはどこですか？」「集合時間は？」— ガイドが事前登録した情報に基づきAIがアプリ内で即座に回答。ガイドは解説にだけ集中。"
+        title: "AIが繰り返しの質問に回答"
+        description: "ガイド登録情報を基にAIが即座に回答。ガイドは解説に集中できます。"
       - icon: "📍"
         title: "リアルタイム位置確認"
-        description: "アプリ内マップでガイドと自分の位置をリアルタイムで確認。写真を撮っていて一行とはぐれても安心。ツアー終了時に自動無効化でプライバシー保護。"
+        description: "マップでガイドと自分の位置をリアルタイム確認。ツアー終了時に自動無効化。"
 
   app_vs_web:
     title: "アプリだからこそ可能なこと"
@@ -1113,7 +1179,18 @@ ja:
       title: "セッション単品購入（サブスクなしでもOK）"
       description: "必要な時に1回単位でセッション購入可能（最大5名、アプリ内決済）"
     free_highlight: "観光客はいつでも無料"
-    note: ""
+    testimonials:
+      - text: "30人の団体ツアーをメガホンなしで進行しましたが、全員よく聞こえたと言っていました。騒音クレームもなくなりました。"
+        author: "金OO、京都徒歩ツアーガイド"
+      - text: "トイレの場所をAIが代わりに答えてくれるので、解説に集中できます。ツアーの質が格段に上がりました。"
+        author: "朴OO、済州ツアーガイド"
+    mini_faq:
+      - question: "観光客も費用を払いますか？"
+        answer: "いいえ。観光客は常に無料です。QRスキャンですぐ参加できます。"
+      - question: "無料体験後、自動課金されますか？"
+        answer: "いいえ。5セッション無料体験後、ご希望の時に有料プランをお選びください。"
+      - question: "アプリのインストールは必須ですか？"
+        answer: "はい。画面オフでも再生、リアルタイム位置確認のためにアプリが必要です。50MB以下で軽量です。"
 
   comparison:
     title: "ハードウェアレシーバー vs 録音型アプリ vs Guidecast"
@@ -1248,10 +1325,14 @@ zh-TW:
 
   hero:
     headline: "不用擴音器，<br/>一個App完成專業導覽"
-    subheadline: "即時語音廣播、QR即時接入、AI旅遊回答、位置確認。用遊客的智慧型手機取代共用接收器，更衛生、更智慧的導覽。"
+    subheadline: "遊客的手機就是您的接收器。掃一個QR碼，您的聲音清晰傳達給30人——AI還會代替您回答重複問題。"
     info_box: "只有導遊需要訂閱。遊客永遠免費，掃QR碼即可加入。"
     cta_button: "觀看示範影片 (30秒)"
     image_alt: "導遊展示QR碼，遊客掃描加入的畫面"
+    pain_bullets:
+      - "📢 擴音器違反噪音法規，不用又根本聽不到"
+      - "🦠 共用接收器讓注重衛生的遊客卻步"
+      - "🙋 突如其來的問題打斷解說節奏，讓人分心"
 
   pain_points:
     title: "導覽團為何輸給自由行"
@@ -1271,16 +1352,16 @@ zh-TW:
     features:
       - icon: "🎙️"
         title: "即時語音廣播"
-        description: "基於WebRTC的超低延遲音訊。不用擴音器也能清晰傳達給30人。關閉螢幕也能背景播放不中斷。"
+        description: "WebRTC超低延遲音訊。不用擴音器清晰傳達給30人。關閉螢幕也能背景播放不中斷。"
       - icon: "⚡"
         title: "掃QR碼即時加入"
-        description: "導遊出示QR碼，遊客掃描即可連接。不需複雜註冊，3秒完成。"
+        description: "導遊出示QR碼，遊客掃描即可連接。無需複雜註冊，3秒完成。"
       - icon: "🤖"
         title: "AI代替回答重複問題"
-        description: "「廁所在哪？」「集合時間是？」— AI根據導遊預先登錄的資訊在App內即時回答。導遊只需專注於講解。"
+        description: "「廁所在哪？」「集合時間是？」— AI根據導遊預先登錄的資訊即時回答。"
       - icon: "📍"
         title: "即時位置確認"
-        description: "在App內地圖即時查看導遊和自己的位置。拍照落隊也不用擔心。導覽結束時自動關閉以保護隱私。"
+        description: "在App地圖即時查看導遊位置。拍照落隊不用擔心。導覽結束自動關閉。"
 
   app_vs_web:
     title: "因為是App才能做到的事"
@@ -1361,6 +1442,18 @@ zh-TW:
       description: "需要時按次購買場次（最多5人，App內購買）"
     free_highlight: "遊客永遠免費"
     note: ""
+    testimonials:
+      - text: "帶30人導覽不用擴音器，大家都說聽得很清楚。噪音投訴也消失了。"
+        author: "金OO，京都步行導覽導遊"
+      - text: "AI代替回答廁所問題，我可以專心講解，導覽品質大幅提升。"
+        author: "朴OO，濟州導覽導遊"
+    mini_faq:
+      - question: "遊客需要付費嗎？"
+        answer: "不需要。遊客永遠免費，掃QR碼即可加入。"
+      - question: "免費試用後會自動扣款嗎？"
+        answer: "不會。5場次免費體驗後，您可以在準備好時選擇付費訂閱。"
+      - question: "一定要安裝App嗎？"
+        answer: "是的。App支援背景播放和即時位置確認。容量不到50MB非常輕巧。"
 
   comparison:
     title: "硬體接收器 vs 錄音型App vs Guidecast"
@@ -1495,10 +1588,14 @@ zh-CN:
 
   hero:
     headline: "不用扩音器，<br/>一个App完成专业导览"
-    subheadline: "实时语音广播、QR即时接入、AI旅游回答、位置确认。用游客的智能手机取代共用接收器，更卫生、更智能的导览。"
+    subheadline: "游客的手机就是您的接收器。扫一个QR码，您的声音清晰传达给30人——AI还会代替您回答重复问题。"
     info_box: "只有导游需要订阅。游客永远免费，扫QR码即可加入。"
     cta_button: "观看示范视频 (30秒)"
     image_alt: "导游展示QR码，游客扫描加入的画面"
+    pain_bullets:
+      - "📢 扩音器违反噪音法规，不用又根本听不到"
+      - "🦠 共用接收器让注重卫生的游客却步"
+      - "🙋 突如其来的问题打断讲解节奏，让人分心"
 
   pain_points:
     title: "导览团为何输给自由行"
@@ -1518,16 +1615,16 @@ zh-CN:
     features:
       - icon: "🎙️"
         title: "实时语音广播"
-        description: "基于WebRTC的超低延迟音频。不用扩音器也能清晰传达给30人。关闭屏幕也能后台播放不中断。"
+        description: "WebRTC超低延迟音频。不用扩音器清晰传达给30人。关闭屏幕也能后台播放不中断。"
       - icon: "⚡"
         title: "扫QR码即时加入"
-        description: "导游出示QR码，游客扫描即可连接。不需复杂注册，3秒完成。"
+        description: "导游出示QR码，游客扫描即可连接。无需复杂注册，3秒完成。"
       - icon: "🤖"
         title: "AI代替回答重复问题"
-        description: "「厕所在哪？」「集合时间是？」— AI根据导游预先登录的信息在App内即时回答。导游只需专注于讲解。"
+        description: "「厕所在哪？」「集合时间是？」— AI根据导游预先登录的信息即时回答。"
       - icon: "📍"
         title: "实时位置确认"
-        description: "在App内地图实时查看导游和自己的位置。拍照落队也不用担心。导览结束时自动关闭以保护隐私。"
+        description: "在App地图实时查看导游位置。拍照落队不用担心。导览结束自动关闭。"
 
   app_vs_web:
     title: "因为是App才能做到的事"
@@ -1608,6 +1705,18 @@ zh-CN:
       description: "需要时按次购买场次（最多5人，App内购买）"
     free_highlight: "游客永远免费"
     note: ""
+    testimonials:
+      - text: "带30人导览不用扩音器，大家都说听得很清楚。噪音投诉也消失了。"
+        author: "金OO，京都步行导览导游"
+      - text: "AI代替回答厕所问题，我可以专心讲解，导览品质大幅提升。"
+        author: "朴OO，济州导览导游"
+    mini_faq:
+      - question: "游客需要付费吗？"
+        answer: "不需要。游客永远免费，扫QR码即可加入。"
+      - question: "免费试用后会自动扣款吗？"
+        answer: "不会。5场次免费体验后，您可以在准备好时选择付费订阅。"
+      - question: "一定要安装App吗？"
+        answer: "是的。App支持后台播放和实时位置确认。容量不到50MB非常轻巧。"
 
   comparison:
     title: "硬件接收器 vs 录音型App vs Guidecast"
