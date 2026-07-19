@@ -1,0 +1,4258 @@
+{
+  "version": "2.14",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Travel Landing Components",
+      "clip": true,
+      "width": 1600,
+      "height": 2600,
+      "fill": "#F8FAFC",
+      "layout": "none",
+      "children": [
+        {
+          "type": "group",
+          "id": "comp-header",
+          "x": 80,
+          "y": 40,
+          "name": "Header / Navigation",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 28,
+              "id": "hdr-bg",
+              "x": 0,
+              "y": 0,
+              "fill": "#FFFFFF",
+              "width": 1440,
+              "height": 110,
+              "stroke": "#E2E8F0"
+            },
+            {
+              "type": "text",
+              "id": "hdr-brand",
+              "x": 24,
+              "y": 38,
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 20,
+              "id": "hdr-menu1",
+              "x": 540,
+              "y": 34,
+              "fill": "#EFF6FF",
+              "width": 96,
+              "height": 42
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 20,
+              "id": "hdr-menu2",
+              "x": 652,
+              "y": 34,
+              "fill": "#F8FAFC",
+              "width": 96,
+              "height": 42
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 20,
+              "id": "hdr-menu3",
+              "x": 764,
+              "y": 34,
+              "fill": "#F8FAFC",
+              "width": 96,
+              "height": 42
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 999,
+              "id": "hdr-pill",
+              "x": 1244,
+              "y": 32,
+              "fill": "#2563EB",
+              "width": 112,
+              "height": 46
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 21,
+              "id": "hdr-icon1",
+              "x": 1120,
+              "y": 34,
+              "fill": "#F1F5F9",
+              "width": 42,
+              "height": 42
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 21,
+              "id": "hdr-icon2",
+              "x": 1178,
+              "y": 34,
+              "fill": "#F1F5F9",
+              "width": 42,
+              "height": 42
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "comp-hero",
+          "x": 80,
+          "y": 190,
+          "name": "Hero Section",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 36,
+              "id": "hero-card",
+              "x": 0,
+              "y": 0,
+              "fill": "#FFFFFF",
+              "width": 1440,
+              "height": 420,
+              "stroke": "#E2E8F0"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 999,
+              "id": "hero-accent",
+              "x": 64,
+              "y": 54,
+              "fill": "#60A5FA",
+              "width": 116,
+              "height": 10
+            },
+            {
+              "type": "text",
+              "id": "hero-title",
+              "x": 64,
+              "y": 86,
+              "fontFamily": "Inter",
+              "fontSize": 42,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "hero-sub",
+              "x": 64,
+              "y": 208,
+              "fill": "#475569",
+              "content": "스마트폰 하나로 투어를 설계하고, 관광객과 실시간으로 연결하세요.",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "hero-search",
+              "x": 64,
+              "y": 292,
+              "fill": "#F8FAFC",
+              "width": 620,
+              "height": 72,
+              "stroke": "#CBD5E1"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "hero-btn",
+              "x": 700,
+              "y": 292,
+              "fill": "#2563EB",
+              "width": 148,
+              "height": 72
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 32,
+              "id": "hero-image",
+              "x": 940,
+              "y": 48,
+              "fill": "#DBEAFE",
+              "width": 420,
+              "height": 324
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "comp-destinations",
+          "x": 80,
+          "y": 660,
+          "name": "Destination Cards",
+          "children": [
+            {
+              "type": "text",
+              "id": "dest-title",
+              "x": 0,
+              "y": 0,
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "dest-1",
+              "x": 0,
+              "y": 56,
+              "fill": "#E0F2FE",
+              "width": 208,
+              "height": 160
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "dest-2",
+              "x": 232,
+              "y": 56,
+              "fill": "#DBEAFE",
+              "width": 208,
+              "height": 160
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "dest-3",
+              "x": 464,
+              "y": 56,
+              "fill": "#BFDBFE",
+              "width": 208,
+              "height": 160
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "dest-4",
+              "x": 696,
+              "y": 56,
+              "fill": "#DBEAFE",
+              "width": 208,
+              "height": 160
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "dest-5",
+              "x": 928,
+              "y": 56,
+              "fill": "#E0F2FE",
+              "width": 208,
+              "height": 160
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "dest-6",
+              "x": 1160,
+              "y": 56,
+              "fill": "#DBEAFE",
+              "width": 208,
+              "height": 160
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "comp-experiences",
+          "x": 80,
+          "y": 940,
+          "name": "Experience Cards",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 32,
+              "id": "exp-bg",
+              "x": 0,
+              "y": 0,
+              "fill": "#FFFFFF",
+              "width": 1440,
+              "height": 340,
+              "stroke": "#E2E8F0"
+            },
+            {
+              "type": "text",
+              "id": "exp-title",
+              "x": 32,
+              "y": 24,
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "exp-1",
+              "x": 32,
+              "y": 78,
+              "fill": "#F8FAFC",
+              "width": 312,
+              "height": 220,
+              "stroke": "#E2E8F0"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "exp-2",
+              "x": 372,
+              "y": 78,
+              "fill": "#F8FAFC",
+              "width": 312,
+              "height": 220,
+              "stroke": "#E2E8F0"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "exp-3",
+              "x": 712,
+              "y": 78,
+              "fill": "#F8FAFC",
+              "width": 312,
+              "height": 220,
+              "stroke": "#E2E8F0"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "exp-4",
+              "x": 1052,
+              "y": 78,
+              "fill": "#F8FAFC",
+              "width": 312,
+              "height": 220,
+              "stroke": "#E2E8F0"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "comp-features",
+          "x": 80,
+          "y": 1320,
+          "name": "Value / Features",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 32,
+              "id": "feat-bg",
+              "x": 0,
+              "y": 0,
+              "fill": "#FFFFFF",
+              "width": 1440,
+              "height": 280,
+              "stroke": "#E2E8F0"
+            },
+            {
+              "type": "text",
+              "id": "feat-title",
+              "x": 32,
+              "y": 28,
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "feat-1",
+              "x": 32,
+              "y": 84,
+              "fill": "#EFF6FF",
+              "width": 300,
+              "height": 150
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "feat-2",
+              "x": 360,
+              "y": 84,
+              "fill": "#EFF6FF",
+              "width": 300,
+              "height": 150
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "feat-3",
+              "x": 688,
+              "y": 84,
+              "fill": "#EFF6FF",
+              "width": 300,
+              "height": 150
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "feat-4",
+              "x": 1016,
+              "y": 84,
+              "fill": "#EFF6FF",
+              "width": 300,
+              "height": 150
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "comp-social",
+          "x": 80,
+          "y": 1640,
+          "name": "Social Proof / Trust",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 28,
+              "id": "proof-bg",
+              "x": 0,
+              "y": 0,
+              "fill": "#EFF6FF",
+              "width": 1440,
+              "height": 180
+            },
+            {
+              "type": "text",
+              "id": "proof-text",
+              "x": 34,
+              "y": 42,
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 999,
+              "id": "proof-pill1",
+              "x": 640,
+              "y": 38,
+              "fill": "#FFFFFF",
+              "width": 160,
+              "height": 48
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 999,
+              "id": "proof-pill2",
+              "x": 824,
+              "y": 38,
+              "fill": "#FFFFFF",
+              "width": 160,
+              "height": 48
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 999,
+              "id": "proof-pill3",
+              "x": 1008,
+              "y": 38,
+              "fill": "#FFFFFF",
+              "width": 160,
+              "height": 48
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "comp-faq",
+          "x": 80,
+          "y": 1860,
+          "name": "FAQ Accordion",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 32,
+              "id": "faq-bg",
+              "x": 0,
+              "y": 0,
+              "fill": "#FFFFFF",
+              "width": 1440,
+              "height": 260,
+              "stroke": "#E2E8F0"
+            },
+            {
+              "type": "text",
+              "id": "faq-title",
+              "x": 32,
+              "y": 24,
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 16,
+              "id": "faq-1",
+              "x": 32,
+              "y": 80,
+              "fill": "#F8FAFC",
+              "width": 1376,
+              "height": 48
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 16,
+              "id": "faq-2",
+              "x": 32,
+              "y": 144,
+              "fill": "#F8FAFC",
+              "width": 1376,
+              "height": 48
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 16,
+              "id": "faq-3",
+              "x": 32,
+              "y": 208,
+              "fill": "#F8FAFC",
+              "width": 1376,
+              "height": 48
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "comp-cta",
+          "x": 80,
+          "y": 2160,
+          "name": "Final CTA",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 36,
+              "id": "cta-bg",
+              "x": 0,
+              "y": 0,
+              "fill": "#2563EB",
+              "width": 1440,
+              "height": 260
+            },
+            {
+              "type": "text",
+              "id": "cta-title",
+              "x": 88,
+              "y": 74,
+              "fontFamily": "Inter",
+              "fontSize": 34,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "cta-sub",
+              "x": 88,
+              "y": 138,
+              "fill": "#DBEAFE",
+              "content": "QR 하나로 시작하고, 관광객과 실시간으로 연결하세요.",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 999,
+              "id": "cta-btn",
+              "x": 1108,
+              "y": 96,
+              "fill": "#FFFFFF",
+              "width": 220,
+              "height": 64
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "VAJRr",
+      "x": 0,
+      "y": 3040,
+      "name": "Guidecast Landing Page",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "swZas",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "$bg",
+          "padding": [
+            24,
+            64
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Nbyd8",
+              "name": "Logo",
+              "fill": "$text-primary",
+              "content": "Guidecast",
+              "fontFamily": "$font-body",
+              "fontSize": 23,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "kYOVV",
+              "name": "Nav",
+              "gap": 40,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sbSIB",
+                  "name": "왜 지금",
+                  "fill": "$text-secondary",
+                  "content": "왜 지금",
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "t27lC",
+                  "name": "기능",
+                  "fill": "$text-secondary",
+                  "content": "기능",
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "gCqf0",
+                  "name": "요금제",
+                  "fill": "$text-secondary",
+                  "content": "요금제",
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "Rmp8r",
+                  "name": "FAQ",
+                  "fill": "$text-secondary",
+                  "content": "FAQ",
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "W2NXKX",
+              "name": "Header CTA",
+              "fill": "$accent",
+              "cornerRadius": 999,
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hQJ4E",
+                  "name": "Label",
+                  "fill": "$text-on-dark",
+                  "content": "사전 설문 남기기",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "x7mGNj",
+          "name": "Hero Outer",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            24,
+            64,
+            80,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "r4T0J",
+              "name": "Hero Card",
+              "width": "fill_container",
+              "fill": "$bg-alt",
+              "cornerRadius": "$radius-xl",
+              "stroke": "$border-subtle",
+              "gap": 56,
+              "padding": 56,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "c5v9u",
+                  "name": "Hero Left",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Z6dxXU",
+                      "name": "Launch Badge",
+                      "fill": "$surface-blue-50",
+                      "cornerRadius": 999,
+                      "gap": 8,
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XtE2C",
+                          "name": "Icon",
+                          "fill": "$accent",
+                          "content": "🚀",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hgLAn",
+                          "name": "Label",
+                          "fill": "$accent",
+                          "content": "출시 예정 · 사전 설문 참여 시 크레딧 증정",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 999,
+                      "id": "Tw2OG",
+                      "name": "Accent Bar",
+                      "fill": "$accent",
+                      "width": 64,
+                      "height": 6
+                    },
+                    {
+                      "type": "text",
+                      "id": "tOFCT",
+                      "name": "Headline",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "메가폰 없이, 앱 하나로 완성하는\n프로 투어 가이드",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$font-body",
+                      "fontSize": 48,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "s9OdDX",
+                      "name": "Subheadline",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "실시간 음성 방송 · QR 즉시 접속 · 여행노트 동시 공유.\n공용 리시버 대신 관광객의 스마트폰으로, 더 위생적이고 더 선명한 투어.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 21,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JIbn3",
+                      "name": "Info Box",
+                      "width": "fill_container",
+                      "fill": "$surface-blue-50",
+                      "cornerRadius": 16,
+                      "gap": 12,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "q8Ppry",
+                          "name": "Icon",
+                          "fill": "$text-primary",
+                          "content": "💡",
+                          "fontFamily": "$font-body",
+                          "fontSize": 20,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pAc56",
+                          "name": "Info Text",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "관광객은 항상 무료. QR 스캔으로 3초 만에 참여. 가이드는 필요할 때만 세션 단위로 결제합니다.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$font-body",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bEy2R",
+                      "name": "CTA Row",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "uKWDE",
+                          "name": "Primary CTA",
+                          "fill": "$accent",
+                          "cornerRadius": 999,
+                          "padding": [
+                            18,
+                            32
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Y1tLKD",
+                              "name": "Label",
+                              "fill": "$text-on-dark",
+                              "content": "사전 설문 남기고 크레딧 받기",
+                              "fontFamily": "$font-body",
+                              "fontSize": 17,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "WnnAC",
+                          "name": "Secondary CTA",
+                          "cornerRadius": 999,
+                          "stroke": "$border-subtle",
+                          "strokeWidth": 1.5,
+                          "gap": 14,
+                          "padding": [
+                            14,
+                            32,
+                            14,
+                            22
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "F68ZZ8",
+                              "name": "Play Badge",
+                              "width": 34,
+                              "height": 34,
+                              "fill": "$accent",
+                              "cornerRadius": 999,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "path",
+                                  "id": "JgSgz",
+                                  "name": "Triangle",
+                                  "geometry": "M0 0l0 15 13-7.5z",
+                                  "viewBox": [
+                                    0,
+                                    0,
+                                    13,
+                                    15
+                                  ],
+                                  "fill": "$text-on-dark",
+                                  "width": 13,
+                                  "height": 15
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "lcb9b",
+                              "name": "Label",
+                              "fill": "$text-primary",
+                              "content": "데모 영상 보기 (30초)",
+                              "fontFamily": "$font-body",
+                              "fontSize": 17,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wKY2o",
+                  "name": "Hero Image",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "c_devj0nes",
+                    "link": "https://unsplash.com/@c_devj0nes",
+                    "author": "Charlie Devinett-Jones"
+                  },
+                  "width": 460,
+                  "height": 420,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "assets/images/image0.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": "$radius-lg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "y6KHm",
+          "name": "Why Now Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            0,
+            64,
+            80,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "O3eIyk",
+              "name": "Title Group",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "h11tjU",
+                  "name": "Eyebrow",
+                  "fill": "$accent",
+                  "content": "가이드의 현실",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "nU6ak",
+                  "name": "Title",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "가이드 투어가 개인 관광에 밀리는 이유 — 3가지",
+                  "fontFamily": "$font-body",
+                  "fontSize": 36,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "D6WZ5",
+              "name": "Cards Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "GFDuQ",
+                  "name": "메가폰은 못 쓰고, 안 쓰면 안 들린다",
+                  "width": "fill_container",
+                  "fill": "$bg-alt",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "A2sKIz",
+                      "name": "Icon",
+                      "fill": "$text-primary",
+                      "content": "📢",
+                      "fontFamily": "$font-body",
+                      "fontSize": 32,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "C3Tysn",
+                      "name": "Card Title",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "메가폰은 못 쓰고, 안 쓰면 안 들려요",
+                      "lineHeight": 1.3,
+                      "fontFamily": "$font-body",
+                      "fontSize": 21,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gdSTf",
+                      "name": "Card Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "10명 이상 단체는 메가폰 없이 설명이 불가능한데, 소음 규제(Quiet Zone)는 점점 강해집니다. ",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 17.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "LVKpn",
+                  "name": "공용 리시버, 관광객은 찝찝하다",
+                  "width": "fill_container",
+                  "fill": "$bg-alt",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "M8kTfG",
+                      "name": "Icon",
+                      "fill": "$text-primary",
+                      "content": "🦠",
+                      "fontFamily": "$font-body",
+                      "fontSize": 32,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "au6q2",
+                      "name": "Card Title",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "공용 리시버, 관광객은 찝찝해요",
+                      "lineHeight": 1.3,
+                      "fontFamily": "$font-body",
+                      "fontSize": 21,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uXPQ4",
+                      "name": "Card Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "남이 귀에 꽂았던 이어폰, 목에 걸었던 끈. 아무리 소독해도 위생에 민감한 관광객은 \"차라리 혼자 다니겠다\"고 합니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 17.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "jAchZ",
+                  "name": "자료를 나눠줘도 참여자는 못 따라간다",
+                  "width": "fill_container",
+                  "fill": "$bg-alt",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "X5vkwg",
+                      "name": "Icon",
+                      "fill": "$text-primary",
+                      "content": "🙋",
+                      "fontFamily": "$font-body",
+                      "fontSize": 32,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tUMbF",
+                      "name": "Card Title",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "자료를 나눠줘도 따라가기 힘들어요",
+                      "lineHeight": 1.3,
+                      "fontFamily": "$font-body",
+                      "fontSize": 21,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WsnrL",
+                      "name": "Card Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "가이드가 안내 자료를 미리 준비해도 참여자가 놓치거나 딴 데를 보면 소용이 없습니다. 모두가 같은 화면을 보지 못하면 투어 퀄리티가 떨어집니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 17.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Tf0MY",
+          "name": "Features Section",
+          "width": "fill_container",
+          "fill": "$bg-dark",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "N7ciq",
+              "name": "Title Group",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "M1xOYq",
+                  "name": "Eyebrow",
+                  "fill": "$accent-lime",
+                  "content": "이렇게 해결하세요 ",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "YxP1X",
+                  "name": "Title",
+                  "fill": "$text-on-dark",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "가이드캐스트로 해결됩니다",
+                  "fontFamily": "$font-body",
+                  "fontSize": 36,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vq6Ar",
+              "name": "Features List",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hCexf",
+                  "name": "실시간 음성 방송",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "m2ZQi",
+                      "name": "Icon Badge",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "#FFFFFF1A",
+                      "cornerRadius": 16,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "a28rVb",
+                          "name": "Icon",
+                          "fill": "$text-on-dark",
+                          "content": "🎙️",
+                          "fontFamily": "$font-body",
+                          "fontSize": 26,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CDoNN",
+                      "name": "Text Col",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LR8Vs",
+                          "name": "Feat Title",
+                          "fill": "$text-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "실시간 음성 방송",
+                          "fontFamily": "$font-body",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lbbaA",
+                          "name": "Feat Desc",
+                          "fill": "$text-on-dark-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "WebRTC 기반 초저지연(P95 0.5초 미만). 30명에게도 메가폰 없이 선명하게, 화면을 꺼도 백그라운드 재생.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "j48xi",
+                  "name": "QR 스캔 즉시 참여",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "E5x1p",
+                      "name": "Icon Badge",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "#FFFFFF1A",
+                      "cornerRadius": 16,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "o4uFd",
+                          "name": "Icon",
+                          "fill": "$text-on-dark",
+                          "content": "⚡",
+                          "fontFamily": "$font-body",
+                          "fontSize": 26,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "l588uG",
+                      "name": "Text Col",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Ie5ae",
+                          "name": "Feat Title",
+                          "fill": "$text-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "QR 스캔 즉시 참여",
+                          "fontFamily": "$font-body",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Nny26",
+                          "name": "Feat Desc",
+                          "fill": "$text-on-dark-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "가이드가 QR을 보여주면 관광객이 스캔해 바로 접속. 복잡한 회원가입 없이 3초 완료. 본인 이어폰·스마트폰만 있으면 되는 BYOD 방식이라 위생 걱정도 없습니다.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Yz5n9",
+                  "name": "여행노트 동시 공유",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nlFeP",
+                      "name": "Icon Badge",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "#FFFFFF1A",
+                      "cornerRadius": 16,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l1SYh",
+                          "name": "Icon",
+                          "fill": "$text-on-dark",
+                          "content": "📑",
+                          "fontFamily": "$font-body",
+                          "fontSize": 26,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "strg7",
+                      "name": "Text Col",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fYcuz",
+                          "name": "Feat Title",
+                          "fill": "$text-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "여행노트 동시 공유",
+                          "fontFamily": "$font-body",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AHuZ3",
+                          "name": "Feat Desc",
+                          "fill": "$text-on-dark-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "가이드가 자료를 넘기면 모든 참여자 화면에 같은 페이지가 1초 내에 동시에 표시. 앞뒤로 넘겨봐도 가이드가 이동하면 바로 따라갑니다.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "s8X0N",
+              "name": "Asides Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wvJKp",
+                  "name": "Aside",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF14",
+                  "cornerRadius": 16,
+                  "gap": 12,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wQDIv",
+                      "name": "Icon",
+                      "fill": "$text-on-dark",
+                      "content": "📱",
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "S1i1pr",
+                      "name": "Text",
+                      "fill": "$text-on-dark-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "앱 설치는 장벽이 아니라 안정적인 투어 품질을 위한 필수 조건입니다. 용량 50MB 이하, 가이드 안내로 투어 전 자연스럽게 설치됩니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fGEiI",
+          "name": "Pricing Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            80,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "L1NFw",
+              "name": "Title Group",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "F14bH",
+                  "name": "Eyebrow",
+                  "fill": "$accent",
+                  "content": "요금제",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "IbxoN",
+                  "name": "Title",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "요금 — 구독 없이 세션 단위로",
+                  "fontFamily": "$font-body",
+                  "fontSize": 36,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "blCqx",
+              "name": "Billing Aside",
+              "width": "fill_container",
+              "fill": "$surface-blue-50",
+              "cornerRadius": 16,
+              "gap": 12,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "y8veP",
+                  "name": "Icon",
+                  "fill": "$text-primary",
+                  "content": "💰",
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "OSc2e",
+                  "name": "Text",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "과금 단위: 세션(Session) — 1 세션 = 최대 8시간. 방송 종료 시 즉시 종료. 필요할 때만 앱 내에서 구매(IAP)하므로 약정·월 구독이 없습니다.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 19,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dO0Ve",
+              "name": "Launch Note",
+              "width": "fill_container",
+              "fill": "$surface-blue-50",
+              "cornerRadius": 16,
+              "gap": 12,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "s7Jbl5",
+                  "name": "Icon",
+                  "fill": "$accent",
+                  "content": "🚀",
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "xenSX",
+                  "name": "Text",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "아직 정식 출시 전입니다. 아래 요금은 출시 예정 가격이며, 지금 사전 설문에 참여하시면 출시 시 무료 세션 크레딧을 가장 먼저 드립니다.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "g0cYOs",
+              "name": "Tiers Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mfpwC",
+                  "name": "세션 S (~5명)",
+                  "width": "fill_container",
+                  "fill": "$bg",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bJ2LE",
+                      "name": "Plan Name",
+                      "fill": "$text-primary",
+                      "content": "세션 S (~5명)",
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "z9D69",
+                      "name": "Price",
+                      "fill": "$accent",
+                      "content": "$9.99",
+                      "fontFamily": "$font-body",
+                      "fontSize": 40,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "G6AHg",
+                      "name": "Use Case",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "개인 가이드 / 소규모 투어",
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "IQmWX",
+                      "name": "Feature",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "실시간 음성 + QR + 자료 공유",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EGyZQ",
+                  "name": "세션 M (~15명)",
+                  "width": "fill_container",
+                  "fill": "$surface-blue-50",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$accent",
+                  "strokeWidth": 2,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "XcNTg",
+                      "name": "Badge",
+                      "fill": "$accent",
+                      "cornerRadius": 999,
+                      "padding": [
+                        6,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "J50FJ0",
+                          "name": "Badge Label",
+                          "fill": "$text-on-dark",
+                          "content": "인기",
+                          "fontFamily": "$font-body",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "AA4hT",
+                      "name": "Plan Name",
+                      "fill": "$text-primary",
+                      "content": "세션 M (~15명)",
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OGwD9",
+                      "name": "Price",
+                      "fill": "$accent",
+                      "content": "$19.99",
+                      "fontFamily": "$font-body",
+                      "fontSize": 40,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "W1tD6",
+                      "name": "Use Case",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "일반 단체 투어",
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "B7IfK",
+                      "name": "Feature",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "세션 S 전체 + 대규모 안정 운영",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "E6A9Z9",
+                  "name": "세션 L (~30명)",
+                  "width": "fill_container",
+                  "fill": "$bg",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DlZL4",
+                      "name": "Plan Name",
+                      "fill": "$text-primary",
+                      "content": "세션 L (~30명)",
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "C95o3H",
+                      "name": "Price",
+                      "fill": "$accent",
+                      "content": "$29.99",
+                      "fontFamily": "$font-body",
+                      "fontSize": 40,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EIPhD",
+                      "name": "Use Case",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "대규모 단체 투어",
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CxfZw",
+                      "name": "Feature",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "세션 M 전체 + 주력 전문 가이드용",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rOSTZ",
+              "name": "Notes Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xcgxI",
+                  "name": "첫 세션 무료 크레딧",
+                  "width": "fill_container",
+                  "fill": "$bg-alt",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yQtLm",
+                      "name": "Icon",
+                      "fill": "$text-primary",
+                      "content": "🎁",
+                      "fontFamily": "$font-body",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Dmz9k",
+                      "name": "Note Title",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "첫 세션 무료 크레딧",
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "IGDVP",
+                      "name": "Note Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "최대 30명 규모(세션 L) 무료 세션 1회 제공. 잘 마치면 1회 추가.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BxE6G",
+                  "name": "크레딧 팩",
+                  "width": "fill_container",
+                  "fill": "$bg-alt",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tFZ2L",
+                      "name": "Icon",
+                      "fill": "$text-primary",
+                      "content": "📦",
+                      "fontFamily": "$font-body",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "n0Clp",
+                      "name": "Note Title",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "크레딧 팩",
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "AgZKl",
+                      "name": "Note Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "세션을 묶음으로 선구매 시 할인(예: 10세션 팩 15% 할인).",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FLgfv",
+                  "name": "하드웨어 대비",
+                  "width": "fill_container",
+                  "fill": "$bg-alt",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wTrKW",
+                      "name": "Icon",
+                      "fill": "$text-primary",
+                      "content": "⚖️",
+                      "fontFamily": "$font-body",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "H3B7q",
+                      "name": "Note Title",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "하드웨어 대비",
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "otslf",
+                      "name": "Note Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "무선 리시버 세트(10인) 구매 시 $1,000~1,500. Guidecast는 30명 투어도 세션 L 1회 $29.99로 해결.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "iBVih",
+              "name": "Small Print",
+              "fill": "$text-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "관광객은 항상 무료입니다. 결제는 가이드만 해당됩니다.",
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WvRv5",
+          "name": "Final CTA Outer",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "vOPSl",
+              "name": "CTA Banner",
+              "width": "fill_container",
+              "fill": "$accent",
+              "cornerRadius": "$radius-xl",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 64,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MMpZI",
+                  "name": "Title",
+                  "fill": "$text-on-dark",
+                  "textGrowth": "fixed-width",
+                  "width": 900,
+                  "content": "정식 출시를 가장 먼저 만나보세요",
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 38,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "FePOQ",
+                  "name": "Subheadline",
+                  "fill": "$surface-blue-100",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "사전 설문에 참여하시면 출시 시 무료 세션 크레딧을 가장 먼저 드립니다.",
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "vw6OX",
+                  "name": "Big CTA",
+                  "fill": "$bg",
+                  "cornerRadius": 999,
+                  "padding": [
+                    20,
+                    40
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MFn2I",
+                      "name": "Label",
+                      "fill": "$accent",
+                      "content": "사전 설문 남기기",
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XMzkP",
+          "name": "FAQ Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            80,
+            64
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "h6kf7h",
+              "name": "Title",
+              "fill": "$text-primary",
+              "content": "자주 묻는 질문",
+              "fontFamily": "$font-body",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "viqUb",
+              "name": "FAQ List",
+              "width": "fill_container",
+              "stroke": "$border-subtle",
+              "strokeWidth": {
+                "top": 1
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "frrGy",
+                  "name": "지금 바로 사용할 수 있나요?",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "v68EQR",
+                      "name": "Question",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Q. 지금 바로 사용할 수 있나요?",
+                      "fontFamily": "$font-body",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XaJwb",
+                      "name": "Answer",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "아직 정식 출시 전입니다. 사전 설문에 참여해주시면 출시 소식과 무료 세션 크레딧을 가장 먼저 안내해드립니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c7U23",
+                  "name": "관광객도 비용을 내나요?",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zrvHS",
+                      "name": "Question",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Q. 관광객도 비용을 내나요?",
+                      "fontFamily": "$font-body",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GU0xW",
+                      "name": "Answer",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "아니요, 항상 무료입니다. QR 스캔으로 바로 참여합니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qx1zM",
+                  "name": "메가폰 없이 30명에게 전달되나요?",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "v5jElV",
+                      "name": "Question",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Q. 메가폰 없이 30명에게 전달되나요?",
+                      "fontFamily": "$font-body",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CWOeF",
+                      "name": "Answer",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "네. WebRTC 초저지연(P95 0.5초 미만)으로 본인 이어폰에 선명하게 전달됩니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "i9NG1",
+                  "name": "앱을 꼭 설치해야 하나요?",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HYvpP",
+                      "name": "Question",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Q. 앱을 꼭 설치해야 하나요?",
+                      "fontFamily": "$font-body",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ldzUM",
+                      "name": "Answer",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "네. 백그라운드 재생·배터리 절약·여행노트 동시 수신을 위한 앱 기반 서비스이며, 용량은 50MB 이하입니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nykbO",
+                  "name": "인터넷이 불안정해도 괜찮나요?",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "P2uAq",
+                      "name": "Question",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Q. 인터넷이 불안정해도 괜찮나요?",
+                      "fontFamily": "$font-body",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "I64dDL",
+                      "name": "Answer",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "4G/5G로 충분하며, 로컬 버퍼링·자동 재접속으로 끊김을 최소화합니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wgJcG",
+                  "name": "투어 자료(여행노트)는 어떻게 공유되나요?",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ePEQs",
+                      "name": "Question",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Q. 투어 자료(여행노트)는 어떻게 공유되나요?",
+                      "fontFamily": "$font-body",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SnTMP",
+                      "name": "Answer",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "가이드가 넘기면 모든 참여자 화면에 1초 내로 동시에 표시됩니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GmBEp",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$bg-alt",
+          "stroke": "$border-subtle",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            40,
+            64
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "p2RY7",
+              "name": "Logo",
+              "fill": "$text-primary",
+              "content": "Guidecast",
+              "fontFamily": "$font-body",
+              "fontSize": 17,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "gxPZ4",
+              "name": "Links",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XZv5c",
+                  "name": "Instagram",
+                  "fill": "$text-secondary",
+                  "content": "인스타그램: @guidecast.official",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cjQcB",
+                  "name": "Website",
+                  "fill": "$text-secondary",
+                  "content": "웹사이트: guidecast.com",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "KzX4r",
+      "x": 1560,
+      "y": 3040,
+      "name": "Guidecast Landing Page - Mobile",
+      "clip": true,
+      "width": 390,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "t2Gw25",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "$bg",
+          "padding": [
+            18,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "j6I51",
+              "name": "Logo",
+              "fill": "$text-primary",
+              "content": "Guidecast",
+              "fontFamily": "$font-body",
+              "fontSize": 19,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "JtXwh",
+              "name": "Header CTA",
+              "fill": "$accent",
+              "cornerRadius": 999,
+              "padding": [
+                9,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "x6vnq",
+                  "name": "Label",
+                  "fill": "$text-on-dark",
+                  "content": "사전 설문 남기기",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZFCWy",
+              "name": "Menu Button",
+              "width": 40,
+              "height": 40,
+              "fill": "$bg-alt",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "w2bXrt",
+                  "name": "Icon",
+                  "fill": "$text-primary",
+                  "content": "☰",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "PXhEw",
+          "name": "Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            8,
+            20,
+            48,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "HCZ8m",
+              "name": "Launch Badge",
+              "fill": "$surface-blue-50",
+              "cornerRadius": 999,
+              "gap": 6,
+              "padding": [
+                8,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "R8Rqz",
+                  "name": "Icon",
+                  "fill": "$accent",
+                  "content": "🚀",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ik2hG",
+                  "name": "Label",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": 280,
+                  "content": "출시 예정 · 사전 설문 참여 시 크레딧 증정",
+                  "fontFamily": "$font-body",
+                  "fontSize": 11.5,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 999,
+              "id": "qzpCi",
+              "name": "Accent Bar",
+              "fill": "$accent",
+              "width": 48,
+              "height": 5
+            },
+            {
+              "type": "text",
+              "id": "Ubz0z",
+              "name": "Headline",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "메가폰 없이, 앱 하나로 완성하는 프로 투어 가이드",
+              "lineHeight": 1.3,
+              "fontFamily": "$font-body",
+              "fontSize": 30,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "HuX3l",
+              "name": "Subheadline",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "실시간 음성 방송 · QR 즉시 접속 · 여행노트 동시 공유.\n공용 리시버 대신 관광객의 스마트폰으로, 더 위생적이고 더 선명한 투어.",
+              "lineHeight": 1.6,
+              "fontFamily": "$font-body",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "DN9l2",
+              "name": "Hero Image",
+              "metadata": {
+                "type": "unsplash",
+                "username": "nkhasebe",
+                "link": "https://unsplash.com/@nkhasebe",
+                "author": "Nk Ni"
+              },
+              "width": "fill_container",
+              "height": 260,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "assets/images/image0.png",
+                "mode": "fill"
+              },
+              "cornerRadius": "$radius-lg"
+            },
+            {
+              "type": "frame",
+              "id": "ijrEd",
+              "name": "Info Box",
+              "width": "fill_container",
+              "fill": "$surface-blue-50",
+              "cornerRadius": 16,
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UehtW",
+                  "name": "Icon",
+                  "fill": "$text-primary",
+                  "content": "💡",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "rONqT",
+                  "name": "Info Text",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "관광객은 항상 무료. QR 스캔으로 3초 만에 참여. 가이드는 필요할 때만 세션 단위로 결제합니다.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14.5,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "A0AN1Z",
+              "name": "CTA Col",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qa7h4",
+                  "name": "Primary CTA",
+                  "width": "fill_container",
+                  "fill": "$accent",
+                  "cornerRadius": 999,
+                  "padding": [
+                    16,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BpZmR",
+                      "name": "Label",
+                      "fill": "$text-on-dark",
+                      "content": "사전 설문 남기고 크레딧 받기",
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "egn3F",
+                  "name": "Secondary CTA",
+                  "width": "fill_container",
+                  "cornerRadius": 999,
+                  "stroke": "$border-subtle",
+                  "strokeWidth": 1.5,
+                  "gap": 12,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "W0lMM6",
+                      "name": "Play Badge",
+                      "width": 30,
+                      "height": 30,
+                      "fill": "$accent",
+                      "cornerRadius": 999,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "path",
+                          "id": "NGOLb",
+                          "name": "Triangle",
+                          "geometry": "M0 0l0 13 11-6.5z",
+                          "viewBox": [
+                            0,
+                            0,
+                            11,
+                            13
+                          ],
+                          "fill": "$text-on-dark",
+                          "width": 11,
+                          "height": 13
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "J5B2H",
+                      "name": "Label",
+                      "fill": "$text-primary",
+                      "content": "데모 영상 보기 (30초)",
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZDXhl",
+          "name": "Why Now Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            0,
+            20,
+            48,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "tHwJF",
+              "name": "Title Group",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FURkK",
+                  "name": "Eyebrow",
+                  "fill": "$accent",
+                  "content": "가이드의 현실",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "jwQWt",
+                  "name": "Title",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "가이드 투어가 개인 관광에 밀리는 이유 — 3가지",
+                  "lineHeight": 1.3,
+                  "fontFamily": "$font-body",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UOhrw",
+              "name": "Cards Col",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "r4Fl9M",
+                  "name": "메가폰은 못 쓰고, 안 쓰면 안 들린다",
+                  "width": "fill_container",
+                  "fill": "$bg-alt",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fVSVq",
+                      "name": "Icon",
+                      "fill": "$text-primary",
+                      "content": "📢",
+                      "fontFamily": "$font-body",
+                      "fontSize": 28,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Xrpuj",
+                      "name": "Card Title",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "메가폰은 못 쓰고, 안 쓰면 안 들려요",
+                      "lineHeight": 1.3,
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "eY6QL",
+                      "name": "Card Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "10명 이상 단체는 메가폰 없이 설명이 불가능한데, 소음 규제(Quiet Zone)는 점점 강해집니다. ",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zLA71",
+                  "name": "공용 리시버, 관광객은 찝찝하다",
+                  "width": "fill_container",
+                  "fill": "$bg-alt",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "w9vQ5",
+                      "name": "Icon",
+                      "fill": "$text-primary",
+                      "content": "🦠",
+                      "fontFamily": "$font-body",
+                      "fontSize": 28,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "suFPE",
+                      "name": "Card Title",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "공용 리시버, 관광객은 찝찝해요",
+                      "lineHeight": 1.3,
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hIgcF",
+                      "name": "Card Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "남이 귀에 꽂았던 이어폰, 목에 걸었던 끈. 아무리 소독해도 위생에 민감한 관광객은 \"차라리 혼자 다니겠다\"고 합니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xRIKM",
+                  "name": "자료를 나눠줘도 참여자는 못 따라간다",
+                  "width": "fill_container",
+                  "fill": "$bg-alt",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "z0IGEV",
+                      "name": "Icon",
+                      "fill": "$text-primary",
+                      "content": "🙋",
+                      "fontFamily": "$font-body",
+                      "fontSize": 28,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "i9Ldm",
+                      "name": "Card Title",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "자료를 나눠줘도 따라가기 힘들어요",
+                      "lineHeight": 1.3,
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "k2HVUl",
+                      "name": "Card Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "가이드가 안내 자료를 미리 준비해도 참여자가 놓치거나 딴 데를 보면 소용이 없습니다. 모두가 같은 화면을 보지 못하면 투어 퀄리티가 떨어집니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bmIAU",
+          "name": "Features Section",
+          "width": "fill_container",
+          "fill": "$bg-dark",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            48,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "KoXZj",
+              "name": "Title Group",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wU9vc",
+                  "name": "Eyebrow",
+                  "fill": "$accent-lime",
+                  "content": "이렇게 해결하세요 ",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "bNbe7",
+                  "name": "Title",
+                  "fill": "$text-on-dark",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "가이드캐스트로 해결됩니다",
+                  "fontFamily": "$font-body",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zcorB",
+              "name": "Features List",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "RBRwC",
+                  "name": "실시간 음성 방송",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "tKrvV",
+                      "name": "Head Row",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "FqsOG",
+                          "name": "Icon Badge",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "#FFFFFF1A",
+                          "cornerRadius": 14,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Flx14",
+                              "name": "Icon",
+                              "fill": "$text-on-dark",
+                              "content": "🎙️",
+                              "fontFamily": "$font-body",
+                              "fontSize": 22,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "FFjKp",
+                          "name": "Feat Title",
+                          "fill": "$text-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "실시간 음성 방송",
+                          "fontFamily": "$font-body",
+                          "fontSize": 18.5,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "wRgqw",
+                      "name": "Feat Desc",
+                      "fill": "$text-on-dark-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "WebRTC 기반 초저지연(P95 0.5초 미만). 30명에게도 메가폰 없이 선명하게, 화면을 꺼도 백그라운드 재생.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "u0OO04",
+                  "name": "QR 스캔 즉시 참여",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sI5e2",
+                      "name": "Head Row",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "w2YZ7x",
+                          "name": "Icon Badge",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "#FFFFFF1A",
+                          "cornerRadius": 14,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "GLYSl",
+                              "name": "Icon",
+                              "fill": "$text-on-dark",
+                              "content": "⚡",
+                              "fontFamily": "$font-body",
+                              "fontSize": 22,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "w5nrJ",
+                          "name": "Feat Title",
+                          "fill": "$text-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "QR 스캔 즉시 참여",
+                          "fontFamily": "$font-body",
+                          "fontSize": 18.5,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "YKqZC",
+                      "name": "Feat Desc",
+                      "fill": "$text-on-dark-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "가이드가 QR을 보여주면 관광객이 스캔해 바로 접속. 복잡한 회원가입 없이 3초 완료. 본인 이어폰·스마트폰만 있으면 되는 BYOD 방식이라 위생 걱정도 없습니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xSTsX",
+                  "name": "여행노트 동시 공유",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "e0Ayma",
+                      "name": "Head Row",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "dno69",
+                          "name": "Icon Badge",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "#FFFFFF1A",
+                          "cornerRadius": 14,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "I2Tkv",
+                              "name": "Icon",
+                              "fill": "$text-on-dark",
+                              "content": "📑",
+                              "fontFamily": "$font-body",
+                              "fontSize": 22,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "wKGBH",
+                          "name": "Feat Title",
+                          "fill": "$text-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "여행노트 동시 공유",
+                          "fontFamily": "$font-body",
+                          "fontSize": 18.5,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "AX2HO",
+                      "name": "Feat Desc",
+                      "fill": "$text-on-dark-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "가이드가 자료를 넘기면 모든 참여자 화면에 같은 페이지가 1초 내에 동시에 표시. 앞뒤로 넘겨봐도 가이드가 이동하면 바로 따라갑니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "b7gTj",
+              "name": "Asides Col",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "iaVsP",
+                  "name": "Aside",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF14",
+                  "cornerRadius": 16,
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LbdzH",
+                      "name": "Icon",
+                      "fill": "$text-on-dark",
+                      "content": "📱",
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mP0Vv",
+                      "name": "Text",
+                      "fill": "$text-on-dark-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "앱 설치는 장벽이 아니라 안정적인 투어 품질을 위한 필수 조건입니다. 용량 50MB 이하, 가이드 안내로 투어 전 자연스럽게 설치됩니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zw3Bn",
+          "name": "Pricing Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            48,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "bDrQP",
+              "name": "Title Group",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ksN4T",
+                  "name": "Eyebrow",
+                  "fill": "$accent",
+                  "content": "요금제",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "tUH8Z",
+                  "name": "Title",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "요금 — 구독 없이 세션 단위로",
+                  "fontFamily": "$font-body",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "D2gMJ",
+              "name": "Billing Aside",
+              "width": "fill_container",
+              "fill": "$surface-blue-50",
+              "cornerRadius": 16,
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "A6qSX",
+                  "name": "Icon",
+                  "fill": "$text-primary",
+                  "content": "💰",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "CxQ79",
+                  "name": "Text",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "과금 단위: 세션(Session) — 1 세션 = 최대 8시간. 방송 종료 시 즉시 종료. 필요할 때만 앱 내에서 구매(IAP)하므로 약정·월 구독이 없습니다.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Z8N3KK",
+              "name": "Launch Note",
+              "width": "fill_container",
+              "fill": "$surface-blue-50",
+              "cornerRadius": 16,
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vUgWw",
+                  "name": "Icon",
+                  "fill": "$accent",
+                  "content": "🚀",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "V1kNoa",
+                  "name": "Text",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "아직 정식 출시 전입니다. 아래 요금은 출시 예정 가격이며, 지금 사전 설문에 참여하시면 출시 시 무료 세션 크레딧을 가장 먼저 드립니다.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ihMq2",
+              "name": "Tiers Col",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Hxotb",
+                  "name": "세션 S (~5명)",
+                  "width": "fill_container",
+                  "fill": "$bg",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xXOm9",
+                      "name": "Head Row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "R7S9u",
+                          "name": "Plan Name",
+                          "fill": "$text-primary",
+                          "content": "세션 S (~5명)",
+                          "fontFamily": "$font-body",
+                          "fontSize": 17,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "BrEiE",
+                      "name": "Price",
+                      "fill": "$accent",
+                      "content": "$9.99",
+                      "fontFamily": "$font-body",
+                      "fontSize": 34,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "oK5X7",
+                      "name": "Use Case",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "개인 가이드 / 소규모 투어",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "n6L7h",
+                      "name": "Feature",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "실시간 음성 + QR + 자료 공유",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eoRHu",
+                  "name": "세션 M (~15명)",
+                  "width": "fill_container",
+                  "fill": "$surface-blue-50",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$accent",
+                  "strokeWidth": 2,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "EC9OK",
+                      "name": "Head Row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pbcHo",
+                          "name": "Plan Name",
+                          "fill": "$text-primary",
+                          "content": "세션 M (~15명)",
+                          "fontFamily": "$font-body",
+                          "fontSize": 17,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "f9CIKd",
+                          "name": "Badge",
+                          "fill": "$accent",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VUTLo",
+                              "name": "Badge Label",
+                              "fill": "$text-on-dark",
+                              "content": "인기",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Qu1M4",
+                      "name": "Price",
+                      "fill": "$accent",
+                      "content": "$19.99",
+                      "fontFamily": "$font-body",
+                      "fontSize": 34,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gKC60",
+                      "name": "Use Case",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "일반 단체 투어",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "O2EON",
+                      "name": "Feature",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "세션 S 전체 + 대규모 안정 운영",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MfHHQ",
+                  "name": "세션 L (~30명)",
+                  "width": "fill_container",
+                  "fill": "$bg",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dFF5B",
+                      "name": "Head Row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cX2cY",
+                          "name": "Plan Name",
+                          "fill": "$text-primary",
+                          "content": "세션 L (~30명)",
+                          "fontFamily": "$font-body",
+                          "fontSize": 17,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "UQwZZ",
+                      "name": "Price",
+                      "fill": "$accent",
+                      "content": "$29.99",
+                      "fontFamily": "$font-body",
+                      "fontSize": 34,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "E5TAb1",
+                      "name": "Use Case",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "대규모 단체 투어",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "w23WJ",
+                      "name": "Feature",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "세션 M 전체 + 주력 전문 가이드용",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uvYw9",
+              "name": "Notes Col",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kNflf",
+                  "name": "첫 세션 무료 크레딧",
+                  "width": "fill_container",
+                  "fill": "$bg-alt",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QMElz",
+                      "name": "Icon",
+                      "fill": "$text-primary",
+                      "content": "🎁",
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CWCQj",
+                      "name": "Note Title",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "첫 세션 무료 크레딧",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "p1szp",
+                      "name": "Note Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "최대 30명 규모(세션 L) 무료 세션 1회 제공. 잘 마치면 1회 추가.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DsmuQ",
+                  "name": "크레딧 팩",
+                  "width": "fill_container",
+                  "fill": "$bg-alt",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xgvDU",
+                      "name": "Icon",
+                      "fill": "$text-primary",
+                      "content": "📦",
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ikGfm",
+                      "name": "Note Title",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "크레딧 팩",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RdrTo",
+                      "name": "Note Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "세션을 묶음으로 선구매 시 할인(예: 10세션 팩 15% 할인).",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ynkJm",
+                  "name": "하드웨어 대비",
+                  "width": "fill_container",
+                  "fill": "$bg-alt",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TLv07",
+                      "name": "Icon",
+                      "fill": "$text-primary",
+                      "content": "⚖️",
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hDSzT",
+                      "name": "Note Title",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "하드웨어 대비",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UtU2Q",
+                      "name": "Note Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "무선 리시버 세트(10인) 구매 시 $1,000~1,500. Guidecast는 30명 투어도 세션 L 1회 $29.99로 해결.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "tiD8A",
+              "name": "Small Print",
+              "fill": "$text-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "관광객은 항상 무료입니다. 결제는 가이드만 해당됩니다.",
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": 13.5,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "oahu2",
+          "name": "Final CTA Outer",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "h0olyK",
+              "name": "CTA Banner",
+              "width": "fill_container",
+              "fill": "$accent",
+              "cornerRadius": "$radius-xl",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                40,
+                28
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xBeXj",
+                  "name": "Title",
+                  "fill": "$text-on-dark",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "정식 출시를 가장 먼저 만나보세요",
+                  "lineHeight": 1.3,
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 26,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "dAKC9",
+                  "name": "Subheadline",
+                  "fill": "$surface-blue-100",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "사전 설문에 참여하시면 출시 시 무료 세션 크레딧을 가장 먼저 드립니다.",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15.5,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "Wd3mj",
+                  "name": "Big CTA",
+                  "width": "fill_container",
+                  "fill": "$bg",
+                  "cornerRadius": 999,
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rJ2U4",
+                      "name": "Label",
+                      "fill": "$accent",
+                      "content": "사전 설문 남기기",
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "h5djFa",
+          "name": "FAQ Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            48,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "QhKqO",
+              "name": "Title",
+              "fill": "$text-primary",
+              "content": "자주 묻는 질문",
+              "fontFamily": "$font-body",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "qx2t9",
+              "name": "FAQ List",
+              "width": "fill_container",
+              "stroke": "$border-subtle",
+              "strokeWidth": {
+                "top": 1
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Q3D0p",
+                  "name": "지금 바로 사용할 수 있나요?",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KIIGJ",
+                      "name": "Question",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Q. 지금 바로 사용할 수 있나요?",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16.5,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "nDGeK",
+                      "name": "Answer",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "아직 정식 출시 전입니다. 사전 설문에 참여해주시면 출시 소식과 무료 세션 크레딧을 가장 먼저 안내해드립니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NW4QE",
+                  "name": "관광객도 비용을 내나요?",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mgnge",
+                      "name": "Question",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Q. 관광객도 비용을 내나요?",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16.5,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dp6d0",
+                      "name": "Answer",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "아니요, 항상 무료입니다. QR 스캔으로 바로 참여합니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "m94zi",
+                  "name": "메가폰 없이 30명에게 전달되나요?",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Pn7C0",
+                      "name": "Question",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Q. 메가폰 없이 30명에게 전달되나요?",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16.5,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "eFn6W",
+                      "name": "Answer",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "네. WebRTC 초저지연(P95 0.5초 미만)으로 본인 이어폰에 선명하게 전달됩니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oDdqO",
+                  "name": "앱을 꼭 설치해야 하나요?",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bjHl5",
+                      "name": "Question",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Q. 앱을 꼭 설치해야 하나요?",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16.5,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DBIA1",
+                      "name": "Answer",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "네. 백그라운드 재생·배터리 절약·여행노트 동시 수신을 위한 앱 기반 서비스이며, 용량은 50MB 이하입니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FqwF7",
+                  "name": "인터넷이 불안정해도 괜찮나요?",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fuGxS",
+                      "name": "Question",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Q. 인터넷이 불안정해도 괜찮나요?",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16.5,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Mldpx",
+                      "name": "Answer",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "4G/5G로 충분하며, 로컬 버퍼링·자동 재접속으로 끊김을 최소화합니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "cp8km",
+                  "name": "투어 자료(여행노트)는 어떻게 공유되나요?",
+                  "width": "fill_container",
+                  "stroke": "$border-subtle",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "H3bpfQ",
+                      "name": "Question",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Q. 투어 자료(여행노트)는 어떻게 공유되나요?",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16.5,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Q56pQ",
+                      "name": "Answer",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "가이드가 넘기면 모든 참여자 화면에 1초 내로 동시에 표시됩니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NsbEW",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$bg-alt",
+          "stroke": "$border-subtle",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            28,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "z6Oxy",
+              "name": "Logo",
+              "fill": "$text-primary",
+              "content": "Guidecast",
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "SRwGm",
+              "name": "Links",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JPJB1",
+                  "name": "Instagram",
+                  "fill": "$text-secondary",
+                  "content": "인스타그램: @guidecast.official",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13.5,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "l2tMjx",
+                  "name": "Website",
+                  "fill": "$text-secondary",
+                  "content": "웹사이트: guidecast.com",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13.5,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "bg": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "bg-alt": {
+      "type": "color",
+      "value": "#F9FAFB"
+    },
+    "bg-dark": {
+      "type": "color",
+      "value": "#0F172A"
+    },
+    "surface-blue-50": {
+      "type": "color",
+      "value": "#EFF6FF"
+    },
+    "surface-blue-100": {
+      "type": "color",
+      "value": "#DBEAFE"
+    },
+    "border-subtle": {
+      "type": "color",
+      "value": "#E2E8F0"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#0F172A"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#475569"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#94A3B8"
+    },
+    "text-on-dark": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "text-on-dark-muted": {
+      "type": "color",
+      "value": "#CBD5E1"
+    },
+    "accent": {
+      "type": "color",
+      "value": "#2563EB"
+    },
+    "accent-hover": {
+      "type": "color",
+      "value": "#1D4ED8"
+    },
+    "accent-light": {
+      "type": "color",
+      "value": "#60A5FA"
+    },
+    "accent-lime": {
+      "type": "color",
+      "value": "#A3E635"
+    },
+    "success": {
+      "type": "color",
+      "value": "#22C55E"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": 24
+    },
+    "radius-xl": {
+      "type": "number",
+      "value": 32
+    },
+    "space-section": {
+      "type": "number",
+      "value": 96
+    }
+  },
+  "fileToken": "79235c22-54e1-47a1-967c-3bfe347d57f6"
+}
