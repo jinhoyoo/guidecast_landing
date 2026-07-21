@@ -523,6 +523,9 @@ function handleEarlyBirdSubmit(event) {
     const errorMessages = {
       ko: '죄송합니다. 오류가 발생했습니다. 다시 시도해 주세요.',
       en: 'Sorry, an error occurred. Please try again.',
+      es: 'Lo sentimos, ocurrió un error. Por favor, inténtalo de nuevo.',
+      de: 'Entschuldigung, es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.',
+      it: 'Siamo spiacenti, si è verificato un errore. Riprova.',
       ja: '申し訳ございません。エラーが発生しました。もう一度お試しください。',
       'zh-TW': '抱歉，發生錯誤。請重試。',
       'zh-CN': '抱歉，发生错误。请重试。'
@@ -1000,70 +1003,19 @@ function addScrollAnimationStyles() {
   document.head.appendChild(style);
 }
 
-// Form submission handling (placeholder)
-function handleFormSubmit(event) {
-  event.preventDefault();
-
-  // Get form data
-  const formData = new FormData(event.target);
-  const data = Object.fromEntries(formData);
-
-  console.log('Form submitted:', data);
-
-  // Show success message
-  alert('감사합니다! 곧 연락드리겠습니다.');
-
-  // Reset form
-  event.target.reset();
-}
-
-// Add event listeners to all forms
-document.querySelectorAll('form').forEach(form => {
-  form.addEventListener('submit', handleFormSubmit);
-});
-
-// CTA Button handlers
-document.querySelectorAll('.btn-primary, .cta-primary').forEach(button => {
-  button.addEventListener('click', function(e) {
-    // Skip if it's the demo video button
-    if (this.textContent.includes('데모 영상')) return;
-
-    // Placeholder for actual sign-up flow
-    console.log('CTA clicked:', this.textContent);
-
-    // // In production, this would redirect to sign-up page or open a modal
-    // alert('회원가입 페이지로 이동합니다. (실제 구현 시 적절한 URL로 연결하세요)');
-  });
-});
-
-// Secondary button handlers
-document.querySelectorAll('.btn-secondary').forEach(button => {
-  button.addEventListener('click', function(e) {
-    console.log('Secondary CTA clicked:', this.textContent);
-
-    // In production, this would handle consultation requests
-    // if (this.textContent.includes('상담')) {
-    //   alert('상담 신청 페이지로 이동합니다. (실제 구현 시 적절한 URL로 연결하세요)');
-    // } else {
-    //   alert('무료 체험을 시작합니다. (실제 구현 시 적절한 URL로 연결하세요)');
-    // }
-  });
-});
-
 // Initialize animations when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   addScrollAnimationStyles();
   addScrollAnimation();
-
-  console.log('Guidecast Landing Page initialized');
 });
 
-// Analytics tracking (placeholder)
+// Analytics tracking — reports through the Consent Mode v2 gtag stub defined in default.html.
+// gtag() always exists (it queues into window.dataLayer); if the user has not granted analytics
+// consent, gtag.js is never loaded, so these calls never leave the browser.
 function trackEvent(category, action, label) {
-  console.log('Track event:', { category, action, label });
-
-  // In production, integrate with Google Analytics or other analytics tools
-  // Example: gtag('event', action, { 'event_category': category, 'event_label': label });
+  if (typeof gtag === 'function') {
+    gtag('event', action, { event_category: category, event_label: label });
+  }
 }
 
 // Track CTA clicks

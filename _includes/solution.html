@@ -1,11 +1,12 @@
-{% assign t = site.data.translations[page.lang].solution %}
+{% assign t = site.data.translations[page.lang].features %}
 
 <section id="solution" class="solution-section">
   <div class="container">
+    <span class="section-eyebrow">{{ t.eyebrow }}</span>
     <h2 class="section-title">{{ t.title }}</h2>
 
     <div class="features-grid">
-      {% for feature in t.features %}
+      {% for feature in t.items %}
         <div class="feature">
           <div class="feature-icon">{{ feature.icon }}</div>
           <div class="feature-content">
@@ -15,5 +16,14 @@
         </div>
       {% endfor %}
     </div>
+
+    {% if t.aside %}
+    <div class="feature-asides">
+      <div class="feature-aside">
+        <span class="icon">{{ t.aside.icon }}</span>
+        <p>{{ t.aside.text }}</p>
+      </div>
+    </div>
+    {% endif %}
   </div>
 </section>

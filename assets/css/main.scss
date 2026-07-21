@@ -2,440 +2,132 @@
 # Jekyll이 처리할 수 있도록 front matter 필요
 ---
 
-// 기존 CSS 파일을 임포트 (Jekyll이 처리)
-@import "existing-styles";
+:root {
+  /* Colors — guidecast_landing.pen 디자인 토큰 반영 */
+  --bg: #ffffff;
+  --bg-alt: #f9fafb;
+  --bg-dark: #0f172a;
+  --surface-blue-50: #eff6ff;
+  --surface-blue-100: #dbeafe;
+  --border-subtle: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-on-dark: #ffffff;
+  --text-on-dark-muted: #cbd5e1;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-light: #60a5fa;
+  --accent-lime: #a3e635;
+  --success: #22c55e;
+
+  /* 기존 코드 호환용 별칭 */
+  --primary-color: var(--accent);
+  --primary-hover: var(--accent-hover);
+  --secondary-color: var(--text-secondary);
+  --accent-color: #f59e0b;
+  --success-color: var(--success);
+  --text-light: var(--text-muted);
+  --bg-light: var(--bg-alt);
+  --bg-white: var(--bg);
+  --border-color: var(--border-subtle);
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+
+  /* Typography */
+  --font-sans: 'Inter', 'Noto Sans', 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 6rem;
+  --space-section: 6rem;
+
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-base: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+}
+
+h1 { font-size: var(--font-size-5xl); }
+h2 { font-size: var(--font-size-4xl); }
+h3 { font-size: var(--font-size-3xl); }
+h4 { font-size: var(--font-size-2xl); }
+h5 { font-size: var(--font-size-xl); }
+h6 { font-size: var(--font-size-lg); }
+
+p {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
 
 // CSS Grid overflow fix: prevent long text from squeezing image column
 .hero-content > * {
   min-width: 0;
 }
 
-// 언어 전환 드롭다운 스타일 추가
-.language-switcher {
-  position: relative;
-  display: inline-block;
-  margin-left: 1.5rem;
-}
-
-.lang-toggle {
-  background: transparent;
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-md);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.lang-toggle:hover {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-.chevron {
-  transition: transform 0.3s ease;
-}
-
-.lang-toggle:hover .chevron {
-  transform: rotate(180deg);
-}
-
-.lang-dropdown {
-  position: absolute;
-  top: calc(100% + 0.5rem);
-  right: 0;
-  background: white;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  min-width: 100px;
-  list-style: none;
-  padding: 0.5rem 0;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: all 0.3s ease;
-  z-index: 1000;
-}
-
-.language-switcher:hover .lang-dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.lang-dropdown li {
-  margin: 0;
-}
-
-.lang-dropdown a {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: var(--text-primary);
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-}
-
-.lang-dropdown a:hover,
-.lang-dropdown a.active {
-  background-color: var(--bg-light);
-  color: var(--primary-color);
-}
-
-// 헤더 스타일 개선
-.site-header {
-  background: white;
-  box-shadow: var(--shadow-sm);
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  padding: 1rem 0;
-}
-
-.main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-brand h1 {
-  font-size: 1.5rem;
-  color: var(--primary-color);
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.nav-brand a {
-  text-decoration: none;
-}
-
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
-  color: var(--text-primary);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: var(--primary-color);
-}
-
-/* 햄버거 메뉴 아이콘 */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 1001;
-}
-
-.hamburger-line {
-  width: 2rem;
-  height: 0.25rem;
-  background-color: var(--primary-color);
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-
-/* 햄버거 아이콘 애니메이션 (X로 변환) */
-.hamburger.active .hamburger-line:nth-child(1) {
-  transform: rotate(45deg) translate(0.5rem, 0.5rem);
-}
-
-.hamburger.active .hamburger-line:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .hamburger-line:nth-child(3) {
-  transform: rotate(-45deg) translate(0.5rem, -0.5rem);
-}
-
-@media (max-width: 768px) {
-  /* 햄버거 아이콘 표시 */
-  .hamburger {
-    display: flex;
-  }
-
-  /* 네비게이션 메뉴 - 모바일 */
-  .nav-menu {
-    position: fixed;
-    top: 70px;
-    right: 0;
-    left: 0;
-    background: white;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.5rem 1.5rem 3rem 1.5rem; /* 하단 패딩 추가 */
-    box-shadow: var(--shadow-lg);
-    max-height: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    opacity: 0;
-    transition: all 0.3s ease;
-    z-index: 1000;
-    -webkit-overflow-scrolling: touch; /* iOS 스크롤 부드럽게 */
-  }
-
-  .nav-menu.active {
-    max-height: calc(100vh - 70px);
-    opacity: 1;
-  }
-
-  /* 스크롤바 스타일 커스터마이징 */
-  .nav-menu::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .nav-menu::-webkit-scrollbar-track {
-    background: var(--bg-light);
-  }
-
-  .nav-menu::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
-    border-radius: 3px;
-  }
-
-  .nav-menu::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-hover);
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-  }
-
-  .nav-links li {
-    width: 100%;
-  }
-
-  .nav-links a {
-    display: block;
-    padding: 0.75rem 0;
-    font-size: 1.125rem;
-    border-bottom: 1px solid var(--border-color);
-  }
-
-  .language-switcher {
-    margin-left: 0;
-    width: 100%;
-  }
-
-  .lang-toggle {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  /* 모바일에서 언어 드롭다운 위치 조정 */
-  .lang-dropdown {
-    position: static;
-    opacity: 0;
-    visibility: hidden;
-    transform: none;
-    margin-top: 0.5rem;
-    max-height: 0;
-    overflow: visible;
-    transition: all 0.3s ease;
-    box-shadow: none;
-    border: none;
-    background: transparent;
-  }
-
-  .language-switcher.active .lang-dropdown {
-    opacity: 1;
-    visibility: visible;
-    max-height: 500px; /* 5개 언어 모두 표시되도록 충분히 증가 */
-  }
-
-  /* 모바일에서 언어 드롭다운 링크 스타일 */
-  .lang-dropdown li {
-    margin-bottom: 0.25rem;
-  }
-
-  .lang-dropdown li:last-child {
-    margin-bottom: 1rem; /* 마지막 항목에 추가 여백 */
-  }
-
-  .lang-dropdown a {
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-    border-bottom: 1px solid var(--border-color);
-    background-color: var(--bg-light);
-    border-radius: var(--radius-sm);
-  }
-
-  .lang-dropdown a:hover,
-  .lang-dropdown a.active {
-    background-color: var(--primary-color);
-    color: white;
-  }
-
-  /* 언어 토글 버튼에 아래 화살표 회전 */
-  .language-switcher.active .chevron {
-    transform: rotate(180deg);
-  }
-}
-
-/* Footer Social Links */
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-social {
-  display: flex;
-  gap: 0.75rem;
-}
-
-.footer-social-link {
-  color: rgba(255, 255, 255, 0.5);
-  transition: color 0.2s;
-  display: flex;
-  align-items: center;
-
-  &:hover {
-    color: #fff;
-  }
-}
-
-/* Hero Video Thumbnail with Play Button */
-.hero-video-thumb {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.hero-video-thumb img {
-  width: 100%;
-  display: block;
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-xl);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hero-video-thumb:hover img {
-  transform: scale(1.02);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-}
-
-.hero-play-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.15);
-  transition: background 0.3s ease;
-  z-index: 2;
-}
-
-.hero-video-thumb:hover .hero-play-overlay {
-  background: rgba(0, 0, 0, 0.28);
-}
-
-.hero-play-btn {
-  width: 72px;
-  height: 72px;
-  background: rgba(37, 99, 235, 0.92);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
-  transition: transform 0.2s ease, background 0.2s ease;
-  padding-left: 5px;
-}
-
-.hero-video-thumb:hover .hero-play-btn {
-  transform: scale(1.12);
-  background: rgba(29, 78, 216, 1);
-}
-
-/* Hero Pain Bullets */
-.hero-pain-bullets {
-  list-style: none;
-  padding: 0;
-  margin: 1.25rem 0 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.hero-pain-bullets li {
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.85);
-  display: flex;
-  align-items: flex-start;
-  gap: 0.4rem;
-  line-height: 1.4;
-}
-
-/* Pricing Testimonials */
-.pricing-testimonials {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  margin-top: 2.5rem;
-}
-
-.pricing-quote {
-  background: var(--bg-light);
-  border-left: 3px solid var(--primary-color);
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  padding: 1rem 1.25rem;
-  margin: 0;
-}
-
-.pricing-quote p {
-  font-size: 0.95rem;
-  color: var(--text-primary);
-  margin-bottom: 0.5rem;
-  font-style: italic;
-  line-height: 1.5;
-}
-
-.pricing-quote cite {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  font-style: normal;
-  font-weight: 600;
-}
-
-/* Pricing Mini FAQ */
-.pricing-mini-faq {
-  margin-top: 2rem;
-  border-top: 1px solid var(--border-color);
-  padding-top: 1.5rem;
-}
+@import "existing-styles";

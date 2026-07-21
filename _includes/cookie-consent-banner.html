@@ -1,0 +1,13 @@
+{% assign t = site.data.translations[page.lang].cookie_consent %}
+
+<div id="cookie-consent-banner" class="cookie-consent-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+  <div class="container cookie-consent-inner">
+    <div class="cookie-consent-text">
+      <p>{{ t.message }}</p>
+    </div>
+    <div class="cookie-consent-actions">
+      <button type="button" id="cookie-reject" class="cookie-btn-reject">{{ t.reject }}</button>
+      <button type="button" id="cookie-accept" class="cookie-btn-accept">{{ t.accept }}</button>
+    </div>
+  </div>
+</div>

@@ -14,6 +14,17 @@
  * 7. Add the URL to your main.js as GOOGLE_SCRIPT_URL
  */
 
+// Google Sheets (and Excel) auto-parses any cell value starting with
+// =, +, -, or @ as a formula. Phone numbers like "+82 010-1234-5678"
+// hit this and render as #ERROR!, and it's also the classic CSV/Sheet
+// formula-injection vector for free-text fields (name, feedback, etc).
+// Prefixing with a straight apostrophe forces Sheets to store the value
+// as plain text (same effect as typing ' before a value manually).
+function asPlainText(value) {
+  const text = (value || '').toString();
+  return /^[=+\-@]/.test(text) ? "'" + text : text;
+}
+
 function doPost(e) {
   try {
     // Get the active spreadsheet
@@ -24,13 +35,13 @@ function doPost(e) {
 
     // Prepare the row data
     const rowData = [
-      data.name || '',
-      data.email || '',
-      data.phone || '',
-      data.company || '',
-      data.tourMethod || '',
-      data.paymentWillingness || '',
-      data.feedback || '',
+      asPlainText(data.name),
+      asPlainText(data.email),
+      asPlainText(data.phone),
+      asPlainText(data.company),
+      asPlainText(data.tourMethod),
+      asPlainText(data.paymentWillingness),
+      asPlainText(data.feedback),
       data.privacy || 'No',
       data.language || 'ko',
       data.timestamp || new Date().toISOString()
@@ -66,7 +77,7 @@ function testDoPost() {
       contents: JSON.stringify({
         name: 'Test User',
         email: 'test@example.com',
-        phone: '010-1234-5678',
+        phone: '+82 010-1234-5678',
         company: 'Test Company',
         tourMethod: 'dedicated_equipment',
         paymentWillingness: 'willing',

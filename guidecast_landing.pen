@@ -3758,7 +3758,7 @@
                   "fill": "$text-on-dark",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "정식 출시를 가장 먼저 만나보세요",
+                  "content": "정식 출시를 가장 \n먼저 만나보세요",
                   "lineHeight": 1.3,
                   "textAlign": "center",
                   "fontFamily": "$font-body",

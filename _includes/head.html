@@ -1,4 +1,18 @@
 <head>
+  <!-- Google Consent Mode v2 defaults — must run before any other script.
+       gtag.js itself is only requested from Google after the visitor accepts
+       analytics cookies in the banner (see assets/js/cookie-consent.js). -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied'
+    });
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +26,24 @@
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📣</text></svg>">
 
-  <!-- Google Fonts: Noto Sans (all languages) -->
+  <!-- Google Fonts: Inter (Latin) + Noto Sans (CJK fallback) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+  <!-- Alternate Languages -->
+  <link rel="alternate" hreflang="ko" href="{{ '/ko/' | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ '/en/' | absolute_url }}">
+  <link rel="alternate" hreflang="es" href="{{ '/es/' | absolute_url }}">
+  <link rel="alternate" hreflang="de" href="{{ '/de/' | absolute_url }}">
+  <link rel="alternate" hreflang="it" href="{{ '/it/' | absolute_url }}">
+  <link rel="alternate" hreflang="ja" href="{{ '/ja/' | absolute_url }}">
+  <link rel="alternate" hreflang="zh-CN" href="{{ '/zh-CN/' | absolute_url }}">
+  <link rel="alternate" hreflang="zh-TW" href="{{ '/zh-TW/' | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ '/en/' | absolute_url }}">
 
   <!-- SEO Plugin -->
   {% seo %}

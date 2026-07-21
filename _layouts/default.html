@@ -9,6 +9,7 @@
   </main>
 
   {% include footer.html %}
+  {% include cookie-consent-banner.html %}
 
   <script>
     // Pass current language and form translations to JavaScript
@@ -16,7 +17,10 @@
     window.GUIDECAST_TRANSLATIONS = {{ site.data.translations | jsonify }};
     // Pass Google Script URL from Jekyll config
     window.GOOGLE_SCRIPT_URL = '{{ site.google_script_url }}';
+    // Pass Google Analytics measurement ID — only loaded after consent (see cookie-consent.js)
+    window.GUIDECAST_GA_ID = '{{ site.google_analytics_id }}';
   </script>
+  <script src="{{ '/assets/js/cookie-consent.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>

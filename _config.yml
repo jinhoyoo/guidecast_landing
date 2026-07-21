@@ -56,6 +56,14 @@ defaults:
       path: "ja"
     values:
       lang: "ja"
+  - scope:
+      path: "de"
+    values:
+      lang: "de"
+  - scope:
+      path: "it"
+    values:
+      lang: "it"
 
 # SEO
 twitter:
@@ -71,8 +79,8 @@ social:
 logo: /assets/images/og-image.jpg
 image: /assets/images/og-image.jpg
 
-# Analytics (배포 시 추가)
-# google_analytics: G-XXXXXXXXXX
+# Analytics — gtag.js는 쿠키 동의 후 assets/js/cookie-consent.js가 동적으로 로드합니다 (Consent Mode v2)
+google_analytics_id: "G-1V3SEJL0Q4"
 
 # Google Apps Script URL for form submissions
 google_script_url: "https://script.google.com/macros/s/AKfycbxuJhf-lOy4q7HYJb4o2ucuma9iULo3sCPIFuNdkcZ2PjBfXA8fmb0GyjfFLJOfMw030Q/exec"

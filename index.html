@@ -2,18 +2,8 @@
 layout: none
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1V3SEJL0Q4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-1V3SEJL0Q4');
-  </script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -34,7 +24,6 @@ layout: none
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Tour guide showing QR code to tourists with smartphones">
   <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="ko_KR">
   <meta property="og:site_name" content="Guidecast">
 
   <!-- Twitter -->
@@ -50,6 +39,12 @@ layout: none
   <!-- Alternate Languages -->
   <link rel="alternate" hreflang="ko" href="https://www.guidecast.co/ko/">
   <link rel="alternate" hreflang="en" href="https://www.guidecast.co/en/">
+  <link rel="alternate" hreflang="es" href="https://www.guidecast.co/es/">
+  <link rel="alternate" hreflang="de" href="https://www.guidecast.co/de/">
+  <link rel="alternate" hreflang="it" href="https://www.guidecast.co/it/">
+  <link rel="alternate" hreflang="ja" href="https://www.guidecast.co/ja/">
+  <link rel="alternate" hreflang="zh-CN" href="https://www.guidecast.co/zh-CN/">
+  <link rel="alternate" hreflang="zh-TW" href="https://www.guidecast.co/zh-TW/">
   <link rel="alternate" hreflang="x-default" href="https://www.guidecast.co/en/">
 
   <!-- Canonical -->
@@ -74,6 +69,12 @@ layout: none
       lang = 'zh-CN';
     } else if (userLang.startsWith('ja')) {
       lang = 'ja';
+    } else if (userLang.startsWith('es')) {
+      lang = 'es';
+    } else if (userLang.startsWith('de')) {
+      lang = 'de';
+    } else if (userLang.startsWith('it')) {
+      lang = 'it';
     }
 
     // 현재 경로에서 baseurl 자동 감지
@@ -81,7 +82,7 @@ layout: none
     const pathParts = currentPath.split('/').filter(p => p);
 
     // 첫 번째 경로가 언어 코드가 아니면 baseurl로 간주
-    const langCodes = ['ko', 'en', 'zh-TW', 'zh-CN', 'ja'];
+    const langCodes = ['ko', 'en', 'es', 'de', 'it', 'zh-TW', 'zh-CN', 'ja'];
     let baseUrl = '';
 
     if (pathParts.length > 0 && !langCodes.includes(pathParts[0])) {
