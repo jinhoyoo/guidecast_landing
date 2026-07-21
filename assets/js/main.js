@@ -466,7 +466,10 @@ function handleEarlyBirdSubmit(event) {
   const formData = new FormData(event.target);
   const countryCode = formData.get('country_code');
   const phoneNumber = formData.get('phone');
-  const fullPhone = phoneNumber ? `${countryCode} ${phoneNumber}` : '';
+  // Wrap the dial code in parentheses so the value never starts with "+".
+  // Google Sheets treats cell values starting with +, -, = as formulas,
+  // which turned "+82 010-..." into #ERROR! in the spreadsheet.
+  const fullPhone = phoneNumber ? `(${countryCode}) ${phoneNumber}` : '';
 
   const data = {
     name: formData.get('name'),
