@@ -1057,6 +1057,14 @@ button, .btn-primary, .btn-secondary {
   .cookie-consent-inner {
     flex-direction: column;
     align-items: stretch;
+    gap: var(--spacing-sm);
+  }
+
+  /* flex-basis 420px is horizontal sizing for the desktop row layout;
+     in the column layout it becomes a 420px HEIGHT, blowing the banner
+     up to most of the viewport — reset it on mobile. */
+  .cookie-consent-text {
+    flex: none;
   }
 
   .cookie-consent-actions {
