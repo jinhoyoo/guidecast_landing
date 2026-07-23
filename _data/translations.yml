@@ -75,14 +75,14 @@ ko:
         price: "$19.99"
         use_case: "일반 단체 투어"
         features:
-          - "중간 규모 투어용"
+          - "모든 기능 동일 · 1인당 약 $1.3"
         button: "사전 설문 남기기"
       session_l:
         name: "세션 L (~30명)"
         price: "$29.99"
         use_case: "대규모 단체 투어"
         features:
-          - "대규모 투어용"
+          - "모든 기능 동일 · 1인당 약 $1"
         button: "사전 설문 남기기"
     notes:
       - icon: "🎁"
@@ -238,14 +238,14 @@ en:
         price: "$19.99"
         use_case: "Standard group tours"
         features:
-          - "For mid-size tours"
+          - "Same features · about $1.3 per person"
         button: "Join the Waitlist"
       session_l:
         name: "Session L (up to 30 people)"
         price: "$29.99"
         use_case: "Large group tours"
         features:
-          - "For large tours"
+          - "Same features · about $1 per person"
         button: "Join the Waitlist"
     notes:
       - icon: "🎁"
@@ -401,14 +401,14 @@ es:
         price: "$19.99"
         use_case: "Tours grupales estándar"
         features:
-          - "Para tours medianos"
+          - "Mismas funciones · aprox. $1.3 por persona"
         button: "Unirme a la lista de espera"
       session_l:
         name: "Sesión L (~30 personas)"
         price: "$29.99"
         use_case: "Tours grupales de gran tamaño"
         features:
-          - "Para tours grandes"
+          - "Mismas funciones · aprox. $1 por persona"
         button: "Unirme a la lista de espera"
     notes:
       - icon: "🎁"
@@ -564,14 +564,14 @@ de:
         price: "$19.99"
         use_case: "Für klassische Gruppentouren"
         features:
-          - "Für mittelgroße Touren"
+          - "Gleiche Funktionen · ca. $1.3 pro Person"
         button: "Jetzt vormerken"
       session_l:
         name: "Session L (bis 30 Personen)"
         price: "$29.99"
         use_case: "Für große Gruppentouren"
         features:
-          - "Für große Touren"
+          - "Gleiche Funktionen · ca. $1 pro Person"
         button: "Jetzt vormerken"
     notes:
       - icon: "🎁"
@@ -727,14 +727,14 @@ it:
         price: "$19.99"
         use_case: "Tour di gruppo standard"
         features:
-          - "Per tour di medie dimensioni"
+          - "Stesse funzionalità · circa $1.3 a persona"
         button: "Partecipa al sondaggio"
       session_l:
         name: "Sessione L (~30 persone)"
         price: "$29.99"
         use_case: "Tour di gruppo su larga scala"
         features:
-          - "Per tour di grandi dimensioni"
+          - "Stesse funzionalità · circa $1 a persona"
         button: "Partecipa al sondaggio"
     notes:
       - icon: "🎁"
@@ -890,14 +890,14 @@ ja:
         price: "$19.99"
         use_case: "一般団体ツアー"
         features:
-          - "中規模ツアー向け"
+          - "機能はすべて同じ · 1人あたり約$1.3"
         button: "事前アンケートに参加"
       session_l:
         name: "セッションL(~30名)"
         price: "$29.99"
         use_case: "大規模団体ツアー"
         features:
-          - "大規模ツアー向け"
+          - "機能はすべて同じ · 1人あたり約$1"
         button: "事前アンケートに参加"
     notes:
       - icon: "🎁"
@@ -1053,14 +1053,14 @@ zh-TW:
         price: "$19.99"
         use_case: "一般團體導覽"
         features:
-          - "適合中型導覽"
+          - "功能完全相同 · 每人約 $1.3"
         button: "填寫搶先體驗問卷"
       session_l:
         name: "場次 L(約 30 人)"
         price: "$29.99"
         use_case: "大型團體導覽"
         features:
-          - "適合大型導覽"
+          - "功能完全相同 · 每人約 $1"
         button: "填寫搶先體驗問卷"
     notes:
       - icon: "🎁"
@@ -1216,14 +1216,14 @@ zh-CN:
         price: "$19.99"
         use_case: "普通团队导览"
         features:
-          - "适合中型团队导览"
+          - "功能完全相同 · 每人约 $1.3"
         button: "填写预约问卷"
       session_l:
         name: "场次 L（约30人）"
         price: "$29.99"
         use_case: "大型团队导览"
         features:
-          - "适合大型团队导览"
+          - "功能完全相同 · 每人约 $1"
         button: "填写预约问卷"
     notes:
       - icon: "🎁"
