@@ -6,7 +6,7 @@ ko:
     og_description: "실시간 음성 방송, QR 즉시 접속, 여행노트 동시 공유. 공용 리시버 대신 관광객의 스마트폰으로, 더 위생적이고 더 선명한 투어."
 
   nav:
-    why_now: "왜 지금"
+    why_now: "가이드의 현실"
     features: "기능"
     pricing: "요금제"
     faq: "FAQ"
@@ -169,7 +169,7 @@ en:
     og_description: "Live audio broadcasting, instant QR access, synced travel notes. Tours delivered through tourists' own smartphones instead of shared receivers — cleaner and clearer."
 
   nav:
-    why_now: "Why Now"
+    why_now: "Reality for Guides"
     features: "Features"
     pricing: "Pricing"
     faq: "FAQ"
@@ -332,7 +332,7 @@ es:
     og_description: "Transmisión de voz en tiempo real, acceso instantáneo por QR y notas de viaje compartidas al mismo tiempo. En lugar de receptores compartidos, cada turista usa su propio smartphone: un tour más higiénico y más claro."
 
   nav:
-    why_now: "Por qué ahora"
+    why_now: "La realidad del guía"
     features: "Funciones"
     pricing: "Precios"
     faq: "Preguntas frecuentes"
@@ -495,7 +495,7 @@ de:
     og_description: "Live-Audioübertragung, Sofortzugang per QR-Code, gemeinsam geteilte Reisenotizen. Statt gemeinsam genutzter Empfänger nutzen Ihre Gäste einfach ihr eigenes Smartphone – hygienischer und klarer als je zuvor."
 
   nav:
-    why_now: "Warum jetzt"
+    why_now: "Guide-Alltag"
     features: "Funktionen"
     pricing: "Preise"
     faq: "FAQ"
@@ -658,7 +658,7 @@ it:
     og_description: "Audio broadcasting in tempo reale, accesso immediato via QR, note di viaggio condivise. Niente più ricevitori pubblici: solo lo smartphone del turista, per un tour più igienico e più nitido."
 
   nav:
-    why_now: "Perché ora"
+    why_now: "La realtà delle guide"
     features: "Funzionalità"
     pricing: "Prezzi"
     faq: "FAQ"
@@ -821,7 +821,7 @@ ja:
     og_description: "リアルタイム音声配信、QRで即接続、旅ノートを同時共有。共用レシーバーの代わりに観光客自身のスマートフォンで、より衛生的でクリアなツアーを。"
 
   nav:
-    why_now: "今、なぜ"
+    why_now: "ガイドのリアル"
     features: "機能"
     pricing: "料金プラン"
     faq: "FAQ"
@@ -984,7 +984,7 @@ zh-TW:
     og_description: "即時語音廣播、掃碼立即加入、旅遊筆記同步分享。不用共用接收器,用旅客自己的手機,導覽更衛生、更清晰。"
 
   nav:
-    why_now: "為什麼是現在"
+    why_now: "導遊的現實"
     features: "功能"
     pricing: "方案"
     faq: "常見問題"
@@ -1147,7 +1147,7 @@ zh-CN:
     og_description: "实时语音直播、扫码即时接入、行程笔记同步共享。告别公共接收器，用游客自己的手机，打造更卫生、更清晰的导览体验。"
 
   nav:
-    why_now: "为何现在"
+    why_now: "导游的现实"
     features: "功能"
     pricing: "价格方案"
     faq: "常见问题"
