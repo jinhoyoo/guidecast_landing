@@ -85,6 +85,15 @@ body {
   overflow-wrap: break-word;
 }
 
+// keep-all(한국어 단어 단위 줄바꿈용)은 띄어쓰기가 없는 일본어/중국어에서는
+// 줄바꿈 지점을 없애 긴 문장이 컨테이너를 넘치게 한다. ja/zh는 글자 단위
+// 줄바꿈이 표준이므로 normal로 되돌린다.
+html:lang(ja) body,
+html:lang(zh-CN) body,
+html:lang(zh-TW) body {
+  word-break: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
