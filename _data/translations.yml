@@ -75,14 +75,14 @@ ko:
         price: "$19.99"
         use_case: "일반 단체 투어"
         features:
-          - "세션 S 전체 + 대규모 안정 운영"
+          - "중간 규모 투어용"
         button: "사전 설문 남기기"
       session_l:
         name: "세션 L (~30명)"
         price: "$29.99"
         use_case: "대규모 단체 투어"
         features:
-          - "세션 M 전체 + 주력 전문 가이드용"
+          - "대규모 투어용"
         button: "사전 설문 남기기"
     notes:
       - icon: "🎁"
@@ -238,14 +238,14 @@ en:
         price: "$19.99"
         use_case: "Standard group tours"
         features:
-          - "Everything in Session S, plus stable performance for larger groups"
+          - "For mid-size tours"
         button: "Join the Waitlist"
       session_l:
         name: "Session L (up to 30 people)"
         price: "$29.99"
         use_case: "Large group tours"
         features:
-          - "Everything in Session M, built for full-time professional guides"
+          - "For large tours"
         button: "Join the Waitlist"
     notes:
       - icon: "🎁"
@@ -401,14 +401,14 @@ es:
         price: "$19.99"
         use_case: "Tours grupales estándar"
         features:
-          - "Todo lo de Sesión S + operación estable para grupos grandes"
+          - "Para tours medianos"
         button: "Unirme a la lista de espera"
       session_l:
         name: "Sesión L (~30 personas)"
         price: "$29.99"
         use_case: "Tours grupales de gran tamaño"
         features:
-          - "Todo lo de Sesión M + pensada para guías profesionales de alto volumen"
+          - "Para tours grandes"
         button: "Unirme a la lista de espera"
     notes:
       - icon: "🎁"
@@ -564,14 +564,14 @@ de:
         price: "$19.99"
         use_case: "Für klassische Gruppentouren"
         features:
-          - "Alles aus Session S + stabiler Betrieb für größere Gruppen"
+          - "Für mittelgroße Touren"
         button: "Jetzt vormerken"
       session_l:
         name: "Session L (bis 30 Personen)"
         price: "$29.99"
         use_case: "Für große Gruppentouren"
         features:
-          - "Alles aus Session M + optimiert für professionelle Guides"
+          - "Für große Touren"
         button: "Jetzt vormerken"
     notes:
       - icon: "🎁"
@@ -727,14 +727,14 @@ it:
         price: "$19.99"
         use_case: "Tour di gruppo standard"
         features:
-          - "Tutto di Sessione S + gestione stabile per gruppi numerosi"
+          - "Per tour di medie dimensioni"
         button: "Partecipa al sondaggio"
       session_l:
         name: "Sessione L (~30 persone)"
         price: "$29.99"
         use_case: "Tour di gruppo su larga scala"
         features:
-          - "Tutto di Sessione M + pensata per guide professioniste"
+          - "Per tour di grandi dimensioni"
         button: "Partecipa al sondaggio"
     notes:
       - icon: "🎁"
@@ -890,14 +890,14 @@ ja:
         price: "$19.99"
         use_case: "一般団体ツアー"
         features:
-          - "セッションSの全機能 + 大人数でも安定運用"
+          - "中規模ツアー向け"
         button: "事前アンケートに参加"
       session_l:
         name: "セッションL(~30名)"
         price: "$29.99"
         use_case: "大規模団体ツアー"
         features:
-          - "セッションMの全機能 + プロガイド向けの主力プラン"
+          - "大規模ツアー向け"
         button: "事前アンケートに参加"
     notes:
       - icon: "🎁"
@@ -1053,14 +1053,14 @@ zh-TW:
         price: "$19.99"
         use_case: "一般團體導覽"
         features:
-          - "場次 S 全部功能 + 大規模穩定運作"
+          - "適合中型導覽"
         button: "填寫搶先體驗問卷"
       session_l:
         name: "場次 L(約 30 人)"
         price: "$29.99"
         use_case: "大型團體導覽"
         features:
-          - "場次 M 全部功能 + 專業導遊主力方案"
+          - "適合大型導覽"
         button: "填寫搶先體驗問卷"
     notes:
       - icon: "🎁"
@@ -1216,14 +1216,14 @@ zh-CN:
         price: "$19.99"
         use_case: "普通团队导览"
         features:
-          - "包含场次 S 全部功能 + 大规模稳定运行"
+          - "适合中型团队导览"
         button: "填写预约问卷"
       session_l:
         name: "场次 L（约30人）"
         price: "$29.99"
         use_case: "大型团队导览"
         features:
-          - "包含场次 M 全部功能 + 专业导游主力之选"
+          - "适合大型团队导览"
         button: "填写预约问卷"
     notes:
       - icon: "🎁"
