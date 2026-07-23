@@ -95,27 +95,41 @@ layout: none
     }, 1000);
   </script>
   <style>
+    /* Matches the Pencil design tokens (guidecast_landing.pen):
+       bg #FFFFFF, surface-blue-50 #EFF6FF, accent #2563EB, text-muted #94A3B8 */
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
+      background: linear-gradient(135deg, #EFF6FF 0%, #FFFFFF 65%);
+      color: #475569;
     }
     .loader {
       text-align: center;
     }
+    .brand {
+      color: #2563EB;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
     .spinner {
-      border: 4px solid rgba(255, 255, 255, 0.3);
-      border-top: 4px solid white;
+      border: 3px solid #DBEAFE;
+      border-top: 3px solid #2563EB;
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
+      width: 36px;
+      height: 36px;
       animation: spin 1s linear infinite;
-      margin: 0 auto 20px;
+      margin: 0 auto 16px;
+    }
+    .loader p {
+      font-size: 0.95rem;
+      color: #94A3B8;
+      margin: 0;
     }
     @keyframes spin {
       0% { transform: rotate(0deg); }
@@ -125,8 +139,9 @@ layout: none
 </head>
 <body>
   <div class="loader">
+    <div class="brand">Guidecast</div>
     <div class="spinner"></div>
-    <p>Redirecting to Guidecast...</p>
+    <p>Redirecting...</p>
   </div>
 </body>
 </html>
