@@ -1,4 +1,22 @@
 /* ==========================================================================
+   CJK display-size compensation
+   Noto Sans KR/JP/SC/TC glyphs fill the em box ~20% fuller than Inter, so
+   the same font-size renders visually larger on ko/ja/zh pages. Scale the
+   large display headings down slightly there; body text keeps full size
+   for readability.
+   ========================================================================== */
+:root {
+  --display-scale: 1;
+}
+
+html:lang(ko),
+html:lang(ja),
+html:lang(zh-CN),
+html:lang(zh-TW) {
+  --display-scale: 0.92;
+}
+
+/* ==========================================================================
    Buttons
    ========================================================================== */
 button, .btn-primary, .btn-secondary {
@@ -56,7 +74,7 @@ button, .btn-primary, .btn-secondary {
 }
 
 .section-title {
-  font-size: var(--font-size-4xl);
+  font-size: calc(var(--font-size-4xl) * var(--display-scale));
   text-align: center;
   margin-bottom: var(--spacing-xl);
   color: var(--text-primary);
@@ -388,7 +406,7 @@ button, .btn-primary, .btn-secondary {
 }
 
 .hero-text .headline {
-  font-size: var(--font-size-5xl);
+  font-size: calc(var(--font-size-5xl) * var(--display-scale));
   margin-bottom: var(--spacing-md);
   color: var(--text-primary);
   line-height: 1.2;
@@ -860,7 +878,7 @@ button, .btn-primary, .btn-secondary {
 }
 
 .cta-title {
-  font-size: var(--font-size-4xl);
+  font-size: calc(var(--font-size-4xl) * var(--display-scale));
   margin-bottom: var(--spacing-md);
   color: var(--text-on-dark);
 }
@@ -1143,7 +1161,7 @@ button, .btn-primary, .btn-secondary {
 
 @media (max-width: 480px) {
   .hero-text .headline {
-    font-size: 1.75rem;
+    font-size: calc(1.75rem * var(--display-scale));
   }
 
   .hero-text .subheadline {
@@ -1151,7 +1169,7 @@ button, .btn-primary, .btn-secondary {
   }
 
   .section-title {
-    font-size: var(--font-size-3xl);
+    font-size: calc(var(--font-size-3xl) * var(--display-scale));
   }
 
   .cta-primary.large {
