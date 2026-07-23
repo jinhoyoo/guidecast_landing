@@ -7,7 +7,7 @@ ko:
 
   nav:
     why_now: "가이드의 현실"
-    features: "기능"
+    features: "이렇게 해결하세요"
     pricing: "요금제"
     faq: "FAQ"
     header_cta: "사전 설문 남기기"
@@ -170,7 +170,7 @@ en:
 
   nav:
     why_now: "Reality for Guides"
-    features: "Features"
+    features: "Here's the Fix"
     pricing: "Pricing"
     faq: "FAQ"
     header_cta: "Join the Waitlist"
@@ -333,7 +333,7 @@ es:
 
   nav:
     why_now: "La realidad del guía"
-    features: "Funciones"
+    features: "Así lo resolvemos"
     pricing: "Precios"
     faq: "Preguntas frecuentes"
     header_cta: "Unirme a la lista de espera"
@@ -496,7 +496,7 @@ de:
 
   nav:
     why_now: "Guide-Alltag"
-    features: "Funktionen"
+    features: "So lösen Sie es"
     pricing: "Preise"
     faq: "FAQ"
     header_cta: "Jetzt vormerken"
@@ -659,7 +659,7 @@ it:
 
   nav:
     why_now: "La realtà delle guide"
-    features: "Funzionalità"
+    features: "Ecco la soluzione"
     pricing: "Prezzi"
     faq: "FAQ"
     header_cta: "Partecipa al sondaggio"
@@ -822,7 +822,7 @@ ja:
 
   nav:
     why_now: "ガイドのリアル"
-    features: "機能"
+    features: "こう解決します"
     pricing: "料金プラン"
     faq: "FAQ"
     header_cta: "事前アンケートに参加"
@@ -985,7 +985,7 @@ zh-TW:
 
   nav:
     why_now: "導遊的現實"
-    features: "功能"
+    features: "這樣解決"
     pricing: "方案"
     faq: "常見問題"
     header_cta: "填寫搶先體驗問卷"
@@ -1148,7 +1148,7 @@ zh-CN:
 
   nav:
     why_now: "导游的现实"
-    features: "功能"
+    features: "这样解决"
     pricing: "价格方案"
     faq: "常见问题"
     header_cta: "填写预约问卷"
